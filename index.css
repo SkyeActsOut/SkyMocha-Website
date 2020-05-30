@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Bonveno;
+    src: url("/fonts/BonvenoCF-Light.otf");
+}
+@font-face {
+    font-family: Titillium;
+    src: url("/fonts/TitilliumWeb.ttf");
+}
+
+
+@media (orientation: landscape) {
+
+    body {
+        height: 100%;
+        width: auto;
+        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
+        background-size: cover;
+    } 
+
+}
+
+@media (orientation: portrait) {
+
+    body {
+        height: 100%;
+        width: auto;
+        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
+        background-size: cover;
+    } 
+
+}
+
+/* HEADER */
+@media (orientation: landscape) {
+
+    .portrait {
+        display: none;
+    }
+
+    header {
+        width: 90%;
+        height: 20%;
+        margin: auto;
+
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    header .container  {
+
+        height: 100%;
+        width: auto;
+
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        margin: auto;
+
+    }
+
+    header .container a {
+        
+        display: block; 
+        margin: 0 auto;
+    
+        height: auto;
+        width: fit-content;
+
+        font-size: 32px;
+        font-family: Bonveno;
+
+        color: black;
+        text-decoration: none;
+        text-shadow: white 2px 2px;
+    }
+
+    header .container a:hover {
+        text-decoration: underline;
+    }
+
+}
+
+/* HEADER PORTRAIT */
+@media (orientation: portrait) {
+
+    .landscape {
+        display: none;
+    }
+
+    a {
+    
+        height: auto;
+        width: fit-content;
+
+        font-size: 32px;
+        font-family: Bonveno;
+
+        color: black;
+        text-decoration: none;
+        text-shadow: white 2px 2px;
+
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .left {
+        float: left;
+        text-align: left;
+    }
+    .right {
+        float: right;
+        text-align: right;
+    }
+    .mobilebreak { 
+        display: block;
+    }
+
+}
+
+/* SOCIAL MEDIAS */
+.socials {
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    bottom: 20%;
+    top: 80%;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+
+    display: -webkit-flex;
+    display: flex;
+}
+
+.socials .container { 
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    margin: auto;
+}
+
+@media (orientation: landscape) {
+
+    .socials .container img {
+
+        display: block; 
+        margin: 0 auto;
+
+        height: auto;
+        width: 50%;
+
+    }
+}
+
+@media (orientation: portrait) {
+    .socials .container img {
+
+        display: block; 
+        margin: 0 auto;
+    
+        height: auto;
+        width: 70%;
+    
+    }    
+}
