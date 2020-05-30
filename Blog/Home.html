@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/CircleLogo.png" type="image/gif">
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="./Blog.css">
+
+    <title>NickStudios Blog</title>
+    <meta name="author" content="NickStudios">
+    <meta name="descritpion" content="NickStudios blog ranging on everything from programming guides to video game introspectives and reviews!"> 
+
+    <meta property="og:title" id="og_title" content="Nick's Blog">
+    <meta property="og:description" id="og_description" content="NickStudios' blog ranging on everything from programming guides to video game introspectives and reviews!">
+    <meta property="og:image" id="og_image" content="/assets/CircleLogo.png">
+    <meta property="og:url" id="og_url" content="www.nick-studios.com/Blog/Home">
+</head>
+
+<body>
+
+<div id="topBar" style="display: initial;">
+    <div class="top-bar grey show-for-landscape">
+        <div class="top-bar-left grey">
+            <ul class="menu grey">
+            <li class="menu-text grey"><a href="index">NickStudios</a></li>
+                <li class="grey"><a href="/Projects/Projects">Projects</a></li>
+                <li class="grey"><a href="#">Blog</a></li>
+                <li class="grey"><a href="/About">About</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="topBarMobile" style="display: initial;">
+    <div class="top-bar-center-image grey show-for-portrait">
+        <section class="top-bar-section grey" style="width:100%;text-align:center;">
+            <ul class="menu grey">
+            <li class="menu-text grey"><a href="index"><img class="img2" src="/assets/NickStudios Logo.png"></a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<div id="title" style="display: initial;">
+    <div class="callout grey2">
+        <div class="row column text-center white">
+            <h5>Nick's blog ranging on everything from programming guides to video game introspectives and reviews!</h5>
+        </div>
+    </div>
+</div>
+
+<div class="row small-up-1 medium-up-1 large-up-1" id="main">
+   
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+        $(document).foundation();
+
+        var column = document.getElementById('main');
+
+        var splitter = `|`
+
+        // LOADS ARTICLES!
+        async function load () {
+            await loadDoc('Get Started Making Discord Bots')
+            await loadDoc('OP-ED: The Futility of AP Computer Science A')
+            await loadDoc('The Math Behind the Golden Age of Anime')
+            await loadDoc('Turning My Laptop into a Ubuntu Server')
+        }
+
+        // Gets the title, and creates a blog post based on the text
+        // Anything before the 'splitter' is the title, anything after is the body of the post
+        function loadDiv (xhttp) {
+            let text = xhttp.responseText;
+
+            // The element to be posted
+            let element = document.createElement("div")
+
+            element.innerHTML = `
+                <div class="show-for-landscape" style="white-space: nowrap; max-width: 50%; padding-bottom: 2.5%">
+                    <img src=${text.split(splitter)[1]} style="max-width: 52.5%; min-width: 300px; height: auto; margin-right: auto; display: inline-block;">
+                    <div style="display: inline-block; width: 50%; vertical-align: -150%; overflow-wrap: break-word;">
+                        <h5> ${text.split(splitter)[0]} </h5>
+                        <p> ${shortenText ( text.split(splitter)[4]) } </p>
+                    </div>
+                </div>
+                <div class="show-for-portrait">
+                    <h5 style = "margin: auto; text-align: center;"> ${text.split(splitter)[0]} </h5>
+                    <img src=${text.split(splitter)[1]} style="margin: auto; padding: 10%; padding-bottom: 3px; padding-top: 5px;">
+                    <p style="margin: auto; padding-left: 10%; padding-right: 10%; patting-top: 3px; padding-bottom: 5%;"> ${shortenText( text.split(splitter)[4] )} </p>
+                </div>
+            `
+
+            // Adds classes & Onclick
+
+            element.style.cursor = "pointer"
+
+            element.onclick = function () {
+                click(text.split(splitter)[0])
+            };
+
+            column.appendChild (element)
+
+            element = undefined;
+        }
+
+        function shortenText (text) {
+            if (text.length > 152)
+                return `${text.slice (0, 38)}<br>${text.slice (38, 76)}<br>${text.slice (76, 114)}<br>${text.slice (114, 152)}...`
+            else if (text.length > 114)
+                return `${text.slice (0, 38)}<br>${text.slice (38, 76)}<br>${text.slice (76, 114)}...`;
+            else if (text.length > 76)
+                return `${text.slice (0, 38)}<br>${text.slice (38, 76)}...`;
+            else
+                return text;
+        }
+
+        // Loads the docuemtns from the ./Posts/ directory
+        function loadDoc(url, cFunction) {
+            var xhttp;
+            xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    loadDiv(xhttp);
+                }
+            };
+            xhttp.open("GET", `./Posts/Text/${url}.txt`, true);
+            xhttp.send();
+        }
+
+        function click (title) {
+            console.log (title);
+            window.location.href = `./Posts/Articles/${title}`
+        }
+
+        // Switches the screen for desktop systems
+        function switchScreen (screen) {
+            let prev = currScreen;
+            currScreenT = screen;
+
+            console.log ("PREV:" + prev);
+            console.log ("CURR:" + currScreen);
+            let postOne = document.getElementById(currScreenT * 2)
+            let postTwo = document.getElementById(currScreenT * 2 - 1)
+            if (postOne)
+                postOne.style.display = 'initial';
+            if (postTwo)
+                postTwo.style.display = 'initial';
+
+            if (postOne || postTwo) {
+                currScreen = currScreenT
+
+                let prevOne = document.getElementById(prev * 2)
+                let prevTwo = document.getElementById(prev * 2 - 1)
+                if (prevOne)
+                    prevOne.style.display = 'none'
+                if (prevTwo)
+                    prevTwo.style.display = 'none'
+            }
+        }
+
+        load ();
+
+    </script>
+</body>
+
+</html>

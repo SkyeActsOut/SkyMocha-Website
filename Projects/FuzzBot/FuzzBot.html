@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="fuzz.css">
+
+<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
+<html>
+
+<head>
+<title>NickStudios</title>
+</head>
+
+<body>
+
+    <header id="hWeb">
+        <a href="/"> Home &nbsp; </a> <span>
+        <a href="../Projects"> Projects &nbsp; </a>
+        <a href="About"> About &nbsp; </a>
+    </header>
+
+    <header id="hMobile">
+        <a href="./"> Home </a> <span>
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <a href="https://discordapp.com/oauth2/authorize?client_id=384506571146788867&scope=bot&permissions=8" target="blank">
+            <img src="/assets/FuzzBot.png" class="fuzzbot">
+            <div class="sidebarText"> Invite </div>
+        </a>
+        <div class="sidebarText" id="1" onclick="toggleText(this.id)"> About </div>
+        <div class="sidebarText" id="2" onclick="toggleText(this.id)"> Images </div>
+        <div class="sidebarText" id="3" onclick="toggleText(this.id)"> Emojis </div>
+        <div class="sidebarText" id="4" onclick="toggleText(this.id)"> Dice </div>
+        <div class="sidebarText" id="5" onclick="toggleText(this.id)"> Coin Flip </div>
+        <div class="sidebarText" id="6" onclick="toggleText(this.id)"> Quiz </div>
+        <div class="sidebarText" id="7" onclick="toggleText(this.id)"> Urban Dictionary </div>
+        <div class="sidebarText" id="8" onclick="toggleText(this.id)"> Quotes </div>
+        <div class="sidebarText" id="9" onclick="toggleText(this.id)"> TRBMB </div>
+        <div class="sidebarText" id="10" onclick="toggleText(this.id)"> Distance </div>
+        <div class="sidebarText" id="11" onclick="toggleText(this.id)"> Kick | Ban </div>
+        <div class="sidebarText" id="12" onclick="toggleText(this.id)"> Stats </div>
+        <div class="sidebarText">
+            <footer id="footer">
+                NickStudios (NK)
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Body -->
+    <div class="textBody" id="textBody">
+        <!-- About -->
+        <div id="B1">  
+            <div class="titleText"> About </div>
+            <hr>
+            <div class="bodyText"> 
+                FuzzBot is a multipurpose Discord bot whose primary function is to provide fun commands, as well as some utility to a server.
+                <br><br>
+                The bot has been in on and off development since December 2017. Over this time Nick/AntarcticRuler has been able to experiment and add commands to create a bot that will improve any server.
+                <br><br>
+                FuzzBot will also send a welcome message to all new members of a server, and a farewell message to those who leave the server.
+                <br><br>
+                Any questions about FuzzBot can be sent to AntarcticRuler#1529, or to FuzzBot himself. You can also contact Nick on his <a href="https://www.discord.gg/ppmaxad" class="link" target="blank">Discord Server</a>. 
+                <br><br>
+                FuzzBot is written in Node.js using the Discord.js package, with pulls from many different APIs.
+            </div>
+        </div>
+
+        <!-- Images -->
+        <div id="B2"> 
+            <div class="titleText"> 
+                Images 
+                <div class="usage"> f!images; f!cat; f!dog </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                FuzzBot provides an assortment of images that can spice up conversation.
+                <br><br>
+                There are specific commands such as the <i>f!cat</i> / <i>f!dog</i>, however, the main use of FuzzBot are it&apos;s reaction images. For example, type <i>ok!</i> In the chat, and you&apos;ll receive a thumbs up reaction from FuzzBot.
+                <br><br>
+                If you have any ideas for reaction images, reach out to AntarcitcRuler#1529 or DM FuzzBot a link to the image!
+                <br>
+                <img src="/assets/ok!.png" class="kurisu">
+            </div>
+
+        </div>
+
+        <!-- Emojis -->
+        <div id="B3"> 
+            <div class="titleText"> 
+                Emojis 
+                <div class="usage"> f!emojis; -emoji name- </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                FuzzBot provides a handful of emojis that are readily accessible to users. The emojis list holds both still images as well as gifs.
+                <br><br>
+                <i>f!emojis</i> will give a list of all the emojis you can use.
+                <br><br>
+                To use an emoji from the list, just type in chat the name of the emoji surrounded by two dashes
+                <br><br>
+                Ie. <i>-ping-</i>
+            </div>
+        </div>
+
+        <!-- Dice -->
+        <div id="B4"> 
+            <div class="titleText"> 
+                Dice 
+                <div class="usage"> f!d [number] </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                Randomized events just got a lot easier! FuzzBot is highly capable of rolling dice so you don&apos;t have to.
+                <br><br>
+                To roll a dice just type <i>f!d [number]</i>
+                <br><br>
+                Ie. <i>f!d 6</i>
+            </div>
+            
+        </div>
+
+        <!-- Coin Flip -->
+        <div id="B5"> 
+            <div class="titleText"> 
+                Coin Flip 
+                <div class="usage"> f!cp; f!cf </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                Ever needed to settle something online with a simple coin flip? Well the other person can&apos;t see the coin, but they can see FuzzBot&apos;s message.
+                <br><br>
+                To flip a coin just type <i>f!cp</i> or <i>f!cf</i>
+                <br><br>
+                ps. cp is a typo FuzzBot made a while ago, but decided to stick with.
+            </div>
+        </div>
+
+        <!-- Quiz -->
+        <div id="B6"> 
+            <div class="titleText"> 
+                Quiz 
+                <div class="usage"> f!quiz [category] [difficulty]; f!quizcat </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                Want to prove your knowledge? Using the Open Trivia Database, FuzzBot is able to deliver quizzes on just about any subject!
+                <br><br>
+                <i>f!quiz</i> will give a quiz in a random category at a random difficulty
+                <br>
+                <i>f!quiz [category]</i> gives a quiz from a specific category at a random difficulty
+                <br>
+                <i>f!quiz [category] [difficulty]</i> delivers a quiz from a specific category at a specific difficulty
+                <br><br>
+                To see all categories, type f!quizcat
+            </div>
+        </div>
+
+        <!-- Urban Dictionary -->
+        <div id="B7"> 
+            <div class="titleText"> 
+                Urban Dictionary 
+                <div class="usage"> f!ud [term]; f!rud</div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                No longer do you have to google that phrase in urban dictionary yourself! FuzzBot will do it for you.
+                <br><br>
+                <i>f!ud [term]</i> replies with the definition of the term as well as an example sentence.
+                <br><br>
+                <i>f!rud</i> will give a random urban dictionary term.
+            </div>
+        </div>
+
+        <!-- Quotes -->
+        <div id="B8"> 
+            <div class="titleText"> 
+                Random Quotes & Movie Quotes 
+                <div class="usage"> f!quote; f!mquote </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                &ldquo;FuzzBot chooses to deliver quotes, not because it is easy, but because it is fun&rdquo;&ndash; or something like that.
+                <br><br>
+                Using Andruxnet&apos;s random quote API, FuzzBot is packed with quotes he can show you.
+                <br><br>
+                <i>f!quote</i> is for general quotes
+                <br><br>
+                <i>f!mquote</i> is for movie specific quotes
+            </div>
+        </div>
+
+        <!-- That Really Blanked My Blank -->
+        <div id="B9"> 
+            <div class="titleText"> 
+                That Really Blanked My Blank 
+                <div class="usage"> f!trbmb; f!blank </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                Using the TRBMB API, FuzzBot can return funny and sometimes outrageous That Really ____ My ____ statements!
+                <br><br>
+                <i>f!blank</i> or <i>f!trbmb</i> will return a random That Really Blanked My Blank statement
+            </div>
+        </div>
+
+        <!-- Distance -->
+        <div id="B10"> 
+            <div class="titleText"> 
+                Distance
+                <div class="usage"> f!dist x1,y1 x2,y2 </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                FuzzBot can hopefully make your math homework a little bit easier!
+                <br><br>
+                <i>f!dist</i> followed by two coordinates <i>num,num</i> will return the distance
+                <br><br>
+                Ie. <i>f!dist 0,0 0,5</i> will return 5 as the distance between point one and point two
+            </div>
+        </div>
+
+        <!-- Kick/Ban -->
+        <div id="B11"> 
+            <div class="titleText"> 
+                Kick & Ban 
+                <div class="usage"> f!kick/ban [mention] [reason] </div>
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                FuzzBot isn&apos;t just a bot for fun, he can sometimes get down to business too.
+                <br><br>
+                <i>f!kick [mention] [reason]</i> will kick someone. 
+                <br><br>
+                The person will be notified the reason as to why they were kicked, and the channel you send the command in will be informed of the kicking as well.
+                <br><br>
+                To ban someone, just type <i>f!ban [mention] [reason]</i>
+                <br><br>
+                Ie. <i>f!kick @AntarcticRuler#1529 you have committed crimes against NickStudios HQ</i>
+                <br><br>
+                *You need the ban members permission for both commands
+            </div>
+        </div>
+
+        <!-- Stats -->
+        <div id="B12"> 
+            <div class="titleText"> 
+                Server & FuzzBot Statistics
+                <div class="usage"> f!stats; f!fuzzstats </div> 
+            </div>
+            <hr>
+            <div class="bodyText"> 
+                An easy way to check your basic server statistics is provided by FuzzBot!
+                <br><br>
+                Upon <i>f!stats</i>, the server name, icon, member count, owner, region, and ID will be returned in a nice embed.
+                <br><br>
+                If you wish to check up on FuzzBot, <i>f!fuzzstats</i> will return FuzzBot&apos;s statistics.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+<script>
+
+    var sidebar = document.getElementById("sidebar");
+    var textBody = document.getElementById("textBody");
+
+    var windowRatio = window.innerHeight/window.innerWidth;
+
+    // Sets sidebar and body to either web, mobile 1 (iPad), or mobile 2 (iPhone)
+    if (windowRatio < 1.04){
+        sidebar.style.width = `${innerWidth/8.5333}px`;
+        textBody.style.left = `${innerWidth/8.5333}px`;
+    }
+    else if (windowRatio < 1.4){
+        sidebar.style.width = `${innerWidth/4.8}px`;
+        sidebar.style.backgroundImage = `url("/assets/Sidebar2.png")`;
+
+        textBody.style.left = `${innerWidth/4.8}px`;
+    }
+    else {
+        sidebar.style.width = `${innerWidth/3.2}px`;
+        sidebar.style.backgroundImage = `url("/assets/Sidebar2.png")`;
+
+        for (let i = 1; i < sidebar.children.length - 1; i++) {
+            sidebar.children[i].classList.remove ("sidebarText");
+            sidebar.children[i].classList.add ("sidebarTextMobile");
+        }
+
+        var footer = document.getElementById("footer");
+        footer.classList.add("footerMobile");
+
+        textBody.style.left = `${innerWidth/3.2}px`;
+    }
+
+    var prevBody = document.getElementById("B1")
+
+    // Sets all of the info sections to invisible
+    var children = textBody.children;
+    for (let i = 1; i < children.length; i++)
+        document.getElementById(children[i].id).style.display = "none";
+
+    // Toggles whether the text is visible or not
+    function toggleText (clickedID) {
+        var body = document.getElementById(`B${clickedID}`);
+        prevBody.style.display = "none";
+        prevBody = body;
+        body.style.display = "initial";
+    }
+
+    // Changes site between mobile and web
+    setInterval ("changeSite()", 100);
+
+    function changeSite () {
+        // Ratio of height to width
+        windowRatio = window.innerHeight/window.innerWidth;
+        // Changes body to mobile
+        if (windowRatio > 0.85) {
+            var web = document.getElementById("hWeb");
+            var mobile = document.getElementById("hMobile");
+            web.style.display = "none";
+            mobile.style.display = "initial";
+
+            var footer = document.getElementById("footer");
+            if (footer.classList.contains("footerMobile"))
+                footer.classList.add("footerMobile");
+        }
+        // Changes to web
+        else {
+            var web = document.getElementById("hWeb");
+            var mobile = document.getElementById("hMobile");
+            web.style.display = "initial";
+            mobile.style.display = "none";
+
+            var footer = document.getElementById("footer");
+            if (footer.classList.contains("footerMobile"))
+                footer.classList.remove("footerMobile");
+        }
+    }
+
+</script>
+
+<!-- <script src="fuzzbot.js"></script> -->

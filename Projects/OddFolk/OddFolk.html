@@ -1,0 +1,166 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>OddFolk</title>
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="OddFolk.css">
+</head>
+
+<!-- <httpProtocol>
+    <customHeaders>
+        <add name="Access-Control-Allow-Origin" value="*" />
+    </customHeaders>
+</httpProtocol> -->
+
+<body>
+
+<div class="top-bar black show-for-landscape">
+    <div class="top-bar-left black">
+        <ul class="menu black">
+            <li class="menu-text black"><a href="index">NickStudios</a></li>
+            <li class="black"><a href="../Projects">Projects</a></li>
+            <li class="black"><a href="/Blog/Home">Blog</a></li>
+            <li class="black"><a href="About">About</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top-bar-center-image black show-for-portrait">
+    <section class="top-bar-section grey" style="width:100%;text-align:center;">
+        <ul class="menu grey">
+        <li class="menu-text"><a href="index"><img class="img2" src="/assets/NickStudiosLogoLight.png"></a></li>
+        </ul>
+    </section>
+</div>
+
+<div class="grid-container content how-for-landscape">
+    <div class="grid-x">
+        
+        <div class="row">
+            <div class="center">
+                <h5>"Odd Folk is a Roguelike survival simulation hybrid." 
+                    <br>
+                    I have been a contributor on this project since 1-22-2020.
+                    <br><br>
+                    All my commits are shown below:
+                </h5>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="columns" id="commits">
+                <h5 id="loading">Loading...</h5>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script src="/node_modules/gitlab/dist/index.browser.js"> </script>
+    <script>
+        $(document).foundation();
+
+        const { Gitlab } = gitlab;
+
+        var commits = [];
+        var commitsLoaded = false;
+        var branchesLoaded = false;
+        var allLoaded = false;
+
+        async function load () {
+
+            await loadMaster(); // Will get all commits from master branch
+            await loadMainBranch(); // Gets all commits from other branches
+
+            // Makes sure that both branches & general master commits are loaded before putting them on the screen
+            setInterval(() => {
+                if (branchesLoaded && commitsLoaded) {
+                    sortByDate();
+                    if (allLoaded)
+                        window.clearInterval(1);
+                }
+            }, 333);
+
+        }
+
+        // Loads the Master Branch
+        function loadMaster () {
+            $.get( "https://gitlab.com/api/v4/projects/6401097/repository/commits", function( data ) {
+                loadCommits(data)
+            });
+        }
+
+        // Gets all commits from the master Branch
+        function loadCommits (data) {
+            data.forEach(element => {
+                if (element.author_name == 'AntarcticRuler') {
+                    commits.push (element);
+                }
+            });
+            commitsLoaded = true;
+        }
+
+        // Loads the main branch
+        function loadMainBranch () {
+            $.get( "https://gitlab.com/api/v4/projects/6401097/repository/branches", function( data ) {
+                loadBranches(data);
+            });
+        }
+
+        // Loads all the branches
+        function loadBranches (data) {
+            data.forEach(element => {
+                $.get( `https://gitlab.com/api/v4/projects/6401097/repository/branches/${element.name}`, function( data ) {
+                    displayBranchCommits(data);
+                });
+            });
+        }
+
+        // Loads all the commits from the branch onto the commits array
+        function displayBranchCommits (data) {
+            if (data.commits)
+                data.commits.forEach(element => {
+                    if (element.author_name == 'AntarcticRuler') {
+                        commits.push (element);
+                    }
+                });
+            else if (data.commit && data.commit.author_name == 'AntarcticRuler') {
+                // console.log (data.commit);
+                commits.push (data.commit);
+            }
+            branchesLoaded = true;
+        }
+
+        function sortByDate () {
+            document.getElementById('loading').remove();
+
+            // Sorts by the created_at date of the commit
+            commits.sort(function(a,b){
+                // Turn your strings into dates, and then subtract them
+                // to get a value that is either negative, positive, or zero.
+                return new Date(b.created_at.split('T')[0]) - new Date(a.created_at.split('T')[0]);
+            });
+
+            // Loads all the commits on the web-page
+            commits.forEach(element => {
+                let commit = document.createElement('div');
+                commit.innerHTML = `<h4>${element.title} (<a href="https://gitlab.com/lockhead/odd-folk/commit/${element.id}" target="blank">${element.short_id}</a>)</h4><br><p>${element.message.split('-').join('<br> -')}</p><p>${element.created_at.split('T')[0]}</p><br>`;
+
+                let parent = document.getElementById('commits');
+                parent.appendChild(commit);
+            });
+
+            allLoaded = true;
+        }
+
+        load ();
+
+    </script>
+</body>
+
+</html>

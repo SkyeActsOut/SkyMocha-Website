@@ -1,0 +1,159 @@
+@font-face {
+    font-family: "BonvenoCF";
+    src: url("/assets/BonvenoCF-Light.otf");
+}
+
+body {
+    background-color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    background-color: #e2f1ff;
+    font-weight: 900;
+    border-radius: 20%
+}
+
+header {
+    background-color: #262626;
+    color: white;
+    width: 100vw;
+    height: 7vh;
+    font-size: 5vh;
+    font-family: "BonvenoCF";
+    text-align: center;
+    text-shadow: 2px 2px #474747;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.sidebar {
+    background-image: url("/assets/Sidebar.png");
+    background-size: 100%;
+    /* Background color is #474747 */
+    position: fixed;
+    height: 100vh;
+    /* width: 150px; */
+    left: 0px;
+    top: 7vh;
+    font-size: 18px;
+    font-family: "BonvenoCF";
+    overflow-y: auto;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.sidebarText {
+    color: white;
+    position: relative;
+    top: 0.5vh;
+    left: 10px;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-shadow: 2px 2px #686868;
+    cursor: pointer;
+}
+
+.sidebarTextMobile {
+    color: white;
+    position: relative;
+    top: 0.5vh;
+    left: -3px;
+    letter-spacing: 2px;
+    padding: 10px;
+    text-shadow: 2px 2px #686868;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-family: "BonvenoCF";
+    position: relative;
+    display: block;
+    width: 99%;
+    top: 1vh;
+    font-size: 9px;
+    right: 8px;
+    padding-bottom: 50px;
+}
+
+.footerMobile {
+    padding-bottom: 120px;
+}
+
+.fuzzbot {
+    position: relative;
+    top: 10px;
+    left: 19px;
+    width: 60px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.textBody {
+    position: relative;
+    left: 150px;
+    top: 5px;
+    width: calc(99% - 150px);
+    height: 97vh;
+    font-family: "BonvenoCF"
+}
+
+.titleText {
+    position: relative;
+    left: 10px;
+    top: 5vh;
+    font-size: 7vmin;
+}
+
+.usage {
+    position: relative;
+    font-size: 3.3vmin;
+    top: 0vh;
+    padding-bottom: 1vh;
+    left: 0vmin;
+}
+
+.link {
+    color: #0083ab;
+}
+
+.bodyText {
+    position: relative;
+    left: 10px;
+    top: 3vh;
+    font-size: 3.5vmin;
+    max-width: 85%;
+}
+
+hr {
+    position: relative;
+    top: 3vh;
+    right: 8px;
+    border-width: 0.5vh;
+    width: 98%;
+    color: black;
+    fill: black;
+}
+
+.kurisu {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    right: 0vw;
+    top: 1vh;
+}

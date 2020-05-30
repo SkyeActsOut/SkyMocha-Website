@@ -1,0 +1,14 @@
+﻿The Math Behind the Golden Age of Anime|
+/Blog/Assets/Golden_Age_of_Anime.png|
+Anime, MyAnimeList|
+April 6, 2020|
+I consider myself a purveyor of anime, and as one I asked myself this question: Is there a golden age of anime? As someone who is relatively young, I ask myself this because I joined the anime community within the past two years. With such an expansive list of anime to watch, it's sometimes hard to figure out what to watch next with so much coming out now, and such a rich history of anime.|
+I decided, during my self-study of data science, I would try and mess around with MyAnimeList data. One thing I noticed a few things:|
+<img src="/Blog/Assets/Anime/Figure_3.png" class="figure">|
+Although very obvious, I wanted to start off by showing that the amount of anime created every year increases. By how much so, though, is a completely different story. The amount of anime created each year has been increasing exponentially. Each dot on this graph is a year and how many seasons were aired up to 2017. In the early 2000’s 200 seasons were airing each year, around the 2010’s 400-500 seasons were airing each year, and finally in 2017 800 seasons were aired.|
+Now, that we have that fact out of the way, onto the “Golden Age” of anime.|
+<img src="/Blog/Assets/Anime/Figure_1.png" class="figure">|
+It doesn’t exist. This is the data from 1,5000 MAL rankings. Each dot on the chart is an individual anime, and one thing that can be seen from this is that as time goes on, there are not just more good shows, but also amazing, average, and really bad shows. You don't see many 9 or aboves until the 2000’s begin, but around then the number of shows with a score of 3 or lower begin to actually exist. Because as more shows air, you have a larger variety of okay, bad, and outstanding.|
+<img src="/Blog/Assets/Anime/Figure_1.png" class="figure">|
+Now, if we want to look at only shows with a 5 or above, the amount of highly ranked shows above a 8 started increasing around 1980 very gradually. Yet, this is such a gradual increment compared to the massive cluster of shows ranked 5 - 8. As the amount of amazing shows grows, the cluster of okay shows becomes so large that you can no longer distinguish individual anime. As a result, it’s impossible to argue that there is a golden age of anime, but it is fact that there are many more shows both good and bad.|
+The whole idea of a golden age of anything is a very subjective argument. As tastes evolve over time, and new people flood the market for anime, people can get polarized over which year was better than one another. Gigguk has touched on this somewhat on some of his videos, for example his video talking about <a href=https://www.youtube.com/watch?v=VgV-OL_gHig target=blank>2020 being the decade anime grew up</a>. Many people have debated this idea, but I wanted to provide some of the data behind people’s arguments. A golden age does not, and will never exist. Fite me.

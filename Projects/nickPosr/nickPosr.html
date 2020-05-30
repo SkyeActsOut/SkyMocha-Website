@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>nickPosr</title>
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="nickPosr.css">
+</head>
+
+<body class="lightGrey">
+
+<div class="top-bar grey show-for-landscape">
+    <div class="top-bar-left grey">
+        <ul class="menu grey">
+        <li class="menu-text grey"><a href="index">NickStudios</a></li>
+            <li class="grey"><a href="../Projects">Projects</a></li class="grey" >
+            <li class="grey"><a href="/Blog/Home">Blog</a></li>
+            <li class="grey"><a href="About">About</a></li>
+        </ul>
+    </div>
+</div>
+<div class="top-bar-center-image black show-for-portrait">
+    <section class="top-bar-section grey" style="width:100%;text-align:center;">
+        <ul class="menu grey">
+        <li class="menu-text"><a href="index"><img class="img2" src="/assets/NickStudios Logo.png"></a></li>
+        </ul>
+    </section>
+</div>
+
+<div class="callout grey2">
+    <div class="row column text-center white">
+        <h2>nickPosr</h2>
+        <h4 class="subheader white">An attempt at AI generated music</h4>
+    </div>
+</div>
+
+<div class="grid-container show-for-landscape">
+    <div class="grid-x">
+        <div class="row">
+            <div class="columns small-6"> <h5 class="blackText">Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into image. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. (CSV & Img on the right) The image could then be reverse-engineered back into a MIDI file, with minor flaws. (Major flaws throughout the process can be found on the right) <br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. <br>In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence. </h5></div>
+            <div class="columns small-3">
+                <img src="./assets/Chrono Trigger CSV.jpg" width="134" height="400">
+                <img src="./assets/Still More Fighting.png" width="44" height="400">
+            </div>
+            <div class="columns small-3">
+                <p> "Chrono Trigger" with massive errors </p>
+                <audio controls>
+                    <source src="./assets/Chrono_Trigger UHHHH.mp3" type="audio/mpeg">
+                </audio>
+                <p> "Dragonborn" with massive errors </p>
+                <audio controls>
+                    <source src="./assets/DRAGONBORN - TES V - Skyrim Main Theme (Piano Cover) + sheets.mp3" type="audio/mpeg">
+                </audio>
+                <p> "Chrono Trigger" with minimal errors </p>
+                <audio controls>
+                    <source src="./assets/1-02_Chrono_Trigger.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="grid-container show-for-portrait">
+    <div class="grid-x">
+        <div class="row">
+            <h5 class="blackText padding-10">Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into image. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. The image could then be reverse-engineered back into a MIDI file, with minor flaws. <br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. <br>In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence. <br><br>(Pictures & Audio in landscape) </h5>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</body>
+
+</html>

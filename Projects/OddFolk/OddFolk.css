@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "BonvenoCF";
+    src: url("/assets/BonvenoCF-Light.otf");
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url("/assets/TitilliumWeb.ttf");
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+    body {
+        background-image: url("./Gameplay.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;   
+    } 
+
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    body {
+        background-color: black;
+    }
+}
+
+.transparent {
+    background-color: transparent;
+}
+
+h2, h4{
+    font-family: 'Titillium Web', sans-serif !important;
+    color: white;
+    text-shadow: 1px 1px grey;
+}
+
+a {
+    font-family: 'Titillium Web', sans-serif !important;
+    color: rgb(6,69,173);
+    text-shadow: 1px 1px blue;
+}
+
+.h1, h3, h5, p {
+    font-family: "BonvenoCF";
+    color: white;
+    text-shadow: 2px 2px grey;
+}
+
+.black {
+    background-color: black;
+}
+
+.center {
+    text-align: center;
+    margin: auto;
+}

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://www.nick-studios.com/</loc>
+  <lastmod>2020-04-05T11:58:09+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Blog/Home</loc>
+  <lastmod>2020-04-05T13:49:50+00:00</lastmod>
+  <priority>0.9</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Projects</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.85</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Blog/Posts/Articles/Get%20Started%20Making%20Discord%20Bots</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Blog/Posts/Articles/OP-ED:%20The%20Futility%20of%20AP%20Computer%20Science%20A</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Blog/Posts/Articles/The%20Math%20Behind%20the%20Golden%20Age%20of%20Anime</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Blog/Posts/Articles/Turning%20My%20Laptop%20into%20a%20Ubuntu%20Server</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.75</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/About</loc>
+  <lastmod>2020-04-05T11:57:08+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/FuzzBot</loc>
+  <lastmod>2020-01-10T18:35:55+00:00</lastmod>
+  <priority>0.65</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/discord-location</loc>
+  <lastmod>2020-01-10T18:48:07+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/Peddie-Discord</loc>
+  <lastmod>2020-01-10T18:42:24+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/AbyssalMaze/index.html</loc>
+  <lastmod>2020-01-10T18:21:51+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/NS02</loc>
+  <lastmod>2020-02-02T20:35:43+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/OddFolk</loc>
+  <lastmod>2020-02-03T12:25:46+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/rpg</loc>
+  <lastmod>2020-02-02T20:45:12+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/nickPosr</loc>
+  <lastmod>2020-01-11T00:13:48+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/FuzzBot.html</loc>
+  <lastmod>2020-01-10T18:35:55+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/AbyssalMaze/</loc>
+  <lastmod>2020-01-10T18:21:51+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Projects.html</loc>
+  <lastmod>2020-04-05T11:54:27+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/FuzzBot/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/discord-location.html</loc>
+  <lastmod>2020-01-10T18:48:07+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/NS02.html</loc>
+  <lastmod>2020-02-02T20:35:43+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/OddFolk.html</loc>
+  <lastmod>2020-02-03T12:25:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/Peddie-Discord.html</loc>
+  <lastmod>2020-01-10T18:42:24+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/rpg.html</loc>
+  <lastmod>2020-02-02T20:45:12+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/nickPosr.html</loc>
+  <lastmod>2020-01-11T00:13:48+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Discord-Location/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/NS02/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/OddFolk/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/Peddie-Discord/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=N;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=M;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=S;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=D;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/RPG/assets/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=N;O=A</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=M;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=S;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>http://www.nick-studios.com/Projects/nickPosr/assets/?C=D;O=D</loc>
+  <lastmod>2020-04-05T14:05:46+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+
+</urlset>

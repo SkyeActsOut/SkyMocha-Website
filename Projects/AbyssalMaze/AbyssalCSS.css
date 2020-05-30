@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "BonvenoCF";
+    src: url("../assets/BonvenoCF-Light.otf");
+}
+
+body {
+    background-color: black;
+    font-family: "BonvenoCF";
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+i {
+    background-color: #e2f1ff;
+    font-weight: 900;
+    border-radius: 20%
+}
+
+header {
+    background-color: #262626;
+    color: white;
+    width: 100vw;
+    height: 7vh;
+    font-size: 5vh;
+    font-family: "BonvenoCF";
+    text-align: center;
+    text-shadow: 2px 2px #474747;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    padding: 3px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-family: "BonvenoCF";
+    position: relative;
+    display: block;
+    width: 99%;
+    top: 1vh;
+    font-size: 9px;
+    right: 8px;
+    padding-bottom: 50px;
+}
+
+.footerMobile {
+    padding-bottom: 120px;
+}
+
+.padding-top {
+    position: relative;
+    padding-top: 10.5vh;
+}
+
+.invisible {
+    display: none;
+}
+
+.text {
+    text-align: center;
+    font-family: "BonvenoCF";
+    font-size: 3.5vh;
+    letter-spacing: 0.2vmin;
+    position: relative;
+    color: white;
+    top: 13vh;
+    display: block;
+    cursor: pointer;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-family: "BonvenoCF";
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    bottom: 3vh;
+    font-size: 2vmin;
+}
+
+.github {
+    height: 7.5vh;
+    width: 7.5vh;
+    position: absolute;
+    top: 75%;
+    left: 7.5%;
+}
+.ld {
+    height: 4vh;
+    width: 29vh;
+    position: absolute;
+    top: 76.5%;
+    left: calc(50% - 14.5vh);
+}
+
+.githubWeb {
+    height: 7.5vh;
+    width: 7.5vh;
+    position: absolute;
+    top: 18%;
+    left: 12.5%;
+}
+.ldWeb {
+    height: 4vh;
+    width: 29vh;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+}

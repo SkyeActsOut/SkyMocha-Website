@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="about.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<html>
+
+<head>
+<title>NickStudios</title>
+
+<meta name="descritpion" id="descritpion" content="About NickStudios">
+<meta name="keywords" id="keywords" content="NickStudios, NickStudios Code, AntarcticRuler">
+<meta name="author" content="NickStudios">
+
+<link rel="icon" href="/assets/CircleLogo.png" type="image/gif">
+<meta name="theme-color" content="#4B52EC"/>
+<meta property="og:title" content="NickStudios About Page"/>
+<meta property="og:url" content="http://www.nick-studios.com/About"/>
+<meta property="og:image" content="/assets/CircleLogo.png"/>
+
+</head>
+
+<body>
+
+    <header id="hWeb" class="outline">
+        <a href="./"> Home &nbsp; </a> <span>
+        <a href="/Projects/Projects"> Projects &nbsp; </a>
+        <a href="/Blog/Home"> Blog &nbsp; </a>
+        <a href="#"> About &nbsp; </a>
+    </header>
+
+    <header id="hMobile" class="outline">
+        <a href="./"> Home </a> <span>
+    </header>
+
+    <div class="mainText outline" id="mainText">
+        NickStudios, also known online as AntarcticRuler, is a sophomore in high school in the United States. 
+        <br><br>
+        Nick started programming at 11 years old, and producing YouTube content at 14.
+        <br><br>
+        If you wish to contact him, you can reach him on his
+        <br>
+        <a href="https://www.discord.gg/ppmaxad" class="link" target="blank">Discord Server</a> 
+    </div>
+
+    <div class="buttons">
+        <i class="material-icons md-48 button button2" onclick="startSystem(); console.log (`PLAY`)">play_arrow</i>
+        <i class="material-icons md-48 button button2" onclick="stopSystem(); console.log (`PAUSE`)">pause</i>
+        <i class="material-icons md-48 button" onclick="changeScreen(); console.log (`REPEAT`);">repeat</i>
+    </div>
+
+</body>
+</html>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+<script src="fractals.js"> </script>
+
+<script>
+
+    // Changes site between mobile and web
+    setInterval ("changeSite()", 100);
+
+    function changeSite () {
+        // Ratio of height to width
+        windowRatio = window.innerHeight/window.innerWidth;
+        // Changes body to mobile
+        if (windowRatio > 0.82) {
+            var web = document.getElementById("hWeb");
+            var mobile = document.getElementById("hMobile");
+            web.style.display = "none";
+            mobile.style.display = "initial";
+        }
+        // Changes to web
+        else {
+            var web = document.getElementById("hWeb");
+            var mobile = document.getElementById("hMobile");
+            web.style.display = "initial";
+            mobile.style.display = "none";
+        }
+    }
+
+</script>

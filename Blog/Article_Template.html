@@ -1,0 +1,169 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title id="meta_title"></title>
+    <meta name="descritpion" id="descritpion">
+    <meta name="keywords" id="keywords">
+    <meta name="author" content="NickStudios">
+    <link rel="icon" href="/assets/CircleLogo.png" type="image/gif">
+
+    <meta property="og:title" id="og_title">
+    <meta property="og:description" id="og_description">
+    <meta property="og:image" id="og_image" >
+    <meta property="og:url" id="og_url">
+
+    <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    <link rel="stylesheet" href="/Blog/Blog.css">
+    <script data-ad-client="ca-pub-9432795677810589" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+
+<div id="topBar" style="display: initial;">
+    <div class="top-bar grey show-for-landscape">
+        <div class="top-bar-left grey">
+            <ul class="menu grey">
+            <li class="menu-text grey"><a href="index">NickStudios</a></li>
+                <li class="grey"><a href="/Projects/Projects">Projects</a></li>
+                <li class="grey"><a href="./Home">Blog</a></li>
+                <li class="grey"><a href="/About">About</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="topBarMobile" style="display: initial;">
+    <div class="top-bar-center-image grey show-for-portrait">
+        <section class="top-bar-section grey" style="width:100%;text-align:center;">
+            <ul class="menu grey">
+            <li class="menu-text grey"><a href="index"><img class="img2" src="/assets/NickStudios Logo.png"></a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+<br>
+
+<div class="show-for-landscape">
+    <u><h4 id="title" class="text"> </h4></u>
+    <img id="article_image" style="height: auto; width: 52.5%; margin: auto; display: block;">
+    <br>
+    <div id="main" class="text"> </div>
+    <br>
+    <div id="category" style="text-align: center;"></div>
+    <div id="date" style="text-align: center;"></div>
+    <p style="text-align: center;">NICKSTUDIOS</p>
+    <br>
+</div>
+
+<div class="show-for-portrait">
+    <h5 style="margin-left: auto; padding-left: 2.5%; margin-top: -3%;"> <a href="./Home"> <u>Back to B</u>log </a> </h5>
+    <u><h2 id="title_mobile" style="text-align: center; margin-top: -2.5%;"> </h2></u>
+    <img id="article_image_mobile" style="height: auto; width: 65%; margin: auto; display: block;">
+    <br>
+    <div id="main_mobile" style="padding: 2.5%;"> </div>
+    <br>
+    <div id="category_mobile" style="text-align: center;"></div>
+    <div id="date_mobile" style="text-align: center;"></div>
+    <p style="text-align: center;">NICKSTUDIOS</p>
+    <br>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+        $(document).foundation();
+
+        var column = document.getElementById('main');
+        var column_mobile = document.getElementById('main_mobile');
+
+        var splitter = `|`;
+
+        var url = window.location.href.split ('/Articles/')[1];
+        document.getElementById('og_url').content = url;
+
+        url = url.split('%20').join(' ')
+        console.log (url);
+
+        // Gets the title, and creates a blog post based on the text
+        // Anything before the 'splitter' is the title, anything after is the body of the post
+        function loadDiv (xhttp, column) {
+            let text = xhttp.responseText;
+
+            // The element to be posted
+            let element = document.createElement("div")
+
+            // Adds classes & Onclick
+            // element.classList.add ("text")
+            // element.classList.add ("column-block")
+            // element.classList.add ("small-9")
+            // element.classList.add ("medium-10")
+            // element.classList.add ("large-11")
+
+            // element.style.cursor = "pointer"
+
+            // The title of the post
+            // let title = document.createElement ('h5')
+            document.getElementById('title').innerHTML = text.split(splitter)[0]
+            document.getElementById('title_mobile').innerHTML = text.split(splitter)[0]
+            document.getElementById('meta_title').innerHTML = text.split(splitter)[0]
+            document.getElementById('og_url').content = text.split(splitter)[0]
+            // element.appendChild (title)
+
+            //The article image
+            document.getElementById("article_image").src = text.split(splitter)[1]
+            document.getElementById("article_image_mobile").src = text.split(splitter)[1]
+            document.getElementById('og_image').content = text.split(splitter)[1]
+
+            let tagsText = '';
+            let tagsArr =  text.split(splitter)[2].split (',');
+            tagsArr.forEach (element => {
+                tagsText += element + ', '
+            })
+            document.getElementById('category').innerHTML = `<p>Tags: ${tagsText}</p>`
+            document.getElementById('category_mobile').innerHTML = `<p>Tags: ${tagsText}</p>`
+            document.getElementById('keywords').content = `${tagsText}`
+
+            document.getElementById('date').innerHTML = `<p>Date Written: ${text.split(splitter)[3]}</p>`
+            document.getElementById('date_mobile').innerHTML = `<p>Date Written: ${text.split(splitter)[3]}</p>`
+
+            // The body of the post
+            let bodyTextArr = text.split(splitter).slice(4);
+            document.getElementById('descritpion').content = bodyTextArr[0]
+            document.getElementById('og_description').content = bodyTextArr[0]
+            let body = document.createElement ('h5')
+            let bodyText = '';
+            bodyTextArr.forEach(element => {
+                bodyText += element + '<br><br>'
+            });
+            body.innerHTML = bodyText;
+            element.appendChild(body)
+
+            // Appends the post to the column
+            column.appendChild(element);
+
+            // element = undefined;
+        }
+
+        // Loads the docuemtns from the ./Posts/ directory
+        function loadDoc(url, cFunction) {
+            var xhttp;
+            xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    loadDiv(xhttp, column);
+                    loadDiv(xhttp, column_mobile);
+                }
+            };
+            xhttp.open("GET", `../Text/${url}.txt`, true);
+            xhttp.send();
+        }
+
+        loadDoc (url);
+
+    </script>
+</body>
+
+</html>

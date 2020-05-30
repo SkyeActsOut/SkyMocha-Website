@@ -1,0 +1,32 @@
+﻿Turning My Laptop into a Ubuntu Server|
+/Blog/Assets/Ubuntu_Server.png|
+Programming, Server, Ubuntu, Linux|
+April 10, 2020|
+For any developer working with online applications or websites, having a dedicated server is paramount. At the start of my time developing Discord bots, I used services like Heroku, but then moved on to using my own dedicated server. By that I mean a Raspberry Pi running 24/7 as both a web server and server for my Discord bot.|
+However, eventually, coronavirus gave me an opportunity. I was home with two laptops, one of which was never used as it was my school laptop. So, what if I turned that school laptop into a dedicated server? With specs much, much higher than the Raspberry Pi, it would be overkill for my Discord bots and website, but hey, why not have some fun!|
+The steps were as follows:|
+* Dual Boot Ubuntu (Linux) and Windows<br>
+* Limit Ubuntu to just command line<br>
+* Stop the computer from sleeping<br>
+* Enable SSH
+|
+Step 1:|
+I already had a previously downloaded bootable USB with Ubuntu, but, if not the steps are fairly simple. First <a href="https://ubuntu.com/#download" target="blank">download Ubuntu</a> and then download a bootable USB drive preparer. I used <a href="https://www.balena.io/etcher/" target=”blank”>Balena Etcher</a>. All that needs to be done is for the USB drive to be plugged in, open the app, load the ISO, and wait for the bootable USB to be made!|
+Step two to dual booting Ubuntu is to partition Windows creating free space that your Linux distro can use. For that I followed this <a href="https://itsfoss.com/guide-install-linux-mint-16-dual-boot-windows/" target="blank">itsfoss</a> tutorial. For MacOS it's a different process of installing a service called <a href="https://www.rodsbooks.com/refind/" target="blank">rEFInd</a> and using that to dual boot instead Ubuntu and MacOS.|
+Step 2:|
+Step two is fairly simple. All that needs to be done is to go to Command Line in Ubuntu, and then type in this command:
+<div class="code">sudo systemctl set-default multi-user.target</div><br>
+After this reboot the system, which can be done manually or with <div class="code">sudo reboot</div>|
+Step 3:|
+Step three is to stop the computer from sleeping. Turning this off means we can close the laptop instead of keep it open 24/7.|
+To turn sleep off, type in this command:
+<div class="code">sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</div><br>
+And to turn it back on type:
+<div class="code">sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target</div>|
+Step 4:|
+The final step for us is going to be turning in SSH so we can modify our laptop from a different computer. To install and enable SSH, type:|
+<div class="code">sudo apt install openssh-server</div><br>
+<div class="code">sudo ufw allow ssh</div><br>
+And the final thing you want to do is test the connection by doing this command from another computer:|
+<div class="code">ssh username@computer_ip</div><br>
+Although not likely the most optimal way of going about this, these are the steps I took to be able to turn my school’s Windows 10 laptop into a 24/7 Ubuntu server! These steps are fairly shortened, so some googling might help to understand what is going on, or it might help solve any errors that pop up!
