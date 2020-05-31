@@ -9,20 +9,22 @@
 
 <head>
 <title>SkyMocha</title>
-<link rel="icon" href="/assets/CircleLogo.png" type="image/gif">
+<link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
 <meta name="theme-color" content="#4B52EC"/>
-<meta property="og:title" content="NickStudios Website"/>
-<meta property="og:url" content="http://www.nick-studios.com"/>
-<meta property="og:description" content="The NickStudios Website associated with the NickStudios Code YouTube Channel."/>
-<meta property="og:image" content="/assets/CircleLogo.png"/>
+<meta property="og:title" content="SkyMocha"/>
+<meta property="og:url" content="http://www.skymocha.net"/>
+<meta property="og:description" content="The SkyMocha website associated with the SkyMocha YouTube channel."/>
+<meta property="og:image" content="/logo_assets/SkyMocha.png"/>
 
-<meta name="descritpion" id="descritpion" content="The NickStudios Website associated with the NickStudios Code YouTube Channel. Contains a portfolio of work and a personal blog.">
-<meta name="keywords" id="keywords" content="NickStudios, NickStudios Code, AntarcticRuler">
-<meta name="author" content="NickStudios">
+<meta name="descritpion" id="descritpion" content="The SkyMocha website associated with the SkyMocha YouTube channel. Contains a portfolio of work and a personal blog.">
+<meta name="keywords" id="keywords" content="SkyMocha">
+<meta name="author" content="SkyMocha">
 
 </head>
 
-<body>
+<body id='body'>
+
+    <div id='body_cover'> </div>
 
     <header class="landscape"> 
 
@@ -37,7 +39,7 @@
             <a href="/">BLOG</a>
         </div>
         <div class="container">
-            <a href="/">ABOUT</a>
+            <a onclick="about()">ABOUT</a>
         </div>
 
     </header>
@@ -60,7 +62,7 @@
             </div>
             <span class="mobilebreak"></span>
             <div class="container right">
-                <a href="/">ABOUT</a>
+                <a onclick="about()">ABOUT</a>
             </div>
         </div>
 
@@ -89,6 +91,66 @@
         </div>
     </div>
 
+    <div id="about_right" class="invis">
+        <h3 >About</h3>
+        <h5 style="margin-top: -2.5%;">
+            SkyMocha is a student living in the United States. 
+            Currently in the 11th grade of high school, 
+            they spend much of their free time self-studying computer science.
+            From web design, to game development, to AI, SkyMocha is determined to become a adept magician of code.
+            On top of learning code, SkyMocha teaches others through Discord and through their YouTube channel.
+        </h5>
+    </div>
+
 </body>
+
+<script>
+
+    var aboutOnScreen = false;
+    var animInProcess = false;
+
+    function about () {
+        if (!aboutOnScreen && !animInProcess) {
+            setAnim(3);
+            let about = document.getElementById("about_right");
+            about.classList.remove('invis');
+            about.classList.remove('remove_about');
+            about.classList.add('about');
+
+            let body_cover = document.getElementById("body_cover");
+            body_cover.classList.remove('brighten');
+            body_cover.classList.add('darken');
+            aboutOnScreen = true;
+        }
+        else if (!animInProcess) {
+            setAnim(3);
+            let about = document.getElementById("about_right");
+            setInvis(about, 2.9);
+            about.classList.remove('about');
+            about.classList.add('remove_about');
+
+            let body_cover = document.getElementById("body_cover");
+            body_cover.classList.remove('darken');
+            body_cover.classList.add('brighten');
+            aboutOnScreen = false;
+        }
+    }
+
+    // Sets the animation state
+    function setAnim (time) {
+        animInProcess = true;
+        setTimeout(() => {
+            animInProcess = false;
+        }, time * 1000);
+    }
+
+    // Sets the invisible state
+    function setInvis (elem, time) {
+        setTimeout(() => {
+            elem.classList.add ('invis');
+        }, time * 1000);
+    } 
+
+</script>
 
 </html>

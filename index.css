@@ -15,7 +15,36 @@
         width: auto;
         background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
         background-size: cover;
-    } 
+        z-index: -10;
+    }
+
+    .darken {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
+        background-size: cover;
+        filter: blur(3px) brightness(65%);
+        z-index: -9;
+        animation-name: body_cover_anim_dark;
+        animation-duration: 2.5s;
+    }
+
+    .brighten {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
+        background-size: cover;
+        z-index: -9;
+        filter: none;
+        animation-name: body_cover_anim_light;
+        animation-duration: 2.5s;
+    }
 
 }
 
@@ -26,8 +55,47 @@
         width: auto;
         background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
         background-size: cover;
+        z-index: -10;
     } 
 
+    .darken {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
+        background-size: cover;
+        filter: blur(3px) brightness(65%);
+        z-index: -9;
+        animation-name: body_cover_anim_dark;
+        animation-duration: 2.5s;
+    }
+
+    .brighten {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
+        background-size: cover;
+        z-index: -9;
+        filter: none;
+        animation-name: body_cover_anim_light;
+        animation-duration: 2.5s;
+    }
+
+}
+
+@keyframes body_cover_anim_dark {
+    0%   { filter: blur(0) brightness(100%); }
+    100% { filter: blur(3px) brightness(65%); }
+}
+
+@keyframes body_cover_anim_light {
+    0%   { filter: blur(3px) brightness(65%); }
+    100% { filter: blur(0px) brightness(100%); }
 }
 
 /* HEADER */
@@ -164,4 +232,96 @@
         width: 70%;
     
     }    
+}
+
+
+/* ABOUT */
+@media (orientation: landscape) {
+    .about {
+        display: block;
+        position: absolute;
+        animation-name: about_anim;
+        animation-duration: 3s;
+        text-align: right;
+        max-width: 40%;
+        right: 5%;
+        top: 15%;
+        text-shadow: white 2px 2px;
+        text-align: right;
+    }
+    .remove_about {
+        display: block;
+        position: absolute;
+        text-align: right;
+        max-width: 40%;
+        right: 5%;
+        top: 15%;
+        text-shadow: white 2px 2px;
+        text-align: right;
+
+        animation: remove_about_anim 3s forwards;
+    }
+}
+@media (orientation: portrait) {
+    .about {
+        display: block;
+        position: absolute;
+        animation-name: about_anim_portrait;
+        animation-duration: 3s;
+        text-align: right;
+        max-width: 95%;
+        right: 5%;
+        top: 15%;
+        text-shadow: white 2px 2px;
+        text-align: left;
+    }
+    .remove_about {
+        display: block;
+        position: absolute;
+        text-align: right;
+        max-width: 95%;
+        right: 5%;
+        top: 15%;
+        text-shadow: white 2px 2px;
+        text-align: left;
+        
+        animation: remove_about_anim_portrait 3s forwards;
+
+    }
+}
+
+@keyframes remove_about_anim {
+    0%   { right: 5%; display: block; }
+    99% { right: -50%; display: block; }
+    100% { display: none; }
+}
+
+@keyframes remove_about_anim_portrait {
+    0%   { right: 5%; display: block; }
+    99% { right: -100%; display: block; }
+    100% { display: none; }
+}
+
+@keyframes about_anim {
+    0%   { right: -50%; }
+    100% { right: 5%; }
+}
+
+@keyframes about_anim_portrait {
+    0%   { right: -100%; }
+    100% { right: 5%; }
+}
+
+h3 {
+    font-size: 20px;
+    font-family: Bonveno;
+}
+
+h5 {
+    font-size: 15px;
+    font-family: Titillium;
+}
+
+.invis {
+    display: none;
 }
