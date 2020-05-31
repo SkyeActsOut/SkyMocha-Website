@@ -246,7 +246,7 @@
         max-width: 40%;
         right: 5%;
         top: 15%;
-        text-shadow: white 2px 2px;
+        text-shadow: white 1px 1px;
         text-align: right;
     }
     .remove_about {
@@ -256,7 +256,7 @@
         max-width: 40%;
         right: 5%;
         top: 15%;
-        text-shadow: white 2px 2px;
+        text-shadow: white 1px 1px;
         text-align: right;
 
         animation: remove_about_anim 3s forwards;
@@ -272,7 +272,7 @@
         max-width: 95%;
         right: 5%;
         top: 15%;
-        text-shadow: white 2px 2px;
+        text-shadow: white 1px 1px;
         text-align: left;
     }
     .remove_about {
@@ -282,7 +282,7 @@
         max-width: 95%;
         right: 5%;
         top: 15%;
-        text-shadow: white 2px 2px;
+        text-shadow: white 1px 1px;
         text-align: left;
         
         animation: remove_about_anim_portrait 3s forwards;

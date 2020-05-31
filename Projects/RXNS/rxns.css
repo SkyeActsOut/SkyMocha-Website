@@ -1,5 +1,3 @@
-@import 'foundation';
-
 @font-face {
     font-family: "BonvenoCF";
     src: url("/fonts/BonvenoCF-Light.otf");
@@ -8,6 +6,14 @@
 @font-face {
     font-family: "Titillium Web";
     src: url("/fonts/TitilliumWeb.ttf");
+}
+
+body {
+    font-family: "BonvenoCF";
+}
+
+.padding-10 {
+    padding: 10px;
 }
 
 .grey {
@@ -23,12 +29,33 @@ body {
     font-family: "BonvenoCF";
 }
 
+.blackText {
+    color: black;
+    font-family: "BonvenoCF";
+}
+
 h5 {
     font-family: "BonvenoCF";
 }
 
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
-
-h2, h4, a {
+h2, h4, a{
     font-family: 'Titillium Web', sans-serif;
+}
+
+@media (orientation: landscape) {
+
+    h5 {
+        max-width: 85%;
+        margin: auto;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    h5 {
+        max-width: 65%;
+        margin: auto;
+    }
+
 }

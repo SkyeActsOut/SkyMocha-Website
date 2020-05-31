@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: "BonvenoCF";
-    src: url("/assets/BonvenoCF-Light.otf");
+    src: url("/fonts/BonvenoCF-Light.otf");
 }
 
 @font-face {
     font-family: "Titillium Web";
-    src: url("/assets/TitilliumWeb.ttf");
+    src: url("/fonts/TitilliumWeb.ttf");
 }
 
 .grey {

@@ -1,11 +1,11 @@
 @font-face {
     font-family: "BonvenoCF";
-    src: url("/assets/BonvenoCF-Light.otf");
+    src: url("/fonts/BonvenoCF-Light.otf");
 }
 
 @font-face {
     font-family: "Titillium Web";
-    src: url("/assets/TitilliumWeb.ttf");
+    src: url("/fonts/TitilliumWeb.ttf");
 }
 
 body, h5 {
@@ -50,4 +50,22 @@ body, h5 {
 
 h2, h4, a {
     font-family: 'Titillium Web', sans-serif;
+}
+
+@media (orientation: landscape) {
+
+    h5 {
+        max-width: 85%;
+        margin: auto;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    h5 {
+        max-width: 65%;
+        margin: auto;
+    }
+
 }

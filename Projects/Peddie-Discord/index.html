@@ -10,22 +10,20 @@
 
 <body class="lightGrey">
 
-<div class="top-bar black show-for-landscape">
-    <div class="top-bar-left black">
-        <ul class="menu black">
-        <li class="menu-text"><a href="index">NickStudios</a></li>
-            <li><a href="../Projects">Projects</a></li >
-            <li><a href="/Blog/Home">Blog</a></li>
-            <li><a href="About">About</a></li>
+<div class="top-bar grey show-for-landscape">
+    <div class="top-bar-left grey">
+        <ul class="menu grey">
+            <li class="menu-text grey"><a href="/">SkyMocha</a></li>
+            <li class="grey"><a href="/Projects/">Projects</a></li class="grey" >
+            <li class="grey"><a href="/Blog/Home">Blog</a></li>
         </ul>
     </div>
 </div>
 <div class="top-bar-center-image black show-for-portrait">
-    <section class="top-bar-section black" style="width:100%;text-align:center;">
-        <ul class="menu black">
-        <li class="menu-text"><a href="index"><img class="img2" src="/assets/NickStudiosLogoLight.png"></a></li>
-        </ul>
-    </section>
+    <ul class="menu grey">
+        <li class="menu-text grey"><a href="/">SkyMocha</a></li>
+        <li class="menu-text grey"><a href="/Projects/">Portfolio</a></li>
+    </ul>
 </div>
 
 <div class="callout grey">
@@ -38,7 +36,11 @@
 <div class="grid-container">
     <div class="grid-x">
         <div class="row column text-center blackText">
-            <h5 class="blackText">To solve the problem of security on a school-only Discord, I implemented a Discord Bot. The bot works of Google authentication, checking to see if the user has a peddie.org domain for their email. Users who pass the verification will recieve a role on the server that gives them access to all channels.</p>
+            <h5 class="blackText">
+                During the creation of a Peddie School only Discord server, I realized that there would need to be some way of verifying students to make sure they were students.
+                To solve this problem, I made a Discord bot that through Google authentication on a localhost server checked to see if their email contained the peddie.org extension.
+                As a bonus, since all student emails have the extension -xx for the graduation year, I was able to automatically assign roles for students depending on their graduation year.
+            </h5>
         </div>
         <br>
         <div class="row column text-center blackText">
