@@ -72,3 +72,17 @@ footer {
     width: fit-content;
     
 }
+
+/* BACKGROUND */
+.background {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: url("/Backgrounds/Winter.jpg") no-repeat fixed center;
+    background-position-y: -125px;
+    background-size: cover;
+    filter: blur(0.5px) brightness(120%);
+    z-index: -9;
+}

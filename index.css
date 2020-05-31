@@ -62,12 +62,13 @@
         position: fixed;
         left: 0px;
         top: 0px;
-        width: 100vw;
-        height: 100vh;
-        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
+        width: 100%;
+        height: 100%;
+        background-image: url("/logo_assets/SkyMocha_Portrait.png");
+        background-position: center;
         background-size: cover;
-        filter: blur(3px) brightness(65%);
         z-index: -9;
+        filter: blur(3px) brightness(65%);
         animation-name: body_cover_anim_dark;
         animation-duration: 2.5s;
     }
@@ -76,14 +77,14 @@
         position: fixed;
         left: 0px;
         top: 0px;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
         background-size: cover;
         z-index: -9;
         filter: none;
         animation-name: body_cover_anim_light;
-        animation-duration: 2.5s;
+        animation-duration: 3s;
     }
 
 }
@@ -140,6 +141,9 @@
         color: black;
         text-decoration: none;
         text-shadow: white 2px 2px;
+
+        cursor: pointer;
+
     }
 
     header .container a:hover {
@@ -166,6 +170,8 @@
         color: black;
         text-decoration: none;
         text-shadow: white 2px 2px;
+
+        cursor: pointer;
 
     }
 
