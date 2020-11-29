@@ -1,0 +1,178 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TARPG</title>
+<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="/Projects/index.css">
+<link rel="stylesheet" href="./tarpg.css">
+
+<link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
+</head>
+
+<body>
+
+<div class="top-bar show-for-landscape">
+    <div class="top-bar-left">
+        <ul class="menu">
+            <li class="menu-text"><a href="/">SkyMocha</a></li>
+            <li><a href="/Projects/">Projects</a></li>
+            <li><a href="/Blog/Home">Blog</a></li>
+        </ul>
+    </div>
+    <div class="top-bar-right">
+        <a href="https://github.com/skymocha" target="blank">
+            <img class="top-bar-right" src="/assets/Github Dark.png" width="10%" height="10%" >
+        </a>
+    </div>
+</div>
+<div class="top-bar grey show-for-portrait">
+    <ul class="menu">
+        <li class="menu-text"><a href="/">SkyMocha</a></li>
+        <li class="menu-text"><a href="/Blog/Home">Blog</a></li>
+    </ul>
+</div>
+
+<div class="callout grey2">
+    <div class="row column text-center white">
+        <h2>TARPG</h2>
+        <h4 class="subheader white">An ASCII-based ARPG in C++</h4>
+    </div>
+</div>
+
+<div class="grid-container">
+    <div class="grid-x">
+        <div class="row">
+            <div class="columns" style="padding: 10px;"> <h5>
+                <!-- FOREWORD -->
+                <strong style="text-align: center;">Foreword</strong><br>
+                I love Path of Exile.
+                It's a unique game with such an in depth loot and character build system, that I can't help but be engrossed in my current and future characters.
+                My goal was to recreate something along those lines, but in 2d space using ASCII tiles. 
+                I did this as a project for my Junior year in computer science;
+                and, as I had to write a journal throught the development process for a grade, below are the journal entries as the project progressed (click sections to see/hide them):
+                <br> <br>
+                <!-- SEPTEMBER -->
+                <div>
+                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">Week #1 (Sept. 10 - 15, 2020)<br></strong>
+                    <div class="invis">
+                    With an idea for a game I wished to create, I had the idea to start working on a prototype for random map generation. 
+                    Having watched a video, and read partly <a href="https://www.redblobgames.com/maps/terrain-from-noise/" target="blank">this article</a>, I began working on a world in Python using OpenSimplex noise as well as NumPy to help with the efficiency of iterating through files. 
+                    With absolutely atrocious speeds, I went on to spend the latter part of the week working on optimizing the rendering process. 
+                    I settled on rendering the screen in chunks of 16x16 and using multiple threads to load them simultaneously. 
+                    Towards the end of my time working on the prototype, I tried overlaying a second map of perlin noise generation to create biomes independent of the height map of the world (the first noise generator).
+                    <br> <br>
+
+                    September 9, approx 5 hours into the project; the beach & ocean biomes.
+                    <img src="./assets/ss_1.jpg">
+                    <br>
+                    September 10; river biomes after tweaking of the generation algorithm
+                    <img src="./assets/ss_2.jpg">
+                    <br>
+                    September 16; Early optimization improvements on rendering.
+                    <br>
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
+                    <iframe width="710" height="400" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
+                    <br>
+                    </div>
+                </div>
+                <br><br>
+
+                <!-- OCTOBER/NOVEMBER -->
+                <div>
+                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">October & November, 2020 <br></strong>
+                    <div class="invis">
+                    I decided to go back to the prototype I made for a game in Python and re-create it in a manner that would be more functional and work better moving forwards. For this I decided to learn C++, something I’d been putting off for a long time, and also use the library SDL2 which has been used for many games and applications whether big or small.
+                    <br> <br>
+
+                    <br>
+                    My first few commits were me essentially messing around with C++ in order to learn it
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/8fc91eb8d74b0cd687b5297d515cda14b0983b1b" target="blank">Commit #1</a>
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/dba3cdbbc10af73b43df6929547359dd3ba5393b" target="blank">Commit #2</a>
+
+                    <br><br>
+                    Afterwards, I started really getting into the flow of creating a project. I created some of the main components of the game. The world would be entirely made up of tiles that would be a subclass of the ASCII_Char class I made. The map would be rendered eventually in chunks for performance, and be created using Perlin noise. This is essentially a re-creation of the prototype I made, just modified in order for performance reasons, and using a different font.
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/2f7f242b8536dde3569202ec26c8a8a2c3e8b27e" target="blank">Commit #3 - Perlin Noise & Beginning Rendering </a>
+
+                    <br><br>
+                    The next three commits, over the span of some time, were me over time learning the rendering engine of SDL2, in order to create a better rendering system. This system works much, much better than the prototype I made in Python, and even then has a lot of room for improvement. The actions of the player and the rendering engine are handled on separate threads, therefore player movement and action is continuous even if the rendering is relatively slow and choppy.
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/85ab72bc1e01a369d3e9da59d8c8ad60267ace8d" target="blank">Commit #4</a><br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/85ab72bc1e01a369d3e9da59d8c8ad60267ace8d" target="blank">Commit #5</a><br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/3ec2968af98368233581a93e942e8aed7f75620a" target="blank">Commit #6</a>
+
+                    <br><br>
+                    The early stages of the rendering system.<br>
+                    <img src="./assets/ss_3.jpg">
+                    <br>
+                    After the rendering system was somewhat complete. At this point it’s still buggy and often crashes, but for the most part it works. I began working on rendering menus. This would be very helpful for ingame debugging, as it would let me see in-game certain values such as the coordinates of the player. The menu system would require rendering another layer on top of the map, while not rendering the parts of the map it would cover. I also created a new system of rendering instead of the ASCII_Char system using the new and unique class ASCII_Line. Rendering an entire line at a time instead of character would be much better for performance, and most likely work better with a in game menu / user interface.
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/8a2065e7a74d1922cb05331dc33653259cd98fe7" target="blank">Commit #7</a>
+                    <br>
+                    <a href="https://github.com/SkyMocha/TARPG_V2/commit/bfd78c41ff65dea39d4f5608abd469a5e78c4fbd" target="blank">Commit #8</a>
+                </div>
+
+                <br>
+                <br>
+            
+                <!-- END OF NOVEMBER -->
+                <div>
+                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">End of November Retrospection<br></strong>
+                    <div class="invis">
+                    As I near the end of Fall term, I look back upon the projects I've created, especially as I have to make a presentation for the end of the year. 
+                    What comes to mind is the dilemma I had many months ago that caused me to stagnate on the project, just in a different light. 
+                    I have a demo of this project in both Python and C++. 
+                    The Python prototype is extremely reliable and I don’t believe it's crashed a single time, on top of that its extremely easy to read and add new features upon.
+                    However, because I don't have access to the lower level SDL2 interfaces, I can't optimize performance to the maximum capicity I could. There's a reason most rougelikes are written in C / C++ and can run on a potato.
+                    Python is slow but reliable; C++ is extremely fast, and that is something that can be seen very evidently during the world generation, yet C++ is very unreliable to someone who is just picking it up. 
+                    I am not very experienced with C++ yet, but considering I didn’t know anything about it 2 months ago, that’s quite the improvement. 
+                    However, the systems in C++ are very bare-bones, and because of that can be optimized immensely, to a point where the C++ prototype is not only faster, but also just as reliable.
+                    The issue is that will take ridiculous time and dedication I could put to mechanics, however it will teach me a lot about the workings of C++ (pointers, referencing, etc.) as well as general optimizations, problem solving, and computer rendering. 
+                    On the other hand, I can say I left this in a position where I learned quite a bit already, and don’t have to continue down the path of using C++. 
+                    I could always switch back to Python, but for the longevity of this project, that wouldn’t be optimal. 
+                    I always have to balance learning about computer science, and making projects that I enjoy making, and that's a hard balance when I can become demotivated after a few days, weeks or months of a project. 
+                    Nonetheless, I have a break to work on it if I choose, or to take a breather from programming in general, or occupy myself with other projects as a refresher. Maybe I might even try a game jam.
+
+                    <br><br>
+
+                    Having learned a lot about the optimizations I made during the C++ demo, I went back to the Python demo and did a litle bit of tweaking.
+                    The Python prototype is still not as fast, but I can see paths to optimization that could make the Python prototype in theory faster than the C++.
+                    Not necisarily faster than <i>any</i> C++ version of this, but faster than any C++ prototype <i>I</i> could conceivably create by myself.
+                    As a result, since I like the direction Im going in, I'm going to continue with Python as I will prioritize the easy ability to create new features over the ability to optimize the game to a point where it can literally run on a potato.
+                    <br><br>
+
+                    <u style="display: block; margin: auto; text-align: center;">Most Recent Demo</u>
+                    <iframe width="355" height="200" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
+                    <iframe width="710" height="400" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
+                    </div>
+                </div>
+
+                </div>
+                <br><br>
+            </h5></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+
+    <script>
+
+        $(document).foundation();
+        function clickable (elem) {
+            console.log (elem);
+            if (!elem.classList.contains ("invis"))
+                elem.classList.add ("invis");
+            else
+                elem.classList.remove ("invis");
+        }
+
+    </script>
+</body>
+
+</html>

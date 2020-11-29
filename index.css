@@ -140,7 +140,7 @@
 
         color: black;
         text-decoration: none;
-        text-shadow: white 2px 2px;
+        text-shadow: 1px 1px #ffb7c5, white 2px 2px;
 
         cursor: pointer;
 
@@ -240,6 +240,13 @@
     }    
 }
 
+.about h5, h3 {
+    font-size: 20px;
+
+    text-shadow: 1px 1px #ffb7c5, 2px 2px black;
+    color: white;
+    text-align: right;
+}
 
 /* ABOUT */
 @media (orientation: landscape) {
@@ -249,21 +256,25 @@
         animation-name: about_anim;
         animation-duration: 3s;
         text-align: right;
-        max-width: 40%;
+        max-width: 50%;
         right: 5%;
         top: 15%;
-        text-shadow: white 1px 1px;
-        text-align: right;
+
+        background-image: linear-gradient(rgba(75,75,75,0.5), rgba(35,35,35,0.5), rgba(20,20,20,0.5));
+        border-radius: 6px;
+        padding: 10px;
     }
     .remove_about {
         display: block;
         position: absolute;
         text-align: right;
-        max-width: 40%;
+        max-width: 50%;
         right: 5%;
         top: 15%;
-        text-shadow: white 1px 1px;
-        text-align: right;
+
+        background-image: linear-gradient(rgba(75,75,75,0.5), rgba(35,35,35,0.5), rgba(20,20,20,0.5));
+        border-radius: 6px;
+        padding: 10px;
 
         animation: remove_about_anim 3s forwards;
     }
@@ -278,7 +289,7 @@
         max-width: 95%;
         right: 5%;
         top: 15%;
-        text-shadow: white 1px 1px;
+
         text-align: left;
     }
     .remove_about {
@@ -288,11 +299,10 @@
         max-width: 95%;
         right: 5%;
         top: 15%;
-        text-shadow: white 1px 1px;
+
         text-align: left;
         
         animation: remove_about_anim_portrait 3s forwards;
-
     }
 }
 
@@ -330,4 +340,11 @@ h5 {
 
 .invis {
     display: none;
+}
+
+hr {
+    border-top: 1px solid rgba(50, 50, 50, 0.8);
+    border-bottom: 1px solid rgba(100, 100, 100, 0.8);
+    border-left: 12px solid rgba(100, 100, 100, 0.35);
+    border-right: 12px solid rgba(100, 100, 100, 0.3);
 }

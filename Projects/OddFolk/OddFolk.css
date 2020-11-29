@@ -36,7 +36,7 @@
 h2, h4{
     font-family: 'Titillium Web', sans-serif !important;
     color: white;
-    text-shadow: 1px 1px grey;
+    text-shadow: 1px 1px black;
 }
 
 a {
@@ -48,7 +48,15 @@ a {
 .h1, h3, h5, p {
     font-family: "BonvenoCF";
     color: white;
-    text-shadow: 2px 2px grey;
+    text-shadow: 1px 1px black;
+}
+
+h5 {
+    background-color: rgba(255, 255, 255, 0.25);
+    width: fit-content;
+    margin: auto;
+    border-radius: 3px;
+    padding: 10px;
 }
 
 .black {

@@ -1,0 +1,13 @@
+.invis {
+    display: none;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+div div div img {
+    width: 60%; 
+    display: block; 
+    margin: auto;
+}
