@@ -7,7 +7,6 @@
     src: url("/fonts/TitilliumWeb.ttf");
 }
 
-
 @media (orientation: landscape) {
 
     body {
@@ -194,21 +193,46 @@
 }
 
 /* SOCIAL MEDIAS */
-.socials {
-    width: 80%;
-    height: 20%;
-    position: absolute;
-    bottom: 20%;
-    top: 80%;
-    left: 0px;
-    right: 0px;
-    margin: auto;
+@media (orientation: landscape) {
+    .socials {
+        width: 45%;
+        min-width: 650px;
+        height: 20%;
+        position: absolute;
+        bottom: 20%;
+        top: 52.5%;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        display: block;
+    }
 
-    display: -webkit-flex;
-    display: flex;
+    .socials div {
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 5%;
+    }
+}
+@media (orientation: portrait) {
+    .socials {
+        width: 80%;
+        height: 20%;
+        position: absolute;
+        /* bottom: 20%; */
+        top: 55%;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+    }
+
+    .socials div {
+        display: -webkit-flex;
+        display: flex;
+        margin-top: 5%;
+    }
 }
 
-.socials .container { 
+.socials div .container { 
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
@@ -241,6 +265,14 @@
 }
 
 .about h5, h3 {
+    font-size: 20px;
+
+    text-shadow: 1px 1px #ffb7c5, 2px 2px black;
+    color: white;
+    text-align: right;
+}
+
+.remove_about h5, h3 {
     font-size: 20px;
 
     text-shadow: 1px 1px #ffb7c5, 2px 2px black;

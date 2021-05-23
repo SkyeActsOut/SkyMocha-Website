@@ -1,0 +1,342 @@
+@font-face {
+    font-family: "BonvenoCF";
+    src: url("/fonts/BonvenoCF-Light.otf");
+}
+
+@font-face {
+    font-family: "Titillium Web";
+    src: url("/fonts/TitilliumWeb.ttf");
+}
+
+
+/* BACKGROUND */
+@media (orientation: portrait) {
+    .background {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background: url("/Backgrounds/White_Desk_Mobile.png");
+        background-position: center;
+        background-size: cover;
+        z-index: -9;
+        animation-name: fade_in;
+        animation-duration: 2.5s;
+    }
+}
+@media (orientation: landscape) {
+    .background {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100vw;
+        height: 100vh;
+        background: url("/Backgrounds/White_Desk.jpg") no-repeat fixed center;
+        background-size: cover;
+        z-index: -9;
+        animation-name: fade_in;
+        animation-duration: 2.5s;
+    }
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+body, h5, p{
+    font-family: "BonvenoCF";
+    color: black;
+}
+
+h2, h4, a {
+    font-family: "Titillium Web", sans-serif;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.calendar{
+    max-width: 85%;
+    border-color: aliceblue !important;
+}
+.calendar-title {
+    margin: auto;
+    text-align: center;
+    margin-top: 5%;
+    /* background-color: black; */
+}
+
+/* BODY */
+.center {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+@media (orientation: landscape) {
+
+    .center p {
+        max-width: 85%;
+        margin: auto;
+    }
+
+    .projects img {
+        width: 192px;
+        height: 192px;
+        margin: auto;
+        display: block;
+        border-radius: 3px;
+    }
+
+    .project {
+        margin: auto;
+        text-align: center;
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        height: 350px;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        min-width: 200px;
+    }
+
+    .project {
+        width: 25%;
+    }
+
+    .project h5 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        font-size: medium;
+    }
+    
+    .project p {
+        width: 75%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+
+    .project_type {
+        display: flex;
+        margin: auto;
+        width: 66%;
+        flex-wrap: wrap;
+    }
+
+    .project_type .box {
+        margin: auto;
+        width: 25%;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    .center p {
+        max-width: 65%;
+        margin: auto;
+    }
+
+    .project_type .box {
+        margin: auto;
+        width: 50%;
+    }
+
+    .projects img {
+        width: 122px;
+        height: 122px;
+        margin: auto;
+        display: block;
+        border-radius: 3px;
+    }
+
+    .project {
+        margin: auto;
+        text-align: center;
+        display: block;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding-top: 25px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+        width: 90%;
+        height: 275px;
+    }
+
+    .project h5 {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 5px;
+        font-size: medium;
+    }
+    
+    .project p {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        display: block;
+        padding: 5px;
+    }
+
+    .buttons {
+        display: flex;
+        width: 95%;
+        margin: auto;
+    }
+
+    .project_type {
+        display: flex;
+        margin: auto;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+}
+
+.fade_in {
+    animation-name: fade_in;
+    animation-duration: 2.5s;
+}
+
+@keyframes fade_in {
+    0% { filter: blur(3px) brightness(80%); }
+    100% { filter: blur(0px) brightness(100%); }
+}
+
+@keyframes fade_in_no_blur {
+    0% { filter: brightness(80%); }
+    100% { filter: brightness(100%); }
+}
+
+.top-button {
+    text-align: center;
+    margin: auto;
+    background-image: linear-gradient(rgb(200, 200, 200), rgb(210, 210, 210), rgb(225, 225, 225), rgb(245, 245, 245), rgb(230, 230, 230));
+    width: 150px;
+    height: fit-content;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Titillium Web", sans-serif !important;
+    box-shadow: 0px 2px 2px #888;
+}
+
+.top-button h5 {
+    line-height: 0px;
+}
+
+.top-button:hover {
+    background-image: linear-gradient(rgb(205, 205, 205), rgb(215, 215, 215), rgb(225, 225, 225), rgb(250, 250, 250), rgb(225, 225, 225));
+}
+
+.padding-10 {
+    padding: 10px;
+}
+
+.top-bar {
+    display: block;
+    box-shadow: 0px 5px 5px #888;
+    height: fit-content;
+}
+
+.top-bar .head {
+    display: flex;
+    margin-bottom: -10px;
+}
+
+.menu {
+    display: flex;
+    text-align: center;
+    /* background-color: aqua; */
+    width: 100%;
+}
+
+.top-bar-left {
+    margin-left: 0px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-width: 333px;
+    width: 20%;
+
+}
+
+.top-bar-right {
+    /* background-color: black; */
+    /* width: 17%; */
+    margin-left: auto;
+}
+
+/* TOP BAR */
+.top-bar {
+    animation-name: fade_in_no_blur;
+    animation-duration: 2.5s;
+}
+
+.menu a {
+    /* width: 33%; */
+    display: block;
+    /* background-color: white; */
+    margin: auto;
+    font-size: large;
+}
+
+menu a {
+    /* background-color: rgb(199, 199, 199); */
+    color: black;
+}
+
+.top-bar-right a img {
+    width: 52px;
+    height: 52px;
+    padding-right: 10px;
+}
+
+.callout {
+    margin: auto;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 10px;
+}
+
+hr {
+    width: 66%;
+}
+
+.project_type .box {
+    margin: auto;
+}
+
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+}
+
+.project .tags {
+    font-size: small;
+}

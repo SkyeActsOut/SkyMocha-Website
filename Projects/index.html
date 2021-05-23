@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SkyMocha Portfolio</title>
-<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<link rel="stylesheet" href="./index.css">
+<!-- <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"> -->
+<link rel="stylesheet" href="./projects.css">
 
 <meta name="descritpion" id="descritpion" content="SkyMocha's portfolio of work.">
 <meta name="keywords" id="keywords" content="SkyMocha">
@@ -34,152 +34,213 @@
 
 <div class="background"> </div>
     
-<div class="top-bar show-for-landscape">
-    <div class="top-bar-left">
-        <ul class="menu">
-            <li class="menu-text"><a href="/">SkyMocha</a></li>
-            <li><a href="/Projects/">Projects</a></li>
-            <li><a href="/Blog/Home">Blog</a></li>
-        </ul>
+<div class="top-bar">
+    <div class="head">
+        <div class="top-bar-left">
+            <div class="menu">
+                <a href="/">SkyMocha</a>
+                <a href="/Projects/">Projects</a>
+                <a href="/Blog/Home">Blog</a>
+            </div>
+        </div>
+        <div class="top-bar-right">
+            <a href="https://github.com/skymocha" target="blank">
+                <img class="github" src="/assets/Github Dark.png" >
+            </a>
+        </div>
     </div>
-    <div class="top-bar-right">
-        <a href="https://github.com/skymocha" target="blank">
-            <img class="top-bar-right" src="/assets/Github Dark.png" width="10%" height="10%" >
-        </a>
-    </div>
-</div>
-<div class="top-bar grey show-for-portrait">
-    <ul class="menu">
-        <li class="menu-text"><a href="/">SkyMocha</a></li>
-        <li class="menu-text"><a href="/Blog/Home">Blog</a></li>
-    </ul>
-</div>
-
-<div class="callout fade_in">
-    <div class="row column text-center white">
+    <div class="callout">
         <h2>Projects | Portfolio</h2>
     </div>
 </div>
 
-<div class="row small-up-2"> 
-    <div class="columns column-block"> <div class="top-button" onclick="ChangeProjects('technical')"> <h5> &nbsp;Technical&nbsp; </h5> </div> </div>
-    <div class="columns column-block"> <div class="top-button" onclick="ChangeProjects('nontechnical')"> <h5> &nbsp;Nontechnical&nbsp; </h5> </div> </div>
+<br>
+
+<div class="buttons"> 
+    <div class="top-button" onclick="ChangeProjects('technical')"> <h5> &nbsp;Technical&nbsp; </h5> </div>
+    <div class="top-button" onclick="ChangeProjects('nontechnical')"> <h5> &nbsp;Nontechnical&nbsp; </h5> </div>
 </div>
+
+
+<br>
 
 <hr>
 
-<div id="technical">
-    <div class="row small-up-2 medium-up-3 large-up-4">
-        <div class="columns column-block">
-            <a href="/Projects/FuzzBot/">
-                <img src="https://cdn.discordapp.com/avatars/384506571146788867/267a85599e7b72a0bdbcf1cc612c94a0.png?size=1024" class="thumbnail" alt="">
-            </a>
-            <h5>FuzzBot</h5>
-            <p>My first project: A Multi-Purpose Discord Bot</p>
+<div class="projects">
+    <div id="technical">
+        
+        <div class="project_type"> 
+            <div class="box">
+                <input type="checkbox" id="Discord.JS" name="Discord.JS" onclick="selectProject(this.id)">
+                <label for="Discord.JS">Discord.JS</label><br>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="Python" name="Python" onclick="selectProject(this.id)">
+                <label for="Python">Python</label><br>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="C# / Unity" name="C# / Unity" onclick="selectProject(this.id)">
+                <label for="C# / Unity">C# / Unity</label><br> 
+            </div>
+            <div class="box">
+                <input type="checkbox" id="C++" name="C++" onclick="selectProject(this.id)">
+                <label for="C++">C++</label><br> 
+            </div>
+            <div class="box">
+                <input type="checkbox" id="Godot" name="Godot" onclick="selectProject(this.id)">
+                <label for="Godot">Godot</label><br> 
+            </div>
+            <div class="box">
+                <input type="checkbox" id="Java" name="Java" onclick="selectProject(this.id)">
+                <label for="Java">Java</label><br>
+            </div>
+            <div class="box">
+                <input type="checkbox" id="WebDev" name="WebDev" onclick="selectProject(this.id)">
+                <label for="WebDev">WebDev</label><br> 
+            </div>
+            <div class="box">
+                <input type="checkbox" id="GameDev" name="GameDev" onclick="selectProject(this.id)">
+                <label for="GameDev">GameDev</label><br> 
+            </div>
         </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/RXNS/">
-                <img src="https://cdn.discordapp.com/avatars/688388524528893955/a808fd599dcab4b688c5e7d2e61c59d1.png?size=1024" class="thumbnail" alt="">
+        <br>
+        <div class="project-list">
+            <a class="project" href="/Projects/FuzzBot/">
+                <img src="https://cdn.discordapp.com/avatars/384506571146788867/267a85599e7b72a0bdbcf1cc612c94a0.png?size=1024" class="thumbnail" alt="The FuzzBot Image">
+                <h5>FuzzBot</h5>
+                <p>My first project: A Multi-Purpose Discord Bot</p>
+                <p class="tags">Discord.JS</p>
             </a>
-            <h5>RXNS</h5>
-            <p>The Final Bot: A Discord Bot Centered Around Reactions</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/RPG/">
-                <img src="/assets/Eye.png" class="thumbnail" alt="">
+            <a class="project" href="/Projects/RXNS/">
+                <img src="https://cdn.discordapp.com/avatars/688388524528893955/a808fd599dcab4b688c5e7d2e61c59d1.png?size=1024" class="thumbnail" alt="RXNS Discord Bot Image">
+                <h5>RXNS</h5>
+                <p>The Final Bot: A Discord Bot Centered Around Reactions</p>
+                <p class="tags">Discord.JS</p>
             </a>
-            <h5>2D-Textbased RPG V1/V2</h5>
-            <p>Text-based games are always visually appealing!</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/TARPG/">
-                <img src="/Projects/TARPG/assets/TARPG_Icon_One.png" class="thumbnail" alt="">
+            <a class="project" href="/Projects/RPG/">
+                <img src="/assets/Eye.png" class="thumbnail" alt="2D TestBased RPG Logo">
+                <h5>2D-Textbased RPG V1/V2</h5>
+                <p>Text-based games are always visually appealing!</p>
+                <p class="tags">GameDev, Godot</p>
             </a>
-            <h5>TARPG V1/V2</h5>
-            <p>An ASCII-based ARPG with C++ and Python prototypes</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/TRPG_Prototype/">
-                <img src="/assets/Player_0_Beeg.png" class="thumbnail" alt="">
+            <a class="project" href="/Projects/TARPG/">
+                <img src="/Projects/TARPG/assets/TARPG_Icon_One.png" class="thumbnail" alt="TARPG Screenshot">
+                <h5>TARPG V1/V2</h5>
+                <p>An ASCII-based ARPG with C++ and Python prototypes</p>
+                <p class="tags">GameDev, Python, C++</p>
             </a>
-            <h5>TRPG_Prototype</h5>
-            <p>A prototype: Turn-based battles on a grid</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/nickPosr/">
+            <a class="project" href="/Projects/TRPG_Prototype/">
+                <img src="/assets/Player_0_Beeg.png" class="thumbnail" alt="TRPG Playable Character">
+                <h5>TRPG_Prototype</h5>
+                <p>A prototype: Turn-based battles on a grid</p>
+                <p class="tags">GameDev, C# / Unity</p>
+            </a>
+
+            <a class="project" href="/Projects/nickPosr/">
                 <img src="/assets/MIDI.png" class="thumbnail" alt="">
+                <h5>nickPosr</h5>
+                <p>Data Processing for AI (no AI involved or harmed)</p>
+                <p class="tags">Python</p>
             </a>
-            <h5>nickPosr</h5>
-            <p>Data Processing for AI (no AI involved or harmed)</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/AbyssalMaze/">
-                <img src="../assets/AbyssalMaze512x512.png" class="thumbnail" alt="">
+            <a class="project" href="/Projects/AbyssalMaze/">
+                <img src="../assets/AbyssalMaze512x512.png" class="thumbnail" alt="Abyssal Maze Logo">
+                <h5>Abyssal Maze</h5>
+                <p>My First Game Jam: A Ludum Dare 45 Game</p>
+                <p class="tags">GameDev, C# / Unity</p>
             </a>
-            <h5>Abyssal Maze</h5>
-            <p>My First Game Jam: A Ludum Dare 45 Game</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/Discord-Location/">
-                <img src="https://cdn.discordapp.com/attachments/660964079556493312/661183772728754187/map-pin-marker-circle-512.png" class="thumbnail" alt="">
+            <a class="project" href="??">
+                <img src="../assets/LunchBoxGalaxy.png" class="thumbnail" alt="LunchBox Galaxy Logo">
+                <h5>LunchBox Galaxy</h5>
+                <p>A MiniJam 71 Project I ocassionally come back to</p>
+                <p class="tags">GameDev, C# / Unity</p>
             </a>
-            <h5>Discord Location</h5>
-            <p>A Distance Calculator for Discord Users</p>
-        </div>
-        <!-- <div class="columns column-block">
-            <a href="/Projects/Peddie-Discord/">
-                <img src="../assets/Peddie Discord.png" class="thumbnail" alt="">
-            </a>
-            <h5>Peddie Discord</h5>
-            <p>A Verification System for the Peddie Discord</p>
-        </div> -->
 
-        <div class="columns column-block">
-            <a href="/Projects/NS02/">
+            <!-- <div class="project">
+                <a href="/Projects/Discord-Location/">
+                    <img src="https://cdn.discordapp.com/attachments/660964079556493312/661183772728754187/map-pin-marker-circle-512.png" class="thumbnail" alt="">
+                </a>
+                <h5>Discord Location</h5>
+                <p>A Distance Calculator for Discord Users</p>
+            </div> -->
+
+            <a class="project" href="/Projects/NS02/">
                 <img src="../assets/NS02.png" class="thumbnail" alt="">
+                <h5>NS02</h5>
+                <p>A Music Visualizer and Remote Control for Speakers</p>
+                <p class="tags">Python, WebDev</p>
             </a>
-            <h5>NS02</h5>
-            <p>A Music Visualizer and Remote Control for Speakers</p>
-        </div>
 
-        <div class="columns column-block">
-            <a href="/Projects/OddFolk/">
+            <a class="project" href="/Projects/OddFolk/">
                 <img src="./OddFolk/Gameplay-Square.gif" class="thumbnail" alt="">
+                <h5>OddFolk</h5>
+                <p>A Java Open Source, Open World RougeLike</p>
+                <p class="tags">GameDev, Java</p>
             </a>
-            <h5>OddFolk</h5>
-            <p>A Java Open Source, Open World RougeLike</p>
-        </div>
-        <!-- <div class="columns column-block" id="garbage_button">
-            <img src="/assets/TrashCan.png" class="thumbnail" alt="">
-            <h5>Failed / On Hold Projects</h5>
-            <p>Discared projects that still show merit</p>
-        </div> -->
 
+            <a class="project" href="https://dogclicker.xyz">
+                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
+                <h5>DogClicker</h5>
+                <p>Dog DogClicker is a cookie clicker clone involving dogs</p>
+                <p class="tags">GameDev, WebDev</p>
+            </a>
+            
+            <div class="project" href="https://dogclicker.xyz">
+                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
+                <h5>MochiComics</h5>
+                <p>Under Development</p>
+                <p class="tags">WebDev</p>
+            </div>
+
+            <a class="project">
+                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
+                <h5>Peddie CS Site</h5>
+                <p>The Peddie School's Computer Science Website</p>
+                <p class="tags">WebDev</p>
+            </a>
+
+            <a class="project">
+                <img src="/assets/QUwUD.png" class="thumbnail" alt="">
+                <h5>Caves of QUwUD</h5>
+                <p>A mod for the game Caves of Qud using Harmony & Data Science</p>
+                <p class="tags">C# / Unity, Python</p>
+            </a>
+
+            <a class="project">
+                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
+                <h5>discord-quiz</h5>
+                <p>A simple NPM package built on Discord.JS</p>
+                <p class="tags">Discord.JS</p>
+            </a>
+
+            <!-- <div class="columns column-block" id="garbage_button">
+                <img src="/assets/TrashCan.png" class="thumbnail" alt="">
+                <h5>Failed / On Hold Projects</h5>
+                <p>Discared projects that still show merit</p>
+            </div> -->
+
+        </div>
     </div>
-</div>
 
-<div id="nontechnical" style="display: none;">
-    <div class="row small-up-2 medium-up-3 large-up-4">
-        <div class="columns column-block">
-            <a href="/Projects/PeddieHacks/">
+
+    <div id="nontechnical" style="display: none;">
+        <div class="project-list">
+            <a class="project" href="/Projects/PeddieHacks/">
                 <img src="./PeddieHacks/assets/PHacks.png" class="thumbnail" alt="">
+                <h5>PeddieHacks</h5>
+                <p>An online hackathon hosted by my school</p>
             </a>
-            <h5>PeddieHacks</h5>
-            <p>An online hackathon hosted by my school</p>
-        </div>
-        <div class="columns column-block">
-            <a href="/Projects/Reeves/">
+            <a class="project" href="/Projects/Reeves/">
                 <img src="./Reeves/assets/Speaker.png" class="thumbnail" alt="">
+                <h5>Geiger Reeves Speech 1 & 2</h5>
+                <p>A school speech competition I participated in twice</p>
             </a>
-            <h5>Geiger Reeves Speech</h5>
-            <p>I won nothing for this :(</p>
         </div>
     </div>
 </div>
@@ -219,63 +280,100 @@
             }
         }
 
-        // function loadEvents () {
-        //     $.get("https://api.github.com/users/SkyMocha/events/public", function( data ) {
-        //         loadCommits(data)
-        //     });
-        // }
+        var projects = {
 
-        // function loadCommits (data) {
-        //     document.getElementById('loading').remove();
-        //     data.forEach(element => {
-        //         if (element.type == "PushEvent")
-        //             postCommit(element)
-        //     });
-        // }
+        }
 
-        // function postCommit (element) {
-        //     console.log (element.repo);
+        var projects_raw = document.getElementsByClassName("project")
+        console.log (projects_raw);
+
+        var boxes = document.getElementsByClassName("box")
+
+        for (item of boxes) {
+            let id = item.children[0].id
+            console.log (id);
+
+            projects[id] = []
+
+            for (proj of projects_raw) {
+                if (proj.children[3]) {
+                    let tags = proj.children[3].innerHTML.split(',')
+                    tags.forEach(tag => {
+                        if (tag.includes(id)) {
+                            projects[id].push(proj);
+                        }
+                    });
+                }
+            }
             
-        //     let commits = element.payload.commits;
-        //     let repo = element.repo;
-        //     // if (commits instanceof Array)
-        //     commits.forEach (commit => {
-        //         let div = document.createElement('div');
-        //         div.innerHTML = `<h5>${repo.name.split('/')[1]} (<a href="${commit.url}">link</a>)</h5><p>${commit.message.split('-').join('<br> -')}<br>${element.created_at.split('T')[0]}</p><br><br>`;
+        }
 
-        //         let parent = document.getElementById('commits');
-        //         parent.appendChild(div);
-        //     })
-        // }
+        project_nums = {
 
-        // loadEvents();
+        }
+        for (let proj in projects) {
+            project_nums[proj] = 0;
+            projects[proj].forEach(() => {
+                project_nums[proj] += 1;
+            });
+        } 
 
-        // let children = document.getElementById("grid").children
-        // for (let i = 0; i < children.length; i++) {
-        //     let element = children.item(i)
-        //     if (element.id == "hide") {
-        //         if (element.style.display == "hidden")
-        //             element.style.display = "visible";
-        //         else
-        //             element.style.display = "hidden";
-        //     }
-        // }
+        // adds number of projects to each
+        for (let proj in projects) {
+            let label = document.getElementById(proj).parentElement.children[1]
+            label.innerHTML = label.innerHTML + ` [${project_nums[proj]}]`
 
-        // Makes abandoned projects visible or invisible
-        // var garbageButton = document.getElementById("garbage_button")
-        // garbageButton.onclick = function () {
-        //     let children = document.getElementById("grid").children
-        //     for (let i = 0; i < children.length; i++) {
-        //         let element = children.item(i)
-        //         if (element.id == "hide") {
-        //             if (element.style.visibility == "hidden")
-        //                 element.style.visibility = "visible";
-        //             else
-        //                 element.style.visibility = "hidden";
-        //         }
-        //     }
-                
-        // }
+            // Ungodly line of code
+            // document.getElementById(proj).parentElement.children[1].innerHTML = document.getElementById(proj).parentElement.children[1].innerHTML + ` [${project_nums[proj]}]`
+        }        
+
+        // shows checked projects
+        function selectProject (id) {
+
+            let checked = []
+
+            for (box of boxes) {
+
+                let check_box = box.children[0]
+                if (check_box.checked) {
+                    checked.push(check_box.id);
+                }
+
+            }
+
+            if (checked.length == 0) {
+                for (proj of projects_raw) {
+                    proj.style.display = "block"
+                }
+            }
+            // Please don't look at this its terrible spaghetti code ;-;
+            else {
+                // sets all projects to invis
+                for (proj of projects_raw) {
+                    proj.style.display = "none"
+                }
+                // Goes through each id thats checked, goes through every list of projects with that id, checks if all the checked ids are in the tags, then visibilities them
+                checked.forEach (checked_id => {
+                    projects[checked_id].forEach (proj => {
+                        let tags = proj.children[3].innerHTML.split(',')
+                        if (is_tags_in_arr(checked, tags))
+                            proj.style.display = "block";
+                    })
+                })
+            }
+        }
+
+        function is_tags_in_arr (checked, tags) {
+            let count = 0;
+            checked.forEach (id => {
+                tags.forEach (tag => {
+                    if (tag.includes (id))
+                        count +=1 ;
+                })
+            })
+            console.log (checked.length + " " + count);
+            return checked.length == count
+        }
 
     </script>
 </body>
