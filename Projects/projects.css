@@ -41,7 +41,48 @@
 }
 
 body {
-    background-color: rgb(245, 245, 245);
+
+    /* background-size: 100%; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+
+}
+
+body .bg-image {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -15;
+    width: 100%;
+    height: 100%;
+    opacity: 0.25;
+    background: url('/assets/Forest/Preview/Background.png');
+}
+
+body .bg-cover {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -14;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.25;
+    background-blend-mode:color;
+}
+
+body .bg-back {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: -16;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 1;
+    background-blend-mode: overlay;
 }
 
 body, h5, p{
@@ -148,6 +189,18 @@ a {
         width: 25%;
     }
 
+    .body .box {
+        width: 45%;
+    }
+
+    .body .container {
+        width: 45%;
+    }
+
+    .body .container .box {
+        width: 95%;
+    }
+
 }
 
 @media (orientation: portrait) {
@@ -215,6 +268,18 @@ a {
         flex-wrap: wrap;
     }
 
+    .body .box {
+        width: 90%;
+    }
+
+    .body .container {
+        width: 90%;
+    }
+
+    .body .container .box {
+        width: 100%;
+    }
+
 }
 
 .fade_in {
@@ -260,6 +325,7 @@ a {
     display: block;
     box-shadow: 0px 5px 5px #888;
     height: fit-content;
+    background-color: white;
 }
 
 .top-bar .head {
@@ -291,10 +357,10 @@ a {
 }
 
 /* TOP BAR */
-.top-bar {
+/* .top-bar {
     animation-name: fade_in_no_blur;
     animation-duration: 2.5s;
-}
+} */
 
 .menu a {
     /* width: 33%; */
@@ -339,4 +405,36 @@ hr {
 
 .project .tags {
     font-size: small;
+}
+
+.body {
+    display: flex;
+    width: 95%;
+    margin-top: 2%;
+    flex-wrap: wrap;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body .box {
+    padding: 10px;
+    text-align: center;
+    /* margin: auto; */
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 15px;
+    background-color: white;
+}
+
+.body .container {
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 10px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
