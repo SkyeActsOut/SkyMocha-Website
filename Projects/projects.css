@@ -201,6 +201,14 @@ a {
         width: 95%;
     }
 
+    .large {
+        width: 55% !important;
+    }
+
+    .small {
+        width: 40% !important;
+    }
+
 }
 
 @media (orientation: portrait) {
@@ -273,11 +281,15 @@ a {
     }
 
     .body .container {
-        width: 90%;
+        width: 95%;
     }
 
     .body .container .box {
-        width: 100%;
+        width: 95%;
+    }
+
+    .large {
+        width: 95%;
     }
 
 }
@@ -437,4 +449,13 @@ hr {
     margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
+}
+
+iframe {
+    display: block; 
+    margin: auto;
+}
+
+.caption {
+    margin-top: auto;
 }

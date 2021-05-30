@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css"> -->
 <link rel="stylesheet" href="/Projects/projects.css">
 <link rel="stylesheet" href="/Projects/slideshow.css">
+<script src="../iframe.js"></script>
 </head>
 
 
@@ -182,23 +183,6 @@
       slides[slideIndex-1].style.display = "block"; 
       dots[slideIndex-1].className += " active";
     }
-
-    function resize() {
-      console.log ("RESIZE");
-      let frames = document.getElementsByTagName('iframe')
-      // document.getElementById().clientWidth
-      for (i of frames) {
-        i.style.width = '100%'
-        console.log (i.clientWidth);
-        i.style.height = `${i.clientWidth / 1.78}px`
-      }
-    }
-    
-    resize();
-
-    // Resizes videos to 16:9 aspect ratio on window resize
-    window.addEventListener('resize', resize);
-
 </script>
 </body>
 

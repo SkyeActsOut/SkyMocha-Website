@@ -4,70 +4,67 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>nickPosr AI</title>
-<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<link rel="stylesheet" href="/Projects/index.css">
+<link rel="stylesheet" href="/Projects/projects.css">
 </head>
 
-<body class="lightGrey">
+<body>
 
-<div class="top-bar show-for-landscape">
-    <div class="top-bar-left">
-        <ul class="menu">
-            <li class="menu-text"><a href="/">SkyMocha</a></li>
-            <li><a href="/Projects/">Projects</a></li>
-            <li><a href="/Blog/Home">Blog</a></li>
-        </ul>
-    </div>
-    <div class="top-bar-right">
-        <a href="https://github.com/skymocha" target="blank">
-            <img class="top-bar-right" src="/assets/Github Dark.png" width="10%" height="10%" >
-        </a>
-    </div>
-</div>
-<div class="top-bar grey show-for-portrait">
-    <ul class="menu">
-        <li class="menu-text"><a href="/">SkyMocha</a></li>
-        <li class="menu-text"><a href="/Blog/Home">Blog</a></li>
-    </ul>
-</div>
-
-<div class="callout grey2">
-    <div class="row column text-center white">
-        <h2>nickPosr</h2>
-        <h4 class="subheader white">An attempt at AI generated music</h4>
-    </div>
-</div>
-
-<div class="grid-container show-for-landscape">
-    <div class="grid-x">
-        <div class="row">
-            <div class="columns small-6"> <h5 class="blackText">Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into image. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. (CSV & Img on the right) The image could then be reverse-engineered back into a MIDI file, with minor flaws. (Major flaws throughout the process can be found on the right) <br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. <br>In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence. </h5></div>
-            <div class="columns small-3">
-                <img src="./assets/Chrono Trigger CSV.jpg" width="134" height="400">
-                <img src="./assets/Still More Fighting.png" width="44" height="400">
+<div class="top-bar">
+    <div class="head">
+        <div class="top-bar-left">
+            <div class="menu">
+                <a href="/">SkyMocha</a>
+                <a href="/Projects/">Projects</a>
+                <a href="/Blog/Home">Blog</a>
             </div>
-            <div class="columns small-3">
-                <p> "Chrono Trigger" with massive errors </p>
-                <audio controls>
-                    <source src="./assets/Chrono_Trigger UHHHH.mp3" type="audio/mpeg">
-                </audio>
-                <p> "Dragonborn" with massive errors </p>
-                <audio controls>
-                    <source src="./assets/DRAGONBORN - TES V - Skyrim Main Theme (Piano Cover) + sheets.mp3" type="audio/mpeg">
-                </audio>
-                <p> "Chrono Trigger" with minimal errors </p>
-                <audio controls>
-                    <source src="./assets/1-02_Chrono_Trigger.mp3" type="audio/mpeg">
-                </audio>
-            </div>
+            <hr>
+        </div>
+        <div class="top-bar-right">
+            <a href="https://github.com/skymocha" target="blank">
+                <img class="github" src="/assets/Github Dark.png" >
+            </a>
         </div>
     </div>
+    <div class="callout">
+        <h2>nickPosr</h2>
+        <h4>An attempt at AI generated music</h4>
+    </div>
 </div>
 
-<div class="grid-container show-for-portrait">
-    <div class="grid-x">
-        <div class="row">
-            <h5 class="blackText padding-10">Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into image. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. The image could then be reverse-engineered back into a MIDI file, with minor flaws. <br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. <br>In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence. <br><br>(Pictures & Audio in landscape) </h5>
+<div class="body">
+    <div class="container large">
+        <div class="box">
+            <h3>Overview</h3>
+            <p>
+                Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into image. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. The image could then be reverse-engineered back into a MIDI file, with minor flaws. <br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. <br>In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Music Conversion Samples</h3>
+            <p> "Chrono Trigger" with massive errors </p>
+            <audio controls>
+                <source src="./assets/Chrono_Trigger UHHHH.mp3" type="audio/mpeg">
+            </audio>
+            <p> "Dragonborn" with massive errors </p>
+            <audio controls>
+                <source src="./assets/DRAGONBORN - TES V - Skyrim Main Theme (Piano Cover) + sheets.mp3" type="audio/mpeg">
+            </audio>
+            <p> "Chrono Trigger" with minimal errors </p>
+            <audio controls>
+                <source src="./assets/1-02_Chrono_Trigger.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </div>
+    <div class="container small">
+        <div class="box">
+            <h3>Images</h3>
+            <img src="./assets/Chrono Trigger CSV.jpg" width="134" height="400">
+            <img src="./assets/Still More Fighting.png" width="44" height="400">
+            <p>
+                Left: CSV file from MIDI
+                <br>
+                Right: Img generated from CSV
+            </p>
         </div>
     </div>
 </div>
