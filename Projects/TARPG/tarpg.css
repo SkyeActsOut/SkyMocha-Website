@@ -7,7 +7,19 @@
 }
 
 div div div img {
-    width: 60%; 
+    width: 100%; 
     display: block; 
     margin: auto;
 }
+
+p {
+    width: 80%;
+    margin: auto;
+}
+h3 {
+    text-decoration: underline;
+}
+
+/* .large {
+    width: 65% !important;
+} */

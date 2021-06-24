@@ -4,15 +4,18 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>TARPG</title>
-<link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
-<link rel="stylesheet" href="/Projects/index.css">
 <link rel="stylesheet" href="/Projects/projects.css">
 <link rel="stylesheet" href="./tarpg.css">
+<script src="../iframe.js"></script>
 
 <link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
 </head>
 
 <body>
+
+<div class="bg-back"> </div>
+<div class="bg-image background-no-anim"> </div>
+<div class="bg-cover"> </div>
 
 <div class="top-bar">
     <div class="head">
@@ -36,24 +39,30 @@
     </div>
 </div>
 
-<br><br>
+<!-- <br><br> -->
 
-<div class="grid-container">
-    <div class="grid-x">
-        <div class="row">
-            <div class="columns" style="padding: 10px;"> <h5>
-                <!-- FOREWORD -->
-                <strong style="text-align: center;">Foreword</strong><br>
-                I love Path of Exile.
-                It's a unique game with such an in depth loot and character build system, that I can't help but be engrossed in my current and future characters.
-                My goal was to recreate something along those lines, but in 2d space using ASCII tiles. 
-                I did this as a project for my Junior year in computer science;
-                and, as I had to write a journal throught the development process for a grade, below are the journal entries as the project progressed (click sections to see/hide them):
-                <br> <br>
-                <!-- SEPTEMBER -->
-                <div>
-                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">Week #1 (Sept. 10 - 15, 2020)<br></strong>
-                    <div class="invis">
+<div class="body">
+    <div class="container" style="width: 90%;">
+        <div class="box">
+            <!-- FOREWORD -->
+            <!-- <strong style="text-align: center;">Foreword</strong><br> -->
+            <h3>Foreward</h3>
+            <p>
+            I love Path of Exile.
+            It's a unique game with such an in depth loot and character build system, that I can't help but be engrossed in my current and future characters.
+            I also love rougelikes, or at least the idea of roguelikes, such as NetHack, DCSS, all the way to Caves of Qud.
+            My goal was to combine the two, on a 2d dimensional plane using ASCII tiles. 
+            I did this as a project for my Junior year in computer science;
+            and, as I had to write a journal throught the development process, below are journal entries as the project progressed (click sections to see/hide them):
+            </p>
+            <br><br>
+        <!-- SEPTEMBER -->
+        </div>
+        <div class="box large">
+            <div>
+                <h3 style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">Week #1 (Sept. 10 - 15, 2020)<br></h3>
+                <div class="invis">
+                <p>
                     With an idea for a game I wished to create, I had the idea to start working on a prototype for random map generation. 
                     Having watched a video, and read partly <a href="https://www.redblobgames.com/maps/terrain-from-noise/" target="blank">this article</a>, I began working on a world in Python using OpenSimplex noise as well as NumPy to help with the efficiency of iterating through files. 
                     With absolutely atrocious speeds, I went on to spend the latter part of the week working on optimizing the rendering process. 
@@ -69,17 +78,22 @@
                     <br>
                     September 16; Early optimization improvements on rendering.
                     <br>
-                    <iframe width="355" height="200" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
-                    <iframe width="710" height="400" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
+                    <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
+                    <iframe width="710" height="400" src="https://www.youtube.com/embed/02LaPXGnT2w" class="show-for-landscape" style="display: block; margin: auto;"></iframe> -->
                     <br>
-                    </div>
+                </p>
                 </div>
-                <br><br>
-
-                <!-- OCTOBER/NOVEMBER -->
-                <div>
-                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">October & November, 2020 <br></strong>
-                    <div class="invis">
+            </div>
+            <!-- OCTOBER/NOVEMBER -->
+        </div>
+        <div class="box large">
+            <h3>Week 1 Chunk Generation</h3>
+            <iframe src="https://www.youtube.com/embed/02LaPXGnT2w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box large">
+            <div>
+                <h3 style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">October & November, 2020 <br></h3>
+                <p class="invis">
                     I decided to go back to the prototype I made for a game in Python and re-create it in a manner that would be more functional and work better moving forwards. For this I decided to learn C++, something I’d been putting off for a long time, and also use the library SDL2 which has been used for many games and applications whether big or small.
                     <br> <br>
 
@@ -111,15 +125,16 @@
                     <a href="https://github.com/SkyMocha/TARPG_V2/commit/8a2065e7a74d1922cb05331dc33653259cd98fe7" target="blank">Commit #7</a>
                     <br>
                     <a href="https://github.com/SkyMocha/TARPG_V2/commit/bfd78c41ff65dea39d4f5608abd469a5e78c4fbd" target="blank">Commit #8</a>
-                </div>
+                </p>
+            </div>
 
-                <br>
-                <br>
-            
-                <!-- END OF NOVEMBER -->
-                <div>
-                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">End of November Retrospection<br></strong>
-                    <div class="invis">
+        </div>
+
+        <div class="box large">
+            <!-- END OF NOVEMBER -->
+            <div>
+                <h3 style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">End of November Retrospection<br></h3>
+                <p class="invis">
                     As I near the end of Fall term, I look back upon the projects I've created, especially as I have to make a presentation for the end of the year. 
                     What comes to mind is the dilemma I had many months ago that caused me to stagnate on the project, just in a different light. 
                     I have a demo of this project in both Python and C++. 
@@ -143,16 +158,20 @@
                     <br><br>
 
                     <u style="display: block; margin: auto; text-align: center;">End of November Demo</u>
-                    <iframe width="355" height="200" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
-                    <iframe width="710" height="400" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
-                    </div>
-                </div>
-
-                <br><br>
-
-                <div>
-                    <strong style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">Wrapping up 2020<br></strong>
-                    <div class="invis">
+                    <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-portrait" style="display: block; margin: auto;"></iframe> -->
+                    <iframe src="https://www.youtube.com/embed/VWEFME-pQqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <!-- <iframe width="710" height="400" src="https://www.youtube.com/embed/VWEFME-pQqs" class="show-for-landscape" style="display: block; margin: auto;"></iframe> -->
+                </p>
+            </div>
+        </div>
+        <div class="box large"> 
+            <h3>End of November Demo</h3>
+            <iframe src="https://www.youtube.com/embed/VWEFME-pQqs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="box large">
+            <div>
+                <h3 style="text-align: center;" class="pointer" onclick="clickable(this.parentElement.children.item(1))">Wrapping up 2020<br></h3>
+                <p class="invis">
                     Since switching back to Python, and throughout finishing the year of 2020, my progress on this project can easily be summed up as: Features, features, features!
                     With a giant break inbetween each feature. Some features that were implemented in this time were:<br><br>
 
@@ -173,23 +192,20 @@
                     &nbsp;&nbsp; After looking at some YouTube videos about enemy AI in video games, I started for the first time implementing an enemy AI.
                     So far its very, very simplistic, and also very, very glitchy. The AI only has one action currently, move towards the player. The enemy has a stack of operations, and this keeps getting added to the stack.
                     
-                    <br><br>
+                    <!-- <br><br> -->
 
-                    <u style="display: block; margin: auto; text-align: center;">Start of 2021 demo</u>
-                    <iframe width="355" height="200" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
-                    <iframe width="710" height="400" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
-                    </div>
-                </div>
+                    <!-- <u style="display: block; margin: auto; text-align: center;">Start of 2021 demo</u> -->
+                    <!-- <iframe width="355" height="200" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
+                    <iframe width="710" height="400" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-landscape" style="display: block; margin: auto;"></iframe> -->
+                    <!-- <iframe src="https://www.youtube.com/embed/XItrwnxam0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </p>
+            </div>
 
-                <br><br>
-
-                <u style="display: block; margin: auto; text-align: center;">Current Demo</u>
-                <iframe width="355" height="200" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-portrait" style="display: block; margin: auto;"></iframe>
-                <iframe width="710" height="400" src="https://www.youtube.com/embed/XItrwnxam0U" class="show-for-landscape" style="display: block; margin: auto;"></iframe>
-
-                </div>
-                <br><br>
-            </h5></div>
+        </div>
+        <div class="box large"> 
+            <!-- <u style="display: block; margin: auto; text-align: center;">>Most Recent Demo</u> -->
+            <h3>Most Recent Demo</h3>
+            <iframe src="https://www.youtube.com/embed/XItrwnxam0U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </div>
 </div>

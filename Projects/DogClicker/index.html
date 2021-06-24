@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+
+<!-- 
+
+    Website uses:
+    https://arc.io/
+
+    PROPERTY OF SKYMOCHA
+
+ -->
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300&family=New+Tegomin&display=swap');
+
+    body {
+        background-color: #a6cae5;
+        touch-action: manipulation;
+    }
+
+    @media (orientation: landscape) {
+
+        .info {
+            text-align: center;
+            position: absolute;
+            top: 5px;
+            right: 25px;
+        }
+        .desktop_ad {
+            display: block;
+            width: 160px;
+            height: 600px;
+            /* background-color: black; */
+        }
+        .mobile_ad {
+            display: none;
+        }
+
+        .big {
+            position: absolute;
+            left: 25%;
+            bottom: 0%;
+            width: 50%;
+            cursor: pointer;
+        }
+
+        .small {
+            position: absolute;
+            left: 26%;
+            bottom: 1%;
+            width: 48%;
+            cursor: pointer;
+        }
+
+        .dev_version {
+            font-family: 'Hind', serif;
+            position: absolute;
+            right: 5px;
+            bottom: 0px;
+            text-align: right;
+            font-size: 15px;
+            line-height: 16px;
+        }
+
+        .speaker {
+            position: absolute;
+            right: 5px;
+            bottom: 50px;
+            width: 50px;
+            transform: scaleX(-1);
+            cursor: pointer;
+        }
+
+        .upgrade {
+            position: absolute;
+            right: 5px;
+            bottom: 110px;
+            width: 55px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .video_reward_button {
+            position: absolute;
+            right: 5px;
+            bottom: 180px;
+            width: 55px;
+            cursor: pointer;
+        }
+
+    }
+
+    @media (orientation: portrait) {
+        /* img {
+            position: absolute;
+            left: 5%;
+            bottom: 0%;
+            width: 90%;
+            cursor:pointer;
+        } */
+        .info {
+            text-align: right;
+            position: absolute;
+            top: 15px;
+            right: 5px;
+        }
+        .desktop_ad {
+            display: none;
+        }
+        .mobile_ad {
+            display: block;
+        }
+
+        .big {
+            position: absolute;
+            left: 5%;
+            bottom: 0%;
+            width: 90%;
+            cursor:pointer;
+        }
+
+        .small {
+            position: absolute;
+            left: 7.5%;
+            bottom: 2%;
+            width: 85%;
+            cursor: pointer;
+        }
+
+        .dev_version {
+            font-family: 'Hind', serif;
+            position: absolute;
+            right: 5px;
+            bottom: 0px;
+            text-align: right;
+            font-size: 10px;
+            line-height: 11px;
+        }
+
+        .speaker {
+            position: absolute;
+            right: 5px;
+            bottom: 45px;
+            width: 40px;
+            transform: scaleX(-1);
+            cursor: pointer;
+        }
+
+        .upgrade {
+            position: absolute;
+            right: 5px;
+            bottom: 105px;
+            width: 45px;
+            cursor: pointer;
+        }
+
+        .video_reward_button {
+            position: absolute;
+            right: 5px;
+            bottom: 175px;
+            width: 45px;
+            cursor: pointer;
+        }
+
+    }
+
+    body h1 {
+        text-align: center;
+        margin: auto;
+        font-family: 'New Tegomin', serif;
+        line-height: 28px;
+        padding-top: 5px;
+        font-size: 165%;
+    }
+
+    body .click_count {
+        position: absolute;
+        left: 55px;
+        bottom: -2px;
+        font-family: 'New Tegomin', serif;
+        font-weight: bold;
+        font-size: 115%;
+    }
+
+    .invis {
+        display: none !important;
+    }
+
+    .footer {
+        margin-bottom: auto;
+        text-align: center;
+        display: block;
+        font-family: 'New Tegomin', serif;
+        margin: auto;
+        width: 50%;
+        font-size: 115%;
+        font-weight: normal;
+    }
+
+    .info {
+        font-family: 'New Tegomin', serif;
+        line-height: 20px;
+    }
+
+    .whatis {
+        font-family: 'New Tegomin', serif;
+        line-height: 20px;
+        left: 0px;
+        top: 0px;
+    }
+
+    img {
+        z-index: -10;
+    }
+
+    /* Item shop */
+
+    .shop {
+        display: flex;
+        width: 95%;
+        height: 90%;
+        margin-left: 2.5%;
+        /* background-color: #cccccc; */
+    }
+
+    .flex_container {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        /* margin-left; */
+        /* background-color: black; */
+        flex-wrap: wrap;
+    }
+
+    .flex_item {
+        width: 192px;
+        background-color: hsl(219, 50%, 62%);
+        border-radius: 12px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    .flex_item div {
+        width: 192px;
+        height: 192px;
+        background-size: cover;
+    }
+
+    .flex_item p {
+        font-family: 'New Tegomin', serif;
+        font-size: 26px;
+        line-height: 11px;
+        /* padding: 0px; */
+        text-align: center;
+        text-shadow: 1px 1px 1px black;
+        -webkit-text-stroke-width: 1px;
+        color: white;
+    }
+
+    .flex_item div p {
+        font-family: 'New Tegomin', serif;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 0px;
+        text-align: left;
+        padding-left: 8px;
+        padding-top: 8px;
+        text-shadow: 1px 1px 1px black;
+        -webkit-text-stroke-width: 1px;
+        color: white;
+    }
+
+    .flex_item button {
+        width: 192px;
+        height: 32px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: hsl(219, 40%, 62%);
+        border-color: black;
+    }
+
+    .items {
+        font-family: 'Hind', serif;
+        font-size: 18px;
+        position: absolute;
+        top: 50px;
+        left: 10px;
+    }
+
+    .message {
+        width: 100%;
+        /* height: 20%;
+        background-color: pink; */
+    }
+
+    .video_ad {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        background-color: blanchedalmond;
+        z-index: 10;
+    }
+
+</style>
+
+<html lang="en">
+
+<head>
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' wss http https 'unsafe-inline' 'unsafe-eval'  *.google.com adservice.google.com fonts.gstatic.com browser.sentry-cdn.com wss://tracker.arc.io wss://socket.arc.io ajax.googleapis.com *.arc.io arc.io cdn.applixir.com *.applixir.com *.appprizes.com *.cloudflare.com *.google-analytics.com; img-src * data:; frame-src *;  "> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script async src="https://arc.io/widget.min.js#7jAMb3Pp"></script>
+
+    <!-- <meta name="a.validate.01" content="ff70d3e5d3f284e134f61dd07d85491cb1dc" /> -->
+
+    <!-- <script type="text/javascript" src="./applixir.sdk3.0m.js" crossorigin="anonymous"></script>    -->
+
+    <link href="https://dogclicker.xyz" rel="canonical">
+
+    <title>DogClicker, A Cookie Clicker Clicker Clone</title>
+    <link rel="icon" href="./assets/Main_Dog_Big.png">
+
+    <meta name="description" content="DogClicker is a cookie clicker clone involving dogs, it plays like a .io game or any other clones of cookie clicker. Click or idle away and watch the boops increment!">
+    <meta name="keywords" content="Dog, Cookie Clicker, Clicker, Clone, Incremental, Idle, Game ">
+    <meta name="author" content="Skye (SkyMocha)">
+
+    <meta property="og:title" content="Dog Clicker" />
+    <meta property="og:description" content="DogClicker is a cookie clicker clone involving dogs, it plays like a .io game or any other clones of cookie clicker. Click or idle away and watch the boops increment!" />
+    <meta property="og:image" content="./assets/Main_Dog_Big.png">
+</head>
+
+<body>
+  
+<div id="title" class="message">
+    <h1>Boop The Dog.</h1>
+    <h2 class="footer">
+        DogClicker is a cookie clicker clone involving dogs,<br>
+        it acts like an .io game or any other clicker clone.<br>
+        <span style="font-size: 80%;">This site uses Cookies, JavaScript, & Arc</span>
+    </h2>
+</div>
+
+<!-- <p class="whatis">DogClicker is a cookie clicker clone,<br>boop the dog and acquire clicks.</p> -->
+
+<h1 id="message" class="message"></h1>
+<p id="click_count" class="click_count">0</p>
+
+<div> 
+
+    <p id="items" class="items"> </p>
+
+</div>
+
+<div class="info">
+    <h4>
+        <u style="font-size: 115%;">SkyMocha</u>
+        <!-- <br><br>SkyMocha -->
+        <br><a href="https://skymocha.net" target="blank">Website</a>
+        <br><a href="https://www.youtube.com/channel/UC_K4EmF_Ks9xmSlL0ZudM4w" target="blank">YouTube</a>
+    </h4>
+</div>
+
+<!-- <div class="video_ad">
+
+    <div id="applixir_vanishing_div" hidden>
+        <iframe id="applixir_parent" allow="autoplay"></iframe>
+    </div>
+
+</div> -->
+
+<img class="upgrade" id="upgrade" alt="Cookie Clicker Upgrade Button" src="./assets/Upgrade.png">
+
+<!-- <img class="video_reward_button" id="video_reward_button" src="https://cdn.discordapp.com/attachments/471852961774174230/831194296056021043/unknown.png"> -->
+
+<div class="shop invis" id="shop">
+
+    <div class="flex_container"> 
+
+        <div class="flex_item"> 
+            <p><u>Bone</u></p>
+            <div style="background-image: url('./assets/Bone_Dog.png');">
+                <p>
+                    *Costs <span id="cost_1">200</span> Boops<br>
+                    *1 boop per 3 seconds<br>
+                    *20 BPM<br>
+                    *Infinite durability<br>
+                    *A good bone for a good boy
+                </p>
+            </div>
+            <button onclick="buy(id=1)">Buy</button>
+        </div>
+
+        <div class="flex_item"> 
+            <p><u>Squeak Toy</u></p>
+            <div style="background-image: url('./assets/Main_Dog_Big.png');">
+                <p>
+                    *Costs <span id="cost_2">500</span> Boops<br>
+                    *2 boop per 2 seconds<br>
+                    *60 BPM
+                    *Infinite durability<br>
+                    *Squeak squeak!
+                </p>
+            </div>
+            <button onclick="buy(id=2)">Buy</button>
+        </div>
+
+        <div class="flex_item"> 
+            <p><u>Snack</u></p>
+            <div style="background-image: url('./assets/Main_Dog_Big.png');">
+                <p>
+                    *Costs <span id="cost_3">25</span> boops<br>
+                    *5 boop per 3 seconds<br>
+                    *30 second durability<br>
+                    *50 total boops; 100 BPM<br>
+                    **Nibble* *nibble*
+                </p>
+            </div>
+            <button onclick="buy(id=3)">Buy</button>
+        </div>
+
+        <div class="flex_item">
+            <p><u>Homework</u></p>
+            <div style="background-image: url('./assets/Homework.png');">
+                <p>
+                    *Costs <span id="cost_4">100</span> boops<br>
+                    *50 boop per 30 seconds<br>
+                    *1.5 minute durability<br>
+                    *150 total boops; 100 BPM<br>
+                    *Time to rip and tear.
+                </p>
+            </div>
+            <button onclick="buy(id=4)">Buy</button>
+        </div>
+
+    </div>
+
+    <div id="shop_ad">
+        <!-- <script data-cfasync="false" type="text/javascript" src="http://www.onclickalgo.com/a/display.php?r=4395691"></script> -->
+    </div>
+
+</div>
+
+<div class="dev_version">Copyright SkyMocha<br>Currently in Development<br>The Shop Update - 0.1.2.3</div>
+
+<img class="big" alt="Click the dog for points" src="./assets/Main_Dog_Big.png" id="dog">
+
+<img class="speaker" id="speaker" alt="Mute or unmute woofs" src="./assets/speaker_on.png">
+
+<!-- <script type="text/javascript" data-adel="atag" src="//asacdn.com/script/atg.js" czid="cvu2ypgx"></script> -->
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script> 
+
+    console.log ("loaded");
+    var dog = document.getElementById("dog")
+    dog.addEventListener("click", click);
+
+    dog.addEventListener("mousedown", () => {
+        dog.classList.remove("big");
+        dog.classList.add("small");
+    })
+    dog.addEventListener("mouseup", () => {
+        dog.classList.remove("small");
+        dog.classList.add("big");
+    })
+
+    var speaker=true;
+
+    var speakerDiv = document.getElementById("speaker");
+    speakerDiv.addEventListener("click", () => {
+        speaker = !speaker;
+        if (speaker)
+            speakerDiv.src = "./assets/speaker_on.png"
+        else 
+            speakerDiv.src = "./assets/speaker_mute.png"
+
+    })
+
+    // Shows the shop
+    var upgradeDiv = document.getElementById("upgrade");
+    var shopDiv = document.getElementById("shop");
+    upgradeDiv.addEventListener("click", () => {
+        if (shopDiv.classList.contains("invis"))
+            shopDiv.classList.remove("invis")
+        else
+            shopDiv.classList.add("invis");
+    })
+
+    // Sets the button show up for video rewards
+    // var videoRewardButtonDiv = document.getElementById ("video_reward_button");
+    // var videoRewardDiv = document.getElementById("video_reward");
+    // videoRewardButtonDiv.addEventListener("click", () => {
+    //     if (videoRewardDiv.classList.contains("invis"))
+    //         videoRewardDiv.classList.remove("invis")
+    //     else
+    //         videoRewardDiv.classList.add("invis");
+    // })
+
+    var title = document.getElementById("title");
+    var message = document.getElementById("message");
+    var count_msg = document.getElementById("click_count")
+    var click_count = 0
+
+    console.log (document.cookie);
+
+    if (document.cookie.indexOf("count=") != -1) {
+        click_count = parseFloat(document.cookie.split("count=")[1].split("/")[0]);
+        count_msg.innerHTML = click_count;
+    }
+    var curr_count = 0;
+
+    var dogAudios = [ 
+        new Audio('./assets/Dog1.mp3'),
+        new Audio('./assets/Dog2.mp3'),
+        new Audio('./assets/Dog3.mp3'),
+    ]
+
+    var BPM_mod = 1;
+
+    var cooldowns = new Map();
+        
+    function click () {
+
+        // console.log ("click");
+
+        // Dissapears the oriiginal message
+        if (curr_count == 0) {
+            title.classList.add ("invis")
+            message.innerHTML = "&nbsp;<br>&nbsp;"
+        }
+
+        click_count++;
+        curr_count++;
+        count_msg.innerHTML = click_count;
+
+        // Run Dog Audio
+        if (speaker && Math.floor(Math.random()*12) == 5) {
+            let audio = dogAudios[Math.floor(Math.random()*dogAudios.length)]
+            audio.volume = Math.max(Math.min(Math.random() + 0.2, 0.2), 0.4)
+            audio.play();
+        }
+
+        // Checks for click counts
+        if (click_count == 10 )
+            display_message()
+
+        else if (click_count % 50 == 0 && click_count < 500 )
+            display_message()
+
+        else if (click_count % 100 == 0 && click_count < 1000 )
+            display_message()
+        
+        else if (click_count % 250 == 0 && click_count < 5000 )
+            display_message()
+        
+        else if (click_count % 1000 == 0 && click_count < 10000 )
+            display_message()
+
+        // Saves cookies
+        // save_cookies();
+    }
+
+    // Displays encouraging messages
+    function display_message(){
+        var messages = [`You're at ${click_count} Clicks!`,
+                        "Keep Going!",
+                        "More Boops!",
+                        "I Believe in You!",
+                        `${click_count} Boops!`,
+                        "Woof woof!"
+                        ]
+        // if (message.classList.contains("no-content")) {
+            message.innerHTML = messages[Math.floor(Math.random()*messages.length)]
+            // message.classList.remove ("no-content");
+            setTimeout(() => {
+                // message.classList.add("no-content");
+                message.innerHTML = "&nbsp;<br>&nbsp;"
+            }, 2500);
+        // }
+    }
+
+    // Item class
+    class item {
+        constructor (name, adder, interval, durability) {
+            this.name = name;
+            this.adder = adder;
+            this.interval = interval;
+            this.durability = durability; // -1 = infinite
+            // this.iid == iid_count;
+            // iid_count++;
+        }
+    }
+
+    var items_div = document.getElementById("items");
+
+    // Parses the items cookie
+    var items = []
+    if (document.cookie.indexOf("items=") != -1) {
+        let item_cookie = document.cookie.split("items=")[1].split("/")[0]
+        item_cookie.split('[').forEach (i => {
+            let j = i.split (']')[0].split(',');
+            // Name, Adder, Interval, Durability
+            if (!isNaN(j[1]))
+                items.push(new item (j[0], parseInt(j[1]), parseInt(j[2]), parseInt(j[3])))
+        })
+        console.log (items)
+        display_items();
+    }
+    // var iid_count = 0;
+
+    // Modifies the cost of an item by continously adding to it
+    var cost_mod = new Map();
+
+    // Sets the cost_mod based off the cookie
+    if (document.cookie.indexOf("cost_mods=") != -1){
+        let mod_cookie = document.cookie.split ("cost_mods=")[1].split("/")[0];
+        mod_cookie.split('[').forEach (i => {
+            let j = i.split (']')[0].split(':');
+
+            // sets the cost_mods to the individual j values
+            if (j[0] != undefined && j[1] != undefined) {
+
+                cost_mod.set(parseInt(j[0]), parseFloat(j[1]));
+                let elem = document.getElementById('cost_' + j[0]); // The element for the cost mod
+                elem.innerHTML = Math.floor(parseInt(elem.innerHTML) * j[1]);
+
+            }
+
+        })
+    }
+
+    function subtract_boops_and_mod (id, original, multiplier) {
+        // cannot afford
+        if (click_count < Math.floor(original*cost_mod.get(id))) {
+            alert("You cannot afford this item.");
+            return false;
+        }
+        // can afford
+        else {
+
+            // first purchase
+            if (!cost_mod.has (id)){ 
+                cost_mod.set (id, multiplier);
+                let cost = Math.floor (original * cost_mod.get(id))
+                document.getElementById('cost_' + id).innerHTML = cost
+
+                click_count -= original;
+                count_msg.innerHTML = click_count;
+                console.log ("Buying item!");
+                return true;
+            }
+            // subsequent purchases
+            else {
+                cost_mod.set(id, cost_mod.get(id) * multiplier)
+                let cost = Math.floor (original * cost_mod.get(id))
+                document.getElementById('cost_' + id).innerHTML = cost;
+                
+                click_count -= cost;
+                count_msg.innerHTML = click_count;
+                console.log ("Buying item!");
+                return true;
+            }
+
+        }
+
+    }
+
+    // Buys an item based off the item ID
+    function buy (id=0) {
+        switch (id) {
+            // Bone
+            case 1:
+                if (cooldown(1, 3) && subtract_boops_and_mod(1, 200, 1.125)) items.push( new item("Bone", 1, 3, -1) );
+                break;
+            case 2:
+                if (cooldown(2, 5) && subtract_boops_and_mod(2, 500, 1.125)) items.push( new item("Squeak Toy", 2, 2, -1) );
+                break;
+            case 3:
+                if (cooldown(3, 10) && subtract_boops(25)) items.push( new item("Snack", 5, 3, 30) );
+                break;
+            case 4:
+                if (cooldown(4, 30) && subtract_boops(100)) items.push( new item("Homework", 50, 30, 90) );
+                break;
+        }
+        // save_cookies();
+        display_items();
+    }
+
+    // Sets a cooldown for an ID item for a specific amount of time
+    function cooldown (id, time) {
+        if (cooldowns.has(id)) {
+            alert (`Item is on cooldown for ${cooldowns.get(id)} more seconds.`);
+            return false;
+        } else {
+
+            // Sets the timer
+            cooldowns.set(id, time);
+            let cooldown_timer_interval = setInterval(() => {
+                cooldowns.set (id, cooldowns.get(id)-1)
+            }, 1000);
+
+            // Clears the timer
+            setTimeout(() => {
+                cooldowns.delete(id);
+                clearInterval(cooldown_timer_interval);
+            }, time*1000);
+            return true;
+        }
+    }
+
+    // Subtracts the boops and sees if you can afford the item
+    function subtract_boops (cost){
+        if (click_count > cost){
+            click_count -= cost;
+            count_msg.innerHTML = click_count;
+            console.log ("Buying item!");
+            return true;
+        }
+        else {
+            alert("You cannot afford this item.");
+            return false;
+        }
+    }
+
+    // Subtracts an items durability
+    function subtract_durability (i) {
+        if (i.durability == -1) {
+            return true;
+        }
+        else if (i.durability > 0) {
+            i.durability--;
+            return true;
+        }
+        else {
+            display_items();
+            return false;
+        }
+    }
+
+    // Adder function
+    var time = 0;
+    setInterval(() => {
+        // console.log (items.toString());
+        items.forEach (i => {
+            if (subtract_durability(i) && time % i.interval == 0) {
+                click_count += Math.floor(i.adder * BPM_mod);
+                count_msg.innerHTML = click_count;
+                // save_cookies();
+            }
+        })
+        time+=1
+        save_cookies();
+    }, 1000);
+
+    // Saves the cookies
+    function save_cookies () {
+        // cookiefies items
+        var item_cookie = "";
+        items.forEach(i => {
+            if (!isNaN(i.adder))
+                item_cookie += `[${i.name},${i.adder},${i.interval},${i.durability}]`
+        })
+        // cookiefies all the modefiers for prices
+        let mod_cookie = "";
+        cost_mod.forEach ( (val, i) => {
+            // console.log (i, val)
+            mod_cookie += `[${i}:${val}]`
+        })
+        // saves cookie
+        document.cookie = "/count="+click_count + "/items=" + item_cookie + "/cost_mods=" + mod_cookie;
+    }
+
+    // Displays all the items the player owns and how many
+    function display_items () {
+        var names = "<u>Items</u><br>"
+        items.forEach ( i=> {
+            // Checks to see item is still valid
+            if (i.durability > 0 || i.durability == -1) {
+                // Adds item if not already there
+                if (names.indexOf (i.name) == -1)
+                    names += i.name + ' x1<br>'
+                // Adds one to the count
+                else {
+                    let num = parseInt (names.split (i.name + ' x')[1].split('<br>')[0])
+                    let index = names.indexOf(i.name) + i.name.length + ' x'.length;
+                    names = names.substr(0, index) + (num + 1).toString() + names.substr (index + num.toString().length)
+                }
+            }
+        })
+        items_div.innerHTML = names;
+    }
+
+</script>

@@ -8,7 +8,7 @@
 <html>
 
 <head>
-<title>SkyMocha</title>
+<title>SkyMocha | Skye Kychenthal</title>
 <link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
 <meta name="theme-color" content="#4B52EC"/>
 <meta property="og:title" content="SkyMocha"/>
@@ -16,9 +16,9 @@
 <meta property="og:description" content="The SkyMocha website associated with the SkyMocha YouTube channel containing a portfolio of work and a personal blog."/>
 <meta property="og:image" content="/logo_assets/SkyMocha.png"/>
 
-<meta name="descritpion" id="descritpion" content="The SkyMocha website associated with the SkyMocha YouTube channel containing a portfolio of work and a personal blog.">
+<meta name="descritpion" id="descritpion" content="The SkyMocha website created by Skye Kychenthal associated with the SkyMocha YouTube channel and containing a portfolio of work for Skye Kychenthal.">
 <meta name="keywords" id="keywords" content="SkyMocha">
-<meta name="author" content="SkyMocha">
+<meta name="author" content="SkyMocha / Skye Kychenthal">
 
 </head>
 
@@ -33,14 +33,14 @@
             <hr>
         </div>
         <div class="container">
-            <a href="/Projects/">PORTFOLIO </a>
+            <a href="/Projects/">PORTFOLIO</a>
             <hr>
         </div>
 
-        <div class="container">
+        <!-- <div class="container">
             <a href="/Blog/Home">BLOG</a>
             <hr>
-        </div>
+        </div> -->
         <div class="container">
             <a onclick="about()">ABOUT</a>
             <hr>
@@ -56,14 +56,14 @@
             </div>
             <span class="mobilebreak"></span>
             <div class="container left">
-                <a href="/Projects/">PORTFOLIO </a>
+                <a href="/Projects/">PORTFOLIO</a>
             </div>
         </div>
 
         <div class="right">
-            <div class="container">
+            <!-- <div class="container">
                 <a href="/Blog/Home">BLOG</a>
-            </div>
+            </div> -->
             <span class="mobilebreak"></span>
             <div class="container right">
                 <a onclick="about()">ABOUT</a>
@@ -76,51 +76,72 @@
         <div>
             <div class="container">
                 <a href="https://discord.com/invite/ppmaxad" target="blank">
-                    <img src="/logo_assets/Discord_Logo.png" style="max-width: 105%;"> 
+                    <img src="/logo_assets/Discord_Logo.png" alt="SkyMocha Discord Server" style="max-width: 105%;"> 
                 </a>
             </div>
             <div class="container">
                 <a href="https://github.com/SkyMocha" target="blank">
-                    <img src="/logo_assets/Github_Dark.png">
+                    <img src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code">
                 </a>
             </div> 
             <div class="container">
                 <a href="https://www.youtube.com/c/NickStudiosCode" target="blank">
-                    <img src="/logo_assets/YouTube_Logo.png"> 
+                    <img src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" > 
                 </a>
             </div>
         </div>
         <div>
             <div class="container">
                 <a href="https://www.twitch.tv/skymochi64" target="blank">
-                    <img src="/logo_assets/TwitchLogo.png" style="max-width: 105%;"> 
+                    <img src="/logo_assets/TwitchLogo.png" style="max-width: 105%;" alt="SkyMocha Twitch"> 
                 </a>
             </div>
             <div class="container">
                 <a href="https://www.instagram.com/skymochicos/" target="blank">
-                    <img src="/logo_assets/Instagram_Logo.svg" style="max-width: 90%;"> 
+                    <img src="/logo_assets/Instagram_Logo.svg" style="max-width: 90%;" alt="SkyMocha Instagram"> 
                 </a>
             </div>
             <div class="container">
-                <a href="https://twitter.com/skymochi64" target="blank">
-                    <img src="/logo_assets/Twitter_Logo.png" style="max-width: 90%;"> 
+                <a href="https://www.tiktok.com/@skymocha64" target="blank">
+                    <img src="/logo_assets/TikTok.svg" style="max-width: 90%;" alt="SkyMocha TikTok"> 
                 </a>
             </div>
         </div>
     
     </div>
 
-    <div id="about_right" class="invis">
-        <h3 >About</h3>
-        <h5 style="margin-top: -2.5%;">
-            SkyMocha is a student, independent developer, and YouTuber living in the United States. 
-            Currently a junior in high school,
+    <div id="about_right" class="invis about">
+        <div class="top">
+            <img src="/assets/Kychenthal.png" alt="Skye Kychenthal">
+            <h5>
+                Skye Kychenthal<br>
+                Full-Stack, GameDev, Content Creation<br>
+                High-School student
+            </h5>
+        </div>
+        <h3 >Bio &#8226;</h3>
+        <h5>
+            Skye Kychenthal, also known as SkyMocha, is a student, independent developer, and YouTuber living in the United States. 
+            Currently a senior in high school,
             Skye spends much of their free time self-studying computer science, or working on various projects.
-            From web design, to game development, to AI; SkyMocha is determined to become a adept magician in all areas of code.
-            As an addendum to their projects, they also teach and showcase their projects on their YouTube channel.
+            From web design, to game development, to Data Science; SkyMocha is determined to become a adept magician in all areas of code.
+            They're also a content creator on various platforms such as YouTube, TikTok, and Instagram.
         </h5>
+        <h3>
+            Resume/CV &#8226;
+        </h3>
+        <a target="_blank" href="./resume.html">
+            <h5> 
+                Web (WIP)
+            </h5>
+        </a>
+        <a target="_blank" href="./resume.pdf">
+            <h5> 
+                PDF
+            </h5>
+        </a>
     </div>
-
+    
 </body>
 
 <script>
@@ -129,31 +150,41 @@
     var animInProcess = false;
 
     function about () {
-        if (!aboutOnScreen && !animInProcess) {
-            setAnim(3);
-            let about = document.getElementById("about_right");
+        let about = document.getElementById("about_right");
+        if (about.classList.contains("invis")) {
             about.classList.remove('invis');
-            about.classList.remove('remove_about');
-            about.classList.add('about');
+        }
+        else {
+            about.classList.add('invis');
+        }
 
-            let body_cover = document.getElementById("body_cover");
-            body_cover.classList.remove('brighten');
-            body_cover.classList.add('darken');
-            aboutOnScreen = true;
+        if (!aboutOnScreen && !animInProcess) {
+            // setAnim(3);
+            // let about = document.getElementById("about_right");
+            // about.classList.remove('invis');
+            // about.classList.remove('remove_about');
+            // about.classList.add('about');
+
+            // let body_cover = document.getElementById("body_cover");
+            // body_cover.classList.remove('brighten');
+            // body_cover.classList.add('darken');
+            // aboutOnScreen = true;
         }
         else if (!animInProcess) {
-            setAnim(3);
-            let about = document.getElementById("about_right");
-            setInvis(about, 2.9);
-            about.classList.remove('about');
-            about.classList.add('remove_about');
+            // setAnim(3);
+            // let about = document.getElementById("about_right");
+            // setInvis(about, 2.9);
+            // about.classList.remove('about');
+            // about.classList.add('remove_about');
 
-            let body_cover = document.getElementById("body_cover");
-            body_cover.classList.remove('darken');
-            body_cover.classList.add('brighten');
-            aboutOnScreen = false;
+            // let body_cover = document.getElementById("body_cover");
+            // body_cover.classList.remove('darken');
+            // body_cover.classList.add('brighten');
+            // aboutOnScreen = false;
         }
     }
+
+
 
     // Sets the animation state
     function setAnim (time) {

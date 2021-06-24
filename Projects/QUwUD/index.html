@@ -1,0 +1,95 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SkyMocha RXNS</title>
+<!-- <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/motion-ui/1.2.2/motion-ui.min.css"> -->
+<link rel="stylesheet" href="/Projects/projects.css">
+<script src="../iframe.js"> </script>
+</head>
+
+<body>
+
+<div class="bg-back"> </div>
+<div class="bg-image background-no-anim"> </div>
+<div class="bg-cover"> </div>
+
+<div class="top-bar">
+    <div class="head">
+        <div class="top-bar-left">
+            <div class="menu">
+                <a href="/">SkyMocha</a>
+                <a href="/Projects/">Projects</a>
+                <a href="/Blog/Home">Blog</a>
+            </div>
+            <hr>
+        </div>
+        <div class="top-bar-right">
+            <a href="https://github.com/skymocha" target="blank">
+                <img class="github" src="/assets/Github Dark.png" >
+            </a>
+        </div>
+    </div>
+    <div class="callout">
+        <h2>Caves of QUwUD</h2>
+        <h4>A caves of Qud UwU text conversion mod</h4>
+    </div>
+</div>
+
+<div class="body">
+    <div class="container large">
+        <div class="box">
+            <h3>Overview</h3>
+            <p>
+                Caves of Qud is a text-heavy Unity engine game, and that text is serious, well-crafted, and intelligent.<br>
+                I decided I'd counteract all three by making all text UwU speech.
+            </p>
+        </div>
+        <div class="box">
+            <h3>Process</h3>
+            <p>
+                Caves of Qud's text falls into two categories of generation.<br><br>
+                <u>Python</u><br>
+                All quests, NPC interactions, and a few other things are all pre-determined through XML files in the games data.
+                To make them UwU text, the easiest way of doing so would be to write a Python script that would turn all XML files text (not the tags or important information) into UwU text.
+                The only down-side to this, and the only thing I would correct in the future, is that these XML files are core to the game. Therefore, when the game is updated with any form of changes to the XML, the mod will break.
+                So, the currently existing mod only works for one version of the game.
+                <br><br>
+                <u>C#, Harmony, Unity</u><br>
+                All other text, such as message logs, are constructed within the code of the game. 
+                There is no "pre-determined" way of changing the text, so it has to be changed during run-time in the C# code.
+                The issue with this, though, is during run-time, methods cannot be directly modified. 
+                The way modders and the way I got around this is by using a library called Harmony.
+                Harmony allows the modder to create prefixes / suffixes for methods, meaning that code can be executed before or after the methods initial code.
+                So, say a method called addLog(Message) adds to the message log in Caves of Qud using a variable called Message.
+                All I have to do as the modder is modify the Message variable into UwU text by adding a prefix to the addLog(Message) method.
+                This way, by the time the actual addLog code is executed, Message is already UwU text.
+                <br><br>
+                For the Python code, I used the default Python XML libraries, and I used an external library for UwU text.
+                For the C# Harmony patches, I used a simple method I created to form UwU text using some basic rules. 
+                The Python version is far better, and reaches more of the text. The C# version was for quick testing.
+            </p>
+        </div>
+    </div>
+    <div class="container small">
+        <div class="box">
+            <h3>Links</h3>
+            <p>
+                <a href="https://github.com/SkyMocha/QuwuD" target="_blank">GitHub Page</a>
+            </p>
+            <p>
+                <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2395382615" target="_blank">Steam Page (Not Working)</a>
+            </p>
+        </div>
+        <div class="box">
+            <h3>Video Demo</h3>
+            <iframe src="https://www.youtube.com/embed/fmTZ3Y1gCQY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
