@@ -1,91 +1,101 @@
 <!DOCTYPE html>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<link rel="stylesheet" type="text/css" href="index.css">
-<link rel="stylesheet" type="text/css" href="loader.css">
-
 <html>
 
-<head>
-<title>SkyMocha | Skye Kychenthal</title>
-<link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
-<meta name="theme-color" content="#4B52EC"/>
-<meta property="og:title" content="SkyMocha"/>
-<meta property="og:url" content="http://www.skymocha.net"/>
-<meta property="og:description" content="The SkyMocha website associated with the SkyMocha YouTube channel containing a portfolio of work and a personal blog."/>
-<meta property="og:image" content="/logo_assets/SkyMocha.png"/>
+<head lang="en-US">
 
-<meta name="descritpion" id="descritpion" content="The SkyMocha website created by Skye Kychenthal associated with the SkyMocha YouTube channel and containing a portfolio of work for Skye Kychenthal.">
-<meta name="keywords" id="keywords" content="SkyMocha">
-<meta name="author" content="SkyMocha / Skye Kychenthal">
+    <!-- <meta charset="UTF-8"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+
+    <title>SkyMocha | Skye Kychenthal</title>
+
+    <link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
+    <meta name="theme-color" content="#77b"/>
+
+    <meta property="og:title" content="SkyMocha"/>
+    <meta property="og:url" content="https://www.skymocha.net"/>
+    <meta property="og:description" content="
+        Skye Kychenthal’s personal website associated with the SkyMocha YouTube channel. 
+        Contains a portfolio of work, resume, and social media links. 
+        "/>
+    <meta property="og:image" content="/logo_assets/SkyMocha.png"/>
+
+    <meta name="descritpion" id="descritpion" content="
+        Skye Kychenthal’s personal website associated with the SkyMocha YouTube channel. 
+        Contains a portfolio of work, resume, and social media links. ">
+    <meta name="keywords" id="keywords" content="SkyMocha, Skye Kychenthal">
+    <meta name="author" content="SkyMocha | Skye Kychenthal">
 
 </head>
 
 <body>
 
-    <div id='body_cover'> </div>
+    <!-- <div id='body_cover'> </div> -->
 
-    <header class="landscape"> 
+    <header> 
 
-        <div class="container">
-            <a href="/">HOME</a>
-            <hr>
-        </div>
-        <div class="container">
-            <a href="/Projects/">PORTFOLIO</a>
-            <hr>
-        </div>
+        <div class="links">
 
-        <!-- <div class="container">
-            <a href="/Blog/Home">BLOG</a>
-            <hr>
-        </div> -->
-        <div class="container">
-            <a onclick="about()">ABOUT</a>
-            <hr>
-        </div>
-
-    </header>
-
-    <header class="portrait"> 
-
-        <div class="left">
             <div class="container">
                 <a href="/">HOME</a>
+                <hr>
             </div>
-            <span class="mobilebreak"></span>
-            <div class="container left">
-                <a href="/Projects/">PORTFOLIO</a>
+            <div class="container" id="portfolio">
+                <a href="/Projects/"><span></span></a>
+                <hr>
             </div>
+
         </div>
 
-        <div class="right">
-            <!-- <div class="container">
-                <a href="/Blog/Home">BLOG</a>
-            </div> -->
-            <span class="mobilebreak"></span>
-            <div class="container right">
-                <a onclick="about()">ABOUT</a>
-            </div>
+        <div class="Safari_BS"> 
+
+            <p>Links do not currently work on Safari</p>
+
         </div>
 
+        <div class="socials_v2">
+            <div class="soc_container">
+                <a href="https://discord.com/invite/ppmaxad" target="blank">
+                    <img class="b" src="/logo_assets/Discord_Logo.svg" alt="SkyMocha Discord Server"> 
+                    <!-- <img src="/logo_assets/Discord_Logo.png" alt="SkyMocha Discord Server">  -->
+                </a>
+            </div>
+            <div class="soc_container">
+                <a href="https://github.com/SkyMocha" target="blank">
+                    <img class="b" src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code">
+                    <!-- <img src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code"> -->
+                </a>
+            </div> 
+            <div class="soc_container">
+                <a href="https://www.youtube.com/c/NickStudiosCode" target="blank">
+                    <img class="b" src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" > 
+                    <!-- <img src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" >  -->
+                </a>
+            </div>
+        </div>
+       
     </header>
 
-    <div class="socials">
+    <!-- <div class="socials">
         <div>
             <div class="container">
                 <a href="https://discord.com/invite/ppmaxad" target="blank">
-                    <img src="/logo_assets/Discord_Logo.png" alt="SkyMocha Discord Server" style="max-width: 105%;"> 
+                    <img class="b" src="/logo_assets/Discord_Logo.png" alt="SkyMocha Discord Server"> 
+                    <img src="/logo_assets/Discord_Logo.png" alt="SkyMocha Discord Server"> 
                 </a>
             </div>
             <div class="container">
                 <a href="https://github.com/SkyMocha" target="blank">
+                    <img class="b" src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code">
                     <img src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code">
                 </a>
             </div> 
             <div class="container">
                 <a href="https://www.youtube.com/c/NickStudiosCode" target="blank">
+                    <img class="b" src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" > 
                     <img src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" > 
                 </a>
             </div>
@@ -106,40 +116,90 @@
                     <img src="/logo_assets/TikTok.svg" style="max-width: 90%;" alt="SkyMocha TikTok"> 
                 </a>
             </div>
+        </div> -->
+    </div>
+
+    <div class="overlay_container">
+
+        <div class="overlay"> 
+
+            <iframe src="https://www.juicer.io/api/feeds/skymochi64/iframe?per=9&pages=1" frameborder='0' ></iframe>
+
+            <div id="about_right" class="about">
+            
+                <div>
+
+                    <div class="body">
+
+                        <h3 >Bio</h3>
+                        <h5>
+                            Skye Kychenthal, also known as SkyMocha, is a student, independent developer, and content creator living in the United States. 
+                        
+                            <br><br>
+            
+                            <u>Content Creation</u><br>
+                            SkyMocha is a trans and non-binary YouTuber focusing on breadtube and video essay content surrounding lgbtq issues, trans rights, and queer theory as well as computer science and tech from a sociology and social perspective. She also has plenty of gay shitposts and trans memes.
+            
+                            <br><br>
+            
+                            <u>Independent Developer</u><br>
+                            Skye spends much of their free time self-studying computer science or working on various projects
+                            that can be found under the portfolio tab.
+            
+                            <br><br>
+            
+                            <u>Academic Interests</u><br>
+                            &bull; Computer Science: HCI<br>
+                            &bull; Sociology: Sociological Theory & Social Theory<br>
+                            &bull; Social Psychology: Self & Social Identity
+                        </h5>
+                        <h3>
+                            Resume/CV
+                        </h3>
+                
+                        <a style="text-decoration: none;" target="_blank" href="./resume.pdf">
+                            <h5> 
+                                &bull; Normal PDF (600kb)
+                            </h5>
+                        </a>
+                        <a style="text-decoration: none;" target="_blank" href="./resume.png">
+                            <h5> 
+                                &bull; High-res PNG (2mb)
+                            </h5>
+                        </a>
+                        <br>
+                    </div>
+            
+                    <div class="top">
+                        <h1>
+                            Skye Kychenthal<br>
+                        </h1>
+                        <img src="/assets/kychenthal/kychenthal2.jpg" alt="Skye Kychenthal Photo 1">
+                        <br>
+                        <img src="/assets/kychenthal/kychenthal3.jpg" alt="Skye Kychenthal Photo 2">
+                        
+                    </div>
+
+                </div>
+                <p class="down">
+                    \/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/
+                </p>
+            </div>
+
         </div>
     
     </div>
 
-    <div id="about_right" class="invis about">
-        <div class="top">
-            <img src="/assets/Kychenthal.png" alt="Skye Kychenthal">
-            <h5>
-                Skye Kychenthal<br>
-                Full-Stack, GameDev, Content Creation<br>
-                High-School student
-            </h5>
-        </div>
-        <h3 >Bio &#8226;</h3>
-        <h5>
-            Skye Kychenthal, also known as SkyMocha, is a student, independent developer, and YouTuber living in the United States. 
-            Currently a senior in high school,
-            Skye spends much of their free time self-studying computer science, or working on various projects.
-            From web design, to game development, to Data Science; SkyMocha is determined to become a adept magician in all areas of code.
-            They're also a content creator on various platforms such as YouTube, TikTok, and Instagram.
-        </h5>
-        <h3>
-            Resume/CV &#8226;
-        </h3>
-        <a target="_blank" href="./resume.html">
-            <h5> 
-                Web (WIP)
-            </h5>
-        </a>
-        <a target="_blank" href="./resume.pdf">
-            <h5> 
-                PDF
-            </h5>
-        </a>
+    <div class="support">
+        <h2>
+            <a href="https://www.patreon.com/skymocha" target="blank">
+                <div>
+                    <p>Support me @:</p>
+                    <p class="sub">patreon.com/skymocha</p>
+                </div>
+                <img src="/logo_assets/Patreon_logo.svg.png">
+            </a>
+        </h2>
     </div>
     
 </body>

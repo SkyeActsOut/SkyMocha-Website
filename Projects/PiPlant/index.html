@@ -1,0 +1,91 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PeddieHacks</title>
+<link rel="stylesheet" href="/Projects/projects.css">
+
+<link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
+</head>
+
+<body>
+
+<div class="bg-back"> </div>
+<div class="bg-image background-no-anim"> </div>
+<div class="bg-cover"> </div>
+
+<div class="top-bar">
+    <div class="head">
+        <div class="top-bar-left">
+            <div class="menu">
+                <a href="/">SkyMocha</a>
+                <a href="/Projects/">Projects</a>
+                <a href="/Blog/Home">Blog</a>
+            </div>
+            <hr>
+        </div>
+        <div class="top-bar-right">
+            <a href="https://github.com/skymocha" target="blank">
+                <img class="github" src="/assets/Github Dark.png" >
+            </a>
+        </div>
+    </div>
+    <div class="callout">
+        <h2>PiPlant</h2>
+        <h4>First & last HS group project: A talking plant</h4>
+    </div>
+</div>
+
+<div class="body">
+    <div class="container">
+        <div class="box">
+            <h3>Overview</h3>
+            <p>
+                A talking plant using a Python flask server connected to a Raspberry Pi feeding realtime into web app.
+                <br>
+                Group project with one junior and another senior Fall term of senior year. 
+                <br>
+                My job primarily focuses on the web app & data visualizations
+            </p>
+        </div>
+        <div class="box">
+            <p>
+                <h3>Back-end</h3>
+                The backend uses a raspberry pi using a external microphone, external speaker, soil humidity sensor, and finally a temperature sensor.
+                <br>
+                The primary person in charge of the backend was Rohan '22 
+                Although I helped out with certain aspects of the Raspberry Pi itself as I worked extensively with one for my <a href="../nickPosr/">nickPosr</a> project.
+                Finally, I put in place certain parts of the chat-bot element, as I was more familiar with creating custom data structures for that purpose due to my time with Discord Bots.
+                <h3>Front-end</h3>
+                I was fully in-charge of the front-end through the use of a stub server/API I created.
+                The front-end uses d3.js as a library to help with data visualizations.
+                The visualizations are updated realtime as new data is introduced from the back-end.
+
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <h3>Links</h3>
+            <p>
+                <a href="https://github.com/akalyan23/pyschic-plant-man" target="blank">Github</a>
+                <br><br>
+                <a href="https://trello.com/b/J3Io1G6m/raspberry-pi-plant-project" target="blank">Trello</a>
+            </p>
+        </div>
+        <div class="box"> 
+            <h3>Front-end as of October 2021</h3>
+            <img src="./assets/Desktop.jpg" style="width: 90%;">
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+      $(document).foundation();
+    </script>
+</body>
+
+</html>
