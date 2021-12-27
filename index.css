@@ -189,6 +189,7 @@ header .container a:hover {
     text-shadow: 1px 1px black;
     color: white;
     text-align: left;
+    letter-spacing: 0.075rem;
 }
 
 .about h3 {
@@ -236,9 +237,12 @@ header .container a:hover {
     color: white;
     font-size: 1.5rem;
     text-shadow: 1px 1px black;
-
-
+    letter-spacing: 0.075rem;
+    /* background-color: antiquewhite; */
+    width: 125%;
+    margin-left: -12.5%;
 }
+
 .about {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     /* height: fit-content; */
@@ -323,6 +327,7 @@ header .container a:hover {
 
     header .container a {
         font-size: 32px;
+        letter-spacing: 0.175rem;
     }
 
     .header .container {
@@ -366,6 +371,7 @@ header .container a:hover {
     .about div .top img {
         width: 90%;
         height: 90%;
+        min-width: 136px;
     }
 
     .about div .top {
@@ -375,6 +381,7 @@ header .container a:hover {
         padding-right: 2%;
         margin-bottom: -5%;
 
+        min-width: 150px;
         width: 20%;
         /* min-width: px; */
         /* background-color: aliceblue; */
@@ -402,6 +409,14 @@ header .container a:hover {
         height: 100%;
         width: 100%;
     }
+
+    .socials_mobile {
+        display: none;
+    }
+
+    .body_mobile {
+        display: none;
+    }
 }
 
 @media (orientation: portrait) {
@@ -420,7 +435,7 @@ header .container a:hover {
         padding-top: 2.5%;
         margin-left: 0px;
         display: block;
-        height: 18%;
+        height: 10%;
         background-color: rgba(119, 119, 187, 0.33);
         padding-bottom: 2%;
         width: 101%;
@@ -428,21 +443,120 @@ header .container a:hover {
     }
 
     header .links {
+        padding-top: 2.5%;
         display: flex;
         margin: auto;
         width: 90%;
     }
 
+    hr {
+        display: none;
+    }
+
     .socials_v2 {
-        height: 8vh;
-        margin: auto;
-        width: 100%;
+        display: none;
+    }
+
+    .socials_mobile {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 30%;
+        /* margin-right: auto; */
+        /* margin-top: 2.5%; */
+        height: 100%;
+        /* background-color: antiquewhite; */
+        margin-left: auto;
+        margin-top: 1.5%;
+        margin-bottom: auto;
+
     }
 
     .soc_container {
         /* padding-left: 6px;
         padding-right: 6px; */
         margin: auto;
+    }
+
+    .socials_mobile .soc_container a img {
+        height: 3.75rem;
+        width: auto;
+    }
+
+    .socials_mobile .bigger {
+        height: 4rem !important;
+    }
+
+    .socials_mobile .soc_container a .b {
+        /* position: absolute; */
+        /* margin: auto; */
+    }
+
+    .overlay_mobile {
+        display: flex;
+        width: 100%;
+        height: 70%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .body_mobile {
+        width: 70%;
+        height: 100%;
+        /* background-color: aquamarine; */
+    }
+    .body_mobile .imgs {
+        display: flex;
+    }
+    .body_mobile img {
+        width: 42%;
+        /* margin: auto; */
+        margin: 10px;
+        margin-left: 5%;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid black;
+    }
+    .body_mobile h3 {
+        text-align: left;
+        color: white;
+        text-shadow: black 1px 1px;
+        width: 95%;
+        margin-top: -3%;
+        margin-left: 3.5%;
+        font-size: calc(1.5vh + 2vw);
+    }
+    .body_mobile h5 {
+        text-align: left;
+        color: white;
+        text-shadow: black 1px 1px;
+        width: 95%;
+        margin-top: -5%;
+        margin-left: 3.5%;
+        letter-spacing: 0.075rem;
+        font-size: calc(1.23vh + 1.725vw);
+        /* font-size: 3.85vw; */
+    }
+    .resumes {
+        margin-top: -5%;
+    }
+    .bio {
+        margin-top: 5%;
+    }
+    .bio h5 {
+        display: flex;
+    }
+    .bio h5 .space {
+        width: 1rem;
+    }
+    .non_img_body {
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        background-color: rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        border: 1px black dashed;
     }
 
     header .links .container {
@@ -457,6 +571,7 @@ header .container a:hover {
     }
         
     .overlay_container {
+        display: none;
         width: 101%;
         /* padding-top: 2%; */
         margin-bottom: -1%;
@@ -518,16 +633,11 @@ header .container a:hover {
     }
 
     .support {
-        /* position: fixed; */
+        position: fixed;
         width: 101%;
         border-color: black;
         border-width: 3px;
         /* border-color: black; */
-    }
-
-    .socials_v2 .soc_container a img {
-        height: 100%;
-        width: 100%;
     }
 
 }
