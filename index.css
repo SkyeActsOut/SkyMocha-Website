@@ -7,10 +7,107 @@
     src: url("/fonts/TitilliumWeb.ttf");
 }
 
-/* body {
+.insta {
+    width: 25%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    min-width: 200px;
+}
+.insta .post {
+    width: 100%;
+    height: auto;
+}
+.insta .post img {
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    display: block;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+}
+.handle {
+    width: 95%;
+    height: 10%;
+    min-height: 40px;
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    /* background-color: aliceblue; */
+}
+.handle p {
+    margin-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 6px;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px black;
+}
+.handle img {
+    height: 60%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.youtube {
+    width: 25%;
+    height: 100%;
+    /* background-color: #212121; */
+    display: block;
     overflow-x: hidden;
-    overflow-y: hidden;
-} */
+    scrollbar-width: none;
+
+    /* background-color: rgba(75,75,75,0.5); */
+}
+
+.youtube .post {
+    width: 95%;
+    height: auto;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+    min-width: 225px;
+}
+
+.youtube .post img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: solid black 1px;
+}
+.youtube .post .description {
+    display: flex;
+    width: 100%;
+}
+.youtube .post p {
+    color: white;
+    margin-top: auto;
+    padding: 5px;
+    padding-right: 10px;
+    margin-bottom: 0px;
+    line-break: auto;
+    width: auto;
+}
+.youtube .post .over {
+    position: absolute;
+    display: block;
+    left: 0px;
+    bottom: 10px;
+    background-color: rgba(33, 33, 33, 0.625);
+    border: dashed black 1px;
+    width: calc(100% - 20px);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.youtube .post .title::before {
+    content: '"';
+}
+.youtube .post .title::after {
+    content: '"';
+}
 
 @media (orientation: landscape) {
 
@@ -20,9 +117,6 @@
     }
 
     body {
-        /* position: absolute;
-        left: 0px;
-        top: 0px; */
         margin: 0 auto;
         width: 100vw;
         height: 100vh;
@@ -31,6 +125,7 @@
         z-index: -10;
         overflow-x: hidden;
         overflow-y: hidden;
+        scrollbar-width: none;
 
         display: flex;
         flex-direction: column;
@@ -166,17 +261,17 @@ header .container a {
     text-decoration: none;
     /* text-shadow: 1px 1px #ffb7c5, black 2px 2px; */
     text-shadow: black 1px 1px;
-    background-color: rgba(0, 0, 0, 0.08);
+    /* background-color: rgba(0, 0, 0, 0.08); */
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 5px;
-    color: white;
+    color: rgb(244, 244, 244);
 
     cursor: pointer;
 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
 }
 
 header .container a:hover {
@@ -198,10 +293,6 @@ header .container a:hover {
     margin-bottom: 0px;
 }
 
-.remove_about h5 {
-    margin-bottom: 0px;
-}
-
 .about h5 {
     margin-right: 24px;
     /* background-color: white; */
@@ -209,47 +300,24 @@ header .container a:hover {
     margin-bottom: 0px;
 }
 
-.remove_about h5 {
-    margin-right: 24px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.remove_about h5, h3 {
-    font-size: 20px;
-
-    text-shadow: 1px 1px black;
-
-    color: white;
-    text-align: right;
-}
-
 .about div .top img {
-    /* position: absolute; */
     border-radius: 6px;
     display: block;
     margin: auto;
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 .about div .top h1 {
-    /* margin-left: 25px; */
     text-align: center;
     color: white;
     font-size: 1.5rem;
     text-shadow: 1px 1px black;
     letter-spacing: 0.075rem;
-    /* background-color: antiquewhite; */
     width: 125%;
     margin-left: -12.5%;
 }
 
 .about {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    /* height: fit-content; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
     overflow-y: scroll;
-    /* height: 80%; */
-    /* display: flex; */
-    /* display: -webkit-flex; */
 }
 
 .about div {
@@ -271,10 +339,18 @@ header .container a:hover {
 .overlay {
     display: flex;
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgba(75,75,75,0.5);;
+    border-radius: 6px;
 }
 
 .overlay_container {
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 
 .socials_v2 {
@@ -351,20 +427,14 @@ header .container a:hover {
     }
 
     .about {
-        /* display: block; */
-        /* position: absolute; */
-        /* animation-name: about_anim;
-        animation-duration: 3s; */
+
         text-align: right;
-        width: 100%;
+        width: 50%;
         height: calc(100% - 20px);
         overflow-x: hidden;
-        /* height: 100%; */
-        /* right: 5%;
-        top: 10%; */
 
-        background-image: linear-gradient(rgba(75,75,75,0.5), rgba(35,35,35,0.5), rgba(20,20,20,0.5));
-        border-radius: 6px;
+        /* background-color: rgba(75,75,75,0.5); */
+        /* border-radius: 6px; */
         padding: 10px;
     }
 
@@ -391,11 +461,12 @@ header .container a:hover {
         display: block;
         /* background-color: antiquewhite; */
         margin-left: 2.5%;
-        max-width: 70%;
         text-align: left;
         height: 100%;
         overflow-x: scroll;
         /* margin-left: auto; */
+        scrollbar-width: none;
+
     }
 
     .support {
@@ -579,6 +650,8 @@ header .container a:hover {
 
     .overlay {
         flex-direction: column-reverse;
+        width: 100%;
+        height: 100%;
     }
 
     iframe {
@@ -630,6 +703,8 @@ header .container a:hover {
         max-width: 90%;
         text-align: left;
         height: 100%;
+        scrollbar-width: none;
+
     }
 
     .support {
@@ -689,6 +764,14 @@ header .container a:hover {
     color: white;
     text-decoration: none;
 } */
+
+h1 {
+    font-family: Titillium;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: 0px;
+    margin-bottom: -20px;
+}
 
 h3 {
     font-size: 20px;

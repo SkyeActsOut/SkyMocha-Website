@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <!-- <link rel="stylesheet" type="text/css" href="loader.css"> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <title>SkyMocha | Skye Kychenthal</title>
 
     <link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
@@ -69,12 +71,6 @@
                     <!-- <img src="/logo_assets/Github_Dark.png" alt="SkyMocha Github & Code"> -->
                 </a>
             </div> 
-            <div class="soc_container">
-                <a href="https://www.youtube.com/c/NickStudiosCode" target="blank">
-                    <img class="b" src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" > 
-                    <!-- <img src="/logo_assets/YouTube_Logo.png" alt="SkyMocha YouTtube Channel" >  -->
-                </a>
-            </div>
         </div>
        
     </header>
@@ -96,6 +92,7 @@
             <div class="non_img_body">
 
                 <div class="bio">
+
 
                     <h3>
                         Bio
@@ -175,13 +172,22 @@
 
         <div class="overlay"> 
 
-            <iframe src="https://www.juicer.io/api/feeds/skymochi64/iframe?per=9&pages=1" frameborder='0' ></iframe>
+            <div class="insta" id='insta'>
+                <a class="handle" href="https://www.instagram.com/skymochi64/">
+                    <img src="./logo_assets/Instagram_Logo.svg"><p>SkyMochi64</p>
+                </a>
 
-            <div id="about_right" class="about">
+            </div>
+
+            <div class="about">
             
                 <div>
 
                     <div class="body">
+
+                        <h1>
+                            Skye Kychenthal
+                        </h1>
 
                         <h3 >Bio</h3>
                         <h5>
@@ -221,20 +227,18 @@
                         </a>
                         <br>
                     </div>
-            
-                    <div class="top">
-                        <h1>
-                            Skye Kychenthal<br>
-                        </h1>
-                        <img src="/assets/kychenthal/kychenthal2.jpg" alt="Skye Kychenthal Photo 1">
-                        <br>
-                        <img src="/assets/kychenthal/kychenthal3.jpg" alt="Skye Kychenthal Photo 2">
-                    </div>
 
                 </div>
                 <p class="down">
                     \/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/&nbsp;&nbsp;\/
                 </p>
+            </div>
+            
+            <div class="youtube" id="youtube"> 
+                <a class="handle" href="https://www.instagram.com/skymochi64/">
+                    <img src="./logo_assets/YouTube_Logo.png"><p>SkyMocha</p>
+                </a>
+
             </div>
 
         </div>
@@ -255,63 +259,60 @@
     
 </body>
 
-<!-- <script>
+<script> 
 
-    var aboutOnScreen = false;
-    var animInProcess = false;
+    function loadInsta () {
+        let insta_div = document.getElementById('insta')
 
-    function about () {
-        let about = document.getElementById("about_right");
-        if (about.classList.contains("invis")) {
-            about.classList.remove('invis');
-        }
-        else {
-            about.classList.add('invis');
-        }
-
-        if (!aboutOnScreen && !animInProcess) {
-            // setAnim(3);
-            // let about = document.getElementById("about_right");
-            // about.classList.remove('invis');
-            // about.classList.remove('remove_about');
-            // about.classList.add('about');
-
-            // let body_cover = document.getElementById("body_cover");
-            // body_cover.classList.remove('brighten');
-            // body_cover.classList.add('darken');
-            // aboutOnScreen = true;
-        }
-        else if (!animInProcess) {
-            // setAnim(3);
-            // let about = document.getElementById("about_right");
-            // setInvis(about, 2.9);
-            // about.classList.remove('about');
-            // about.classList.add('remove_about');
-
-            // let body_cover = document.getElementById("body_cover");
-            // body_cover.classList.remove('darken');
-            // body_cover.classList.add('brighten');
-            // aboutOnScreen = false;
-        }
+        $.ajax({
+            url: "http://localhost:3000/api/v1/insta/posts",
+            type: 'GET',
+            dataType: 'json', // added data type
+            success: function(res) {
+                res.forEach(post => {
+                    console.log (post.permalink)
+                    insta_div.innerHTML +=
+                        `
+                            <a class='post' href="${post.permalink}">
+                                <img src=${post.media_url}>
+                            </a>
+                        `
+                });
+            }
+        });
     }
 
+    function loadYouTube () {
+        let yt_div = document.getElementById('youtube')
 
-
-    // Sets the animation state
-    function setAnim (time) {
-        animInProcess = true;
-        setTimeout(() => {
-            animInProcess = false;
-        }, time * 1000);
+        $.ajax({
+            url: "http://localhost:3000/api/v1/youtube/videos",
+            type: 'GET',
+            dataType: 'json', // added data type
+            success: function(res) {
+                res.forEach(post => {
+                    console.log (post)
+                    yt_div.innerHTML += 
+                    `
+                        <a class='post' href="${post.url}">
+                            <img src=${post.thumb.url}>
+                            <div class="over">
+                                <p class="title">${post.title}</p>
+                                <div class='description'>
+                                    <p class='published'>${post.published}</p>
+                                    <p class="time">${post.length}</p>
+                                </div>
+                            </div>
+                        </a>
+                    `
+                });
+            }
+        });
     }
 
-    // Sets the invisible state
-    function setInvis (elem, time) {
-        setTimeout(() => {
-            elem.classList.add ('invis');
-        }, time * 1000);
-    } 
+    loadInsta()
+    loadYouTube()
 
-</script> -->
+</script>
 
 </html>
