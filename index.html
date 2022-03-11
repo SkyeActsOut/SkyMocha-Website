@@ -261,11 +261,14 @@
 
 <script> 
 
+    const base = `https://api.skymocha.net/api/v1`
+    // const base = ``
+
     function loadInsta () {
         let insta_div = document.getElementById('insta')
 
         $.ajax({
-            url: "http://localhost:3000/api/v1/insta/posts",
+            url: `${base}/insta/posts`,
             type: 'GET',
             dataType: 'json', // added data type
             success: function(res) {
@@ -286,7 +289,7 @@
         let yt_div = document.getElementById('youtube')
 
         $.ajax({
-            url: "http://localhost:3000/api/v1/youtube/videos",
+            url: `${base}/youtube/videos`,
             type: 'GET',
             dataType: 'json', // added data type
             success: function(res) {
