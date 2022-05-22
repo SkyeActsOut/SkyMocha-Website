@@ -2,3 +2,8 @@ node_modules
 assets
 Old Sites
 config.json
+
+# Removes DS_Store and MacOS Specific Files
+*._.DS_Store
+*._*
+.DS_Store

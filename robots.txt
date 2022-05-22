@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://www.nick-studios.com/sitemap.xml
+Sitemap: http://www.skymocha.net/sitemap.xml

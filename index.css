@@ -1,3 +1,19 @@
+/*
+    SKYMOCHA WEBSITE
+    LANDING PAGE CSS
+*/
+
+/* 
+    YOUTUBE AND HANDLE DELETED
+    GO BACK IN REVISION HISTORY IF RE-ADDED
+*/
+
+:root {
+    scrollbar-width: none;
+}
+
+/* FONTS AND SIZING BASE-LINE */
+
 @font-face {
     font-family: Bonveno;
     src: url("/fonts/BonvenoCF-Light.otf");
@@ -7,244 +23,103 @@
     src: url("/fonts/TitilliumWeb.ttf");
 }
 
-.insta {
-    width: 25%;
-    overflow-y: scroll;
-    scrollbar-width: none;
-    min-width: 200px;
-}
-.insta .post {
-    width: 100%;
-    height: auto;
-}
-.insta .post img {
-    width: 95%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    display: block;
-    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
-}
-.handle {
-    width: 95%;
-    height: 10%;
-    min-height: 40px;
-    display: flex;
-    margin: auto;
-    text-decoration: none;
-    /* background-color: aliceblue; */
-}
-.handle p {
-    margin-left: 5%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding-top: 6px;
+h1 {
+    font-family: Titillium;
     color: white;
-    font-size: 1.5rem;
     text-shadow: 1px 1px black;
-}
-.handle img {
-    height: 60%;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.youtube {
-    width: 25%;
-    height: 100%;
-    /* background-color: #212121; */
-    display: block;
-    overflow-x: hidden;
-    scrollbar-width: none;
-
-    /* background-color: rgba(75,75,75,0.5); */
-}
-
-.youtube .post {
-    width: 95%;
-    height: auto;
-    text-decoration: none;
-    position: relative;
-    display: block;
-    padding-bottom: 10px;
-    min-width: 225px;
-}
-
-.youtube .post img {
-    width: 100%;
-    height: 100%;
-    display: block;
-    border: solid black 1px;
-}
-.youtube .post .description {
-    display: flex;
-    width: 100%;
-}
-.youtube .post p {
-    color: white;
-    margin-top: auto;
-    padding: 5px;
-    padding-right: 10px;
+    margin-top: 0px;
     margin-bottom: 0px;
-    line-break: auto;
-    width: auto;
-}
-.youtube .post .over {
-    position: absolute;
-    display: block;
-    left: 0px;
-    bottom: 10px;
-    background-color: rgba(33, 33, 33, 0.625);
-    border: dashed black 1px;
-    width: calc(100% - 20px);
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-}
-.youtube .post .title::before {
-    content: '"';
-}
-.youtube .post .title::after {
-    content: '"';
 }
 
-@media (orientation: landscape) {
+h2 {
+    font-family: Titillium;
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
-    .break {
-        height: 500px;
-        /* background-color: antiquewhite; */
-    }
+h3 {
+    font-family: Titillium;
+}
 
-    body {
-        margin: 0 auto;
-        width: 100vw;
-        height: 100vh;
-        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
-        background-size: cover;
-        z-index: -10;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        scrollbar-width: none;
+.about h3 {
+    margin-right: 12px;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
-    .darken {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
-        background-size: cover;
-        filter: blur(3px) brightness(65%);
-        z-index: -9;
-        animation-name: body_cover_anim_dark;
-        animation-duration: 2.5s;
-    }
+.about h5, h3 {
+    text-shadow: 1px 1px black;
+    color: white;
+    text-align: left;
+    letter-spacing: 0.075rem;
+}
 
-    .brighten {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100vw;
-        height: 100vh;
-        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
-        background-size: cover;
-        z-index: -9;
-        filter: none;
-        animation-name: body_cover_anim_light;
-        animation-duration: 2.5s;
-    }
+.invis {
+    display: none;
+}
+
+hr {
+    fill: black;
+    border: 1px solid black;
+    border-left: none;
+}
+
+i {
+    font-size: 1.325rem;
+}
+
+/* LINK STYLING */
+
+header .container a:hover {
+    text-decoration: underline;
+}
+
+.about a {
+    text-decoration: none;
+    color: rgba(235, 228, 255, 0.9);
+    text-shadow: 1px 1px black;
+    background-color:rgba(235, 228, 255, 0.075);
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    border-radius: 0.125em;
 
 }
 
-@media (orientation: portrait) {
-
-    body {
-        display: block;
-        position:absolute;
-        left: -2.5%;
-        top: -2.5%;
-        height: 100%;
-        width: 100%;
-        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
-        background-size: cover;
-        z-index: -10;
-    } 
-
-    .darken {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        background-image: url("/logo_assets/SkyMocha_Portrait.png");
-        background-position: center;
-        background-size: cover;
-        z-index: -9;
-        filter: blur(3px) brightness(65%);
-        animation-name: body_cover_anim_dark;
-        animation-duration: 2.5s;
-    }
-
-    .brighten {
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 100%;
-        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
-        background-size: cover;
-        z-index: -9;
-        filter: none;
-        animation-name: body_cover_anim_light;
-        animation-duration: 3s;
-    }
-
+a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+.socials_mobile img:hover {
+    opacity: 0.825;
+}
+.insta .post:hover {
+    opacity: 0.925;
 }
 
-@keyframes body_cover_anim_dark {
-    0%   { filter: blur(0) brightness(100%); }
-    100% { filter: blur(3px) brightness(65%); }
-}
+/* HEADER ALL */
 
-@keyframes body_cover_anim_light {
-    0%   { filter: blur(3px) brightness(65%); }
-    100% { filter: blur(0px) brightness(100%); }
-}
-
-/* HEADER */
 header {
-    /* height: 20%; */
-    /* margin-top: 1%; */
-    /* margin: auto; */
     min-height: 70px;
-    height: 12%;
+    height: 10%;
     margin-top: 1%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: -webkit-flex;
     display: flex;
-    /* background-color: white; */
 }
 
 header .container  {
 
     height: 100%;
-    /* width: auto; */
     width: 50%;
     margin: auto;
 
-    /* -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1; */
-    /* margin: auto; */
-
+}
+.header .container {
+    padding-left: 22px;
 }
 
 header .container a {
@@ -257,11 +132,9 @@ header .container a {
 
     font-family: Bonveno;
 
-    color: black;
+    background-color: rgba(0, 0, 0, 0.425);
     text-decoration: none;
-    /* text-shadow: 1px 1px #ffb7c5, black 2px 2px; */
-    text-shadow: black 1px 1px;
-    /* background-color: rgba(0, 0, 0, 0.08); */
+
     padding-left: 7px;
     padding-right: 7px;
     padding-top: 1px;
@@ -271,468 +144,94 @@ header .container a {
 
     cursor: pointer;
 
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.1); */
+    font-size: 32px;
+    letter-spacing: 0.175rem;
+
 }
 
-header .container a:hover {
-    text-decoration: underline;
-}
-
-.about h5, h3 {
-    font-size: 18px;
-
-    text-shadow: 1px 1px black;
-    color: white;
-    text-align: left;
-    letter-spacing: 0.075rem;
-}
-
-.about h3 {
-    /* padding-top: 25px; */
-    text-align: left;
-    margin-bottom: 0px;
-}
-
-.about h5 {
-    margin-right: 24px;
-    /* background-color: white; */
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.about div .top img {
-    border-radius: 6px;
-    display: block;
-    margin: auto;
-}
-.about div .top h1 {
-    text-align: center;
-    color: white;
-    font-size: 1.5rem;
-    text-shadow: 1px 1px black;
-    letter-spacing: 0.075rem;
-    width: 125%;
-    margin-left: -12.5%;
-}
+/* BODY ALL */
 
 .about {
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    overflow-y: scroll;
+    overflow-y: hidden;
 }
 
 .about div {
     display: flex;
-    height: 90%;
-}
-
-.about .down {
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    color: white;
-    letter-spacing: 0.2rem;
-    margin-top: 2%;
-    height: 5%;
-    /* background-color: antiquewhite; */
+    max-height: 90%;
 }
 
 .overlay {
     display: flex;
+    overflow-y:hidden;
     overflow-x: hidden;
-    height: 100%;
-    width: 100%;
 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: rgba(75,75,75,0.5);;
     border-radius: 6px;
 }
 
 .overlay_container {
+    overflow-y:hidden;
     overflow-x: hidden;
-    height: 100%;
-    width: 100%;
+    width: 90%;
 }
 
-.socials_v2 {
-    /* width: fit-content; */
-    /* width: calc(fit-content - 10%); */
-    height: 95%;
-    display: flex;
-    margin-left: auto;
-    /* background-color: aquamarine; */
+.about {
+
+    text-align: right;
+    width: 80%;
+    height: calc(100% - 20px);
+    overflow-x: hidden;
+
+    padding: 10px;
 }
 
-.socials_v2 .soc_container {
-    /* height: 105%;
-    margin: -2.5%; */
-    /* width: 33%; */
+.about div .top img {
+    width: 90%;
+    height: 90%;
+    min-width: 136px;
+}
+
+.about div .top {
     display: block;
-    height: 100%;
-    /* padding-left: 100%; */
-    /* max-width: 33%; */
-    /* padding-right: 5%; */
-    /* background-color: antiquewhite; */
-}
+    height: fit-content;
+    margin-left: auto;
+    padding-right: 2%;
+    margin-bottom: -5%;
 
-/* ABOUT */
-@media (orientation: landscape) {
-
-    #portfolio a::after {
-        content: "PORTFOLIO";
-    }
-
-    .overlay {
-        height: 100%;
-        /* background-color: antiquewhite; */
-        overflow-x: hidden;
-    }
-
-    .overlay_container {
-        height: 100%;
-        width: 90%;
-        overflow-x: hidden;
-    }
-
-    header {
-        width: 90%;
-    }
-    header .links {
-        width: 42%;
-        display: flex;
-    }
-
-    header .container a {
-        font-size: 32px;
-        letter-spacing: 0.175rem;
-    }
-
-    .header .container {
-        padding-left: 22px;
-    }
-
-    .socials_v2 {
-        padding-right: 10px;
-    }
-
-    .soc_container {
-        margin-right: 20px;
-    }
-
-    .left_feed {
-        /* background-color: aquamarine; */
-        width: 20%;
-        min-width: 20%;
-        height: 100%;
-        overflow-x: hidden;
-    }
-
-    .about {
-
-        text-align: right;
-        width: 50%;
-        height: calc(100% - 20px);
-        overflow-x: hidden;
-
-        /* background-color: rgba(75,75,75,0.5); */
-        /* border-radius: 6px; */
-        padding: 10px;
-    }
-
-    .about div .top img {
-        width: 90%;
-        height: 90%;
-        min-width: 136px;
-    }
-
-    .about div .top {
-        display: block;
-        height: fit-content;
-        margin-left: auto;
-        padding-right: 2%;
-        margin-bottom: -5%;
-
-        min-width: 150px;
-        width: 20%;
-        /* min-width: px; */
-        /* background-color: aliceblue; */
-    }
-
-    .about div .body {
-        display: block;
-        /* background-color: antiquewhite; */
-        margin-left: 2.5%;
-        text-align: left;
-        height: 100%;
-        overflow-x: scroll;
-        /* margin-left: auto; */
-        scrollbar-width: none;
-
-    }
-
-    .support {
-        width: 100%;
-        height: 10%;
-        border-width: 2px;
-        border-color: rgba(0, 0, 0, 0.33);
-    }
-
-    .socials_v2 .soc_container a img {
-        height: 100%;
-        width: 100%;
-    }
-
-    .socials_mobile {
-        display: none;
-    }
-
-    .body_mobile {
-        display: none;
-    }
-}
-
-@media (orientation: portrait) {
-
-    /* #portolio a span {
-        display: none;
-        visibility: none;
-    } */
-
-    #portfolio a::after {
-        content: "PORTF.";
-    }
-
-    header {
-        /* width: 95%; */
-        padding-top: 2.5%;
-        margin-left: 0px;
-        display: block;
-        height: 10%;
-        background-color: rgba(119, 119, 187, 0.33);
-        padding-bottom: 2%;
-        width: 101%;
-        border-bottom: 3px black dashed;
-    }
-
-    header .links {
-        padding-top: 2.5%;
-        display: flex;
-        margin: auto;
-        width: 90%;
-    }
-
-    hr {
-        display: none;
-    }
-
-    .socials_v2 {
-        display: none;
-    }
-
-    .socials_mobile {
-
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        width: 30%;
-        /* margin-right: auto; */
-        /* margin-top: 2.5%; */
-        height: 100%;
-        /* background-color: antiquewhite; */
-        margin-left: auto;
-        margin-top: 1.5%;
-        margin-bottom: auto;
-
-    }
-
-    .soc_container {
-        /* padding-left: 6px;
-        padding-right: 6px; */
-        margin: auto;
-    }
-
-    .socials_mobile .soc_container a img {
-        height: 3.75rem;
-        width: auto;
-    }
-
-    .socials_mobile .bigger {
-        height: 4rem !important;
-    }
-
-    .socials_mobile .soc_container a .b {
-        /* position: absolute; */
-        /* margin: auto; */
-    }
-
-    .overlay_mobile {
-        display: flex;
-        width: 100%;
-        height: 70%;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-
-    .body_mobile {
-        width: 70%;
-        height: 100%;
-        /* background-color: aquamarine; */
-    }
-    .body_mobile .imgs {
-        display: flex;
-    }
-    .body_mobile img {
-        width: 42%;
-        /* margin: auto; */
-        margin: 10px;
-        margin-left: 5%;
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-        border: 1px solid black;
-    }
-    .body_mobile h3 {
-        text-align: left;
-        color: white;
-        text-shadow: black 1px 1px;
-        width: 95%;
-        margin-top: -3%;
-        margin-left: 3.5%;
-        font-size: calc(1.5vh + 2vw);
-    }
-    .body_mobile h5 {
-        text-align: left;
-        color: white;
-        text-shadow: black 1px 1px;
-        width: 95%;
-        margin-top: -5%;
-        margin-left: 3.5%;
-        letter-spacing: 0.075rem;
-        font-size: calc(1.23vh + 1.725vw);
-        /* font-size: 3.85vw; */
-    }
-    .resumes {
-        margin-top: -5%;
-    }
-    .bio {
-        margin-top: 5%;
-    }
-    .bio h5 {
-        display: flex;
-    }
-    .bio h5 .space {
-        width: 1rem;
-    }
-    .non_img_body {
-        padding-left: 10px;
-        padding-top: 10px;
-        padding-right: 10px;
-        background-color: rgba(0, 0, 0, 0.25);
-        border-radius: 5px;
-        border: 1px black dashed;
-    }
-
-    header .links .container {
-        /* padding-left: 12px; */
-        margin: auto;
-    }
-
-    header .links .container a {
-        font-size: 28px;
-        margin:auto;
-        text-align: center;
-    }
-        
-    .overlay_container {
-        display: none;
-        width: 101%;
-        /* padding-top: 2%; */
-        margin-bottom: -1%;
-    }
-
-    .overlay {
-        flex-direction: column-reverse;
-        width: 100%;
-        height: 100%;
-    }
-
-    iframe {
-        display: none;
-    }
-
-    .about {
-        display: block;
-        
-        text-align: right;
-        max-width: 100%;
-        right: 5%;
-        top: 15%;
-
-        text-align: left;
-
-        background-image: linear-gradient(rgba(75,75,75,0.5), rgba(35,35,35,0.5), rgba(20,20,20,0.5));
-        border-radius: 6px;
-        padding: 10px;
-    }
+    min-width: 150px;
+    width: 20%;
     
-    .about div {
-        display: block;
-    }
-
-    .about .down {
-        display: none;
-    }
-
-    .about div .top img {
-        width: 90%;
-        /* height: 90%; */
-        height: 100%;
-    }
-
-    .about div .top {
-        display: none;
-        /* display: block; */
-        width: 80%;
-        height: fit-content;
-        margin: auto;
-        height: 100%;
-        /* background-color: aliceblue; */
-    }
-
-    .about div .body {
-        display: block;
-        margin-left: 2.5%;
-        max-width: 90%;
-        text-align: left;
-        height: 100%;
-        scrollbar-width: none;
-
-    }
-
-    .support {
-        position: fixed;
-        width: 101%;
-        border-color: black;
-        border-width: 3px;
-        /* border-color: black; */
-    }
-
 }
 
+.about div .body {
+    display: block;
+
+    margin-left: 2.5%;
+    text-align: left;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    scrollbar-width: none;
+}
+
+/* SUPPORT ALL */
 .support {
     color: white;
     background-color: rgba(119, 119, 187, 0.33);
     text-align: left;
     margin-right: auto;
-    margin-top: 2px;
-    margin-bottom: 0px;
-    /* width: 100%; */
-    /* position: fixed; */
+
     bottom: 0px;
     left: 0px;
-    /* height: 10%; */
-    margin-top: 1%;
-    min-height: 80px;
+
+    min-height: 66px;
     border-top-style: dashed;
-    /* border-style: dashed; */
+
+    width: 101%;
+    height: 10%;
+    border-width: 2px;
+    border-color: rgba(0, 0, 0, 0.33);
 }
 .support h2 a {
     margin-left: 20px;
@@ -746,77 +245,298 @@ header .container a:hover {
 }
 .support h2 a div p {
     display: block;
-    /* background-color: aliceblue; */
     margin: auto;
 }
 .support .sub {
     font-size: 1rem;
 }
 .support img {
-    width: 42px;
-    margin-top: 2px;
-    height: auto;
+    /* margin-top: 2px; */
+    height: 52px;
+    width: 52px;
     margin-left: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
     display: block;
-}
-/* .support a {
-    font-size: 1rem;
-    color: white;
-    text-decoration: none;
-} */
-
-h1 {
-    font-family: Titillium;
-    color: white;
-    text-shadow: 1px 1px black;
-    margin-top: 0px;
-    margin-bottom: -20px;
+    padding-top: 3px;
 }
 
-h3 {
-    font-size: 20px;
-    font-family: Bonveno;
+/* SOCIAL MEDIA ALL */
+
+.soc_container {
+    margin: auto;
 }
 
-h5 {
-    font-size: 15px;
-    font-family: Titillium;
-}
+/* LANDSCAPE */
+@media (orientation: landscape) {   
 
-.invis {
-    display: none;
-}
+    /* BODY LANDSCAPE */
 
-hr {
-    border-top: 1px solid rgba(50, 50, 50, 0.8);
-    border-bottom: 1px solid rgba(100, 100, 100, 0.8);
-    border-left: 12px solid rgba(100, 100, 100, 0.35);
-    border-right: 12px solid rgba(100, 100, 100, 0.3);
-}
+    body {
+        margin: 0 auto;
+        width: 100vw;
+        height: 100vh;
+        background: url("/logo_assets/SkyMocha_Background.png") no-repeat fixed center;
+        background-size: cover;
+        overflow-x: hidden;
+        overflow-y: hidden;
 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* SAFARI SUCKS OH MY GOD */
-.Safari_BS {
-    display: none;
-}
+    .overlay_container {
+        height: 75%;
+        background-color: rgba(52,51,54,0.65);;
+    }
+    .overlay {
+        height: 100%;
+    }
+    .about {
+        height: 100%;
+    }
+    .support {
+        position: absolute;
+    }
 
-@media not all and (min-resolution:.001dpcm) { 
-    @supports (-webkit-appearance: none) {
-        .socials_v2 {
-            visibility:hidden;
+    /* SOCIAL MEDIA LANDSCAPE */
+
+    .socials_mobile {
+        height: 100%;
+        width: 15%;
+        min-width: 125px;
+        background-color: rgba(254, 252, 255, 0.1);
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: auto;
+        overflow-y:hidden;
+    }
+
+    .socials_mobile .soc_container {
+        margin: auto;
+        padding: 10%;
+    }
+
+    .socials_mobile .soc_container a img {
+        height: 3.5vw;
+        min-height: 3rem;
+        width: auto;
+    }
+    
+    .socials_mobile .bigger {
+        min-height: 4rem;
+        height: 4.25vw !important;
+    }
+
+    /* FONT STYLING LANDSCAPE */
+
+    h3 {
+        padding-left: 36px;
+    }
+    .bull-point::before {
+        content: '•';
+        margin-left: -1em;
+    }
+
+    @media screen and (max-width: 800px) {
+        h3 {
+            font-size: 16px;
         }
-        @media (orientation: portrait) {
-            .Safari_BS {
-                display: block;
-                text-align: center;
-            }
+        .subtitle{
+            font-size: 20px;
+            line-height: 18px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .title {
+            font-size: 25px;
+        }
+        h1 {
+            font-size: 20px;
         }
     }
-  }
-
-@-moz-document url-prefix() {
-    .socials_v2 .soc_container a img {
-        /* height: 100%; */
-        width: 90% !important;
+    @media screen and (min-width: 800px) {
+        h3 {
+            font-size: 20px;
+        }
+        .subtitle{
+            line-height: 22px;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        .title {
+            font-size: 32px;
+        }
+        h1 {
+            font-size: 30px;
+        }
     }
+
+    /* HEADER LANDSCAPE */
+
+    #portfolio a::after {
+        content: "PORTFOLIO";
+    }
+    header {
+        width: 90%;
+    }
+    header .links {
+        width: 25%;
+        display: flex;
+        min-width: fit-content;
+    }
+    header .container a {
+        float: left;
+    }
+
+    /* INSTAGRAM LANDSCAPE */
+    .insta {
+        width: 25%;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        min-width: 235px;
+        padding-top: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    .insta .post {
+        width: 100%;
+        height: auto;
+    }
+    .insta .post img {
+        width: 95%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5%;
+        display: block;
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.8);
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    /* BODY PORTRAIT */
+    body {
+        display: block;
+        position:absolute;
+        left: -2.5%;
+        top: -2.5%;
+        height: 100%;
+        width: 100%;
+        background: url("/logo_assets/SkyMocha_Portrait.png") no-repeat fixed center;
+        background-size: cover;    
+    } 
+    .overlay_container {
+        width: 101%;
+        height: 75%;
+        background-color: rgba(52,51,54,0.55);;
+    }
+    .overlay {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+    .about {
+        width: 90%;
+        height: 80%;
+    }
+    .socials_mobile {
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: auto;
+        overflow-y: hidden;
+    
+        width: 90%;
+        height: 15%;
+        margin: auto;
+    }
+
+    /* INSTA REMOVAL PORTRAIT */
+    .insta {
+        display: none;
+    }
+    #insta {
+        display: none;
+    }
+
+    /* HEADER CHANGES PORTRAIT */
+    #portfolio a::after {
+        content: "PORTF.";
+    }
+    header {
+        padding-top: 2.5%;
+        margin-left: 0px;
+        display: block;
+        height: 10%;
+        padding-bottom: 2%;
+        width: 101%;
+        background-color: rgba(119, 119, 187, 0.66);
+        border-bottom: 3px black dashed;
+    }
+    header .links {
+        padding-top: 2%;
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+    header a {
+        font-size: 36px !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+    header .links .container a {
+        font-size: 28px;
+        margin: auto;
+        text-align: center;
+    }
+    header .links .container {
+        margin-left: auto;
+    }
+ 
+    /* FONTS PORTRAIT */
+    .overlay hr {
+        display: none;
+    }
+    .title {
+        width: 100%;
+        font-size: 30px;
+        text-align: center;
+    }
+    h1 {
+        font-size: 24px;
+        padding-top: 10px;
+    }
+    .subtitle {
+        display: none;
+    }
+    h3 {
+        font-size: 20px;
+        width: 100%;
+        margin-left: 2em;
+    }
+    .bull-point::before {
+        content: '•';
+        margin-left: -1em;
+    }
+    #subtitle {
+        display: none;
+    }
+
+    /* SOCIAL MEDIA */
+    .socials_mobile .soc_container {
+        padding: 10px;
+    }
+    .socials_mobile .soc_container a img {
+        height: 10.5vw;
+        width: auto;
+    }
+    .socials_mobile .bigger {
+        height: 12.5vw !important;
+    }
+
 }
