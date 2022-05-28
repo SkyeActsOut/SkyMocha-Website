@@ -337,7 +337,7 @@ header .container a {
         padding-left: 36px;
     }
     .bull-point::before {
-        content: '•';
+        content: '\2022';
         margin-left: -1em;
     }
 

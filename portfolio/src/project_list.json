@@ -1,0 +1,37 @@
+{
+
+    "technical": [
+        {
+
+            "name": "FuzzBot",
+            "short": "My first project: a multi-purpose Discord bot",
+            "tags": ["Discord.JS"]
+        },
+        {
+
+            "name": "2D-RPG",
+            "short": "A 2D Text-based RPG, with a very clever name",
+            "tags": ["Godot"]
+        },
+        {
+
+            "name": "2D-RPG",
+            "short": "A 2D Text-based RPG, with a very clever name",
+            "tags": ["Godot"]
+        }
+    ],
+
+    "nontechnical": [
+        {
+
+            "name": "Why The Trans Programmer?",
+            "short": "Do Trans Women Disproportionately Go Into Computer Science?"
+        },
+        {
+
+            "name": "Geiger Reeves Speaking Contest",
+            "short": "A shcool scpeech competition; wining hearts and awards"
+        }
+    ]
+
+}

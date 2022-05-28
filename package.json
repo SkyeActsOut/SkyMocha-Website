@@ -6,6 +6,7 @@
     "googleapis": "^54.1.0",
     "instagram-private-api": "^1.45.3",
     "instagram-web-api": "^2.2.2",
+    "react": "^18.1.0",
     "twitter": "^1.7.1",
     "twitter-api-client": "^1.5.2",
     "twitter-api-v2": "^1.11.0",
