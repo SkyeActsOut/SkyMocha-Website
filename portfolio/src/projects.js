@@ -15,7 +15,7 @@ function Project (props) {
             tags.push( <li> { t } </li> )
         })
         return (
-            <div className="project">
+            <a href={sortName(props.name)} className="project">
                 <img src={ `/assets/thumbnails/${sortName(props.name)}.png` } alt={props.name} />
                 <div className="info">
                     <h2> { props.name } </h2>
@@ -23,18 +23,18 @@ function Project (props) {
                     <p className='technologies'>Technologies</p>
                     <ul> { tags } </ul>
                 </div>
-            </div>
+            </a>
         );
     }
     else
         return (
-            <div className="project">
+            <a href={sortName(props.name)} className="project">
                 <img src={ `/assets/thumbnails/${sortName(props.name)}.png` } alt={props.name} />
                 <div className="info">
                     <h2> { props.name } </h2>
                     <p> { props.short } </p>
                 </div>
-            </div>
+            </a>
         );
 
 }

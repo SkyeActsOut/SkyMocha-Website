@@ -16,6 +16,9 @@ h1, h2 {
     .project-flex {
       flex-direction: column-reverse;
     }
+    .header-flex {
+      /* display: flex; */
+    }
 
     .nontech .projects_container {
       flex-direction: row;
@@ -53,6 +56,9 @@ h1, h2 {
 
     .project-flex {
       flex-direction: row;
+    }
+    .header-flex {
+      /* display: flex; */
     }
 
     .nontech .projects_container {
@@ -99,14 +105,20 @@ h1, h2 {
     --img-size: 154px;
 
     --size-multiplier: 1.75;
+
+    --header-size: 128px;
   }
 
   .project-flex {
     flex-direction: column-reverse;
   }
+  .header-flex {
+    /* display: block; */
+  }
   .projects_container {
     flex-direction: column;
   }
+
 
   .project {
     display: block;
@@ -146,6 +158,14 @@ h1, h2 {
   
   }
 
+  header {
+    display: block;
+  }
+
+  header .title {
+    margin-top: calc(var(--pad-out)*-1);
+  }
+
 }
 
 @media (min-width: 700px) {
@@ -163,6 +183,8 @@ h1, h2 {
     border: 1px black dashed;
 
     text-align: left;
+
+    --header-size: 64px;
 
   }
   .GitHubStats {
@@ -198,6 +220,24 @@ h1, h2 {
   
     width: calc(100% - var(--pad-in)*2);
   }
+
+  header {
+    display: flex;
+  }
+
+  header h2 {
+    margin-left: 1em;
+    /* margin-top: 0.75em; */
+    /* padding-bottom: 0.125em; */
+  }
+
+  header .title {
+    text-align: left;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 1.5em;
+  }
+
 }
 
 .project img {
@@ -215,6 +255,9 @@ h1, h2 {
 
   border-radius: 3px;
   border: 1px black dashed;
+
+  text-decoration: none;
+
 }
 
 body {
@@ -230,15 +273,17 @@ body {
 }
 
 header {
-  display: flex;
   height: var(--header-size);
   position:fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   padding-top: 0.5em;
-  background-color: rgba(119, 119, 187, 0.33);
+  background-color: #c8c4dc;
+}
 
+.header-flex {
+  display: flex;
 }
 
 a {
@@ -256,8 +301,18 @@ header h1 {
 header h2 {
   text-align: left;
   margin-top: auto;
-  padding-top: 0.375em;
-  padding-left: 1em;
+}
+
+header .title h2{
+  margin-left: auto;  
+  padding: 0px;  
+  margin: 0px;
+}
+header .title p{
+  margin-left: auto;  
+  padding: 0px;  
+  margin: 0px;
+  line-height: 0.5em;
 }
 
 .project-flex {
@@ -316,4 +371,66 @@ header h2 {
 
   width: calc(100% - var(--pad-in)*2);
   padding-bottom: 0px;
+}
+
+.boxes {
+  width: 90%;
+  display: flex;
+  margin: auto;
+}
+.right-box {
+  float: right;
+  width: 45%;
+  margin: auto;
+}
+.left-box {
+  float: left;
+  width: 45%;
+  margin: auto;
+}
+.left-box .text {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--card-color);
+  border: 1px black dashed;
+  display: block;
+
+}
+.right-box .text {
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--card-color);
+  border: 1px black dashed;
+  display: block;
+
+}
+
+.left-box iframe {
+  width: 533px;
+  height: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: var(--card-color);
+  border: 1px black dashed;
+}
+
+.right-box iframe {
+  width: 533px;
+  height: 300px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: var(--card-color);
+  border: 1px black dashed;
 }

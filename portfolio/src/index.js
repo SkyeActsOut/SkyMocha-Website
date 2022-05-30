@@ -2,11 +2,33 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './header';
 import Projects from './projects'
-import reportWebVitals from './reportWebVitals';
+import ProjectPage from './project_page';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import projects from './project_list.json'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
+function sortName (name) {
+  return name.split(' ').join('').split('?').join('').split('!').join('');
+}
+
+function ProjectPages () {
+  let list = []
+  let divs = []
+  projects.technical.forEach (elem => list.push(elem))
+  projects.nontechnical.forEach (elem => list.push(elem))
+  list.forEach (elem => {
+    divs.push( <Route path={sortName(elem.name)} element={ < ProjectPage 
+        name={elem.name} 
+        short={elem.short}
+        format={elem.format}
+      /> } 
+    />);
+  })
+  return divs;
+}
+
+function Home () {
+  return (
+    <React.StrictMode>
 
       <Header />
 
@@ -15,10 +37,25 @@ root.render(
         <Projects technical={false} />
       </div>
 
-  </React.StrictMode>
-);
+    </React.StrictMode>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+export default function App() {
+
+  return (
+    <BrowserRouter>
+      <Routes>
+          <Route path='/' element={<Home />} />
+          { ProjectPages() }
+          <Route path='*' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
+
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <App />
+);

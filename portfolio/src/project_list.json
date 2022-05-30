@@ -11,7 +11,13 @@
 
             "name": "2D-RPG",
             "short": "A 2D Text-based RPG, with a very clever name",
-            "tags": ["Godot"]
+            "tags": ["Godot"],
+            "format": {
+                "left": ["**<2DRPG V1>**After my Ludum Dare 45 game, I concluded that for me, the best game I can make single-handedly is a game with next to no, or no graphics. Therefore, a text-adventure game would be the most likely bet, as it leverages my strengths: programming & writing. I decided to set out with the same theme as my Ludum Dare Game: you see nothing. There are caveats in the game, making long-term continuation of it difficult, for the writing I did was highly unorganizd. However, through the writing, I figured out what this kind of game would need. I used LibGDX, a Java game framework, to build my own text-based game engine. This included text stages, towns, buildings, fights, and NPC encounters with a variety of possible options for each encounter. I held development on the game not due to limitations with the programming aspects, or creation of the game engine, but writing for long stretches for NPCs, scenarios, dungeons, and more became tedious. Future forrays into games after this became more technical, my next substantial work being a contributor to OddFolk, a ASCII Open-world Rouge-like built in Java. Later, I would come back to this style of game, with a more organized approach.",
+                        "https://youtu.be/SJjCnfRwcmE"],
+                "right": ["https://youtu.be/j7FZskjmLGs",
+                        "I came back to this style of game after about a year of waiting. For OddFolk, having worked on a primative dialogue loading system in Java with my extra experience, I realized there were many more ways to create a dialogue system than the one I created for the first iteration of this game. Instead of Java & LibGDX, Godot & GDScript were used to create a more polished feel, and an easier time creating and poritng the game to different platforms. A system in GDScript that would read .txt files and compile them into a game that could be played. As a result of this modularity, only a haldful of maybe 2-3 files of code are used, and only a few hundred lines, rather than the copy and paste amalgomation that was the previous iteration of this game. This system is also far easier to use, making the only road-block in the creation of the game to be the writing aspect. However, I set forth on this game with an idea in mind, and although a vague idea, its an idea that Im fond of and would like to pursue further."]
+            }
         },
         {
 
