@@ -166,14 +166,54 @@ h1, h2 {
     margin-top: calc(var(--pad-out)*-1);
   }
 
+  .boxes {
+    width: calc(95% - 40px);
+    display: block;
+    margin: auto;
+  }
+  .right-box {
+    /* float: right;
+    width: 45%; */
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .left-box {
+    /* float: left;
+    width: 45%; */
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .left-box .text {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .right-box .text {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .left-box iframe {
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .right-box iframe {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
 }
 
 @media (min-width: 700px) {
 
   .project {
     display: flex;
+
+    padding-bottom: var(--pad-out);
   
-    height: calc(var(--img-size)*var(--size-multiplier));
+    height: calc(var(--img-size)*1.4);
   
     background-color:  var(--card-color);
     
@@ -210,6 +250,7 @@ h1, h2 {
   .project ul {
 
     padding-top: 0px;
+    padding-bottom: 10px;
   
     margin-left: -0.75em;
     margin-right: auto;
@@ -236,6 +277,45 @@ h1, h2 {
     width: fit-content;
     height: fit-content;
     margin-left: 1.5em;
+  }
+
+  .boxes {
+    width: 90%;
+    display: flex;
+    margin: auto;
+  }
+  .right-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+  }
+  .left-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+    margin: auto;
+  }
+  .left-box .text {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .right-box .text {
+    width: 90%;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .left-box iframe {
+    width: 90%;
+    height: 225px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  .right-box iframe {
+    width: 90%;
+    height: 225px;
+    padding: 20px;
+    margin-top: 20px;
   }
 
 }
@@ -373,49 +453,30 @@ header .title p{
   padding-bottom: 0px;
 }
 
-.boxes {
-  width: 90%;
-  display: flex;
-  margin: auto;
-}
-.right-box {
-  float: right;
-  width: 45%;
-  margin: auto;
-}
-.left-box {
-  float: left;
-  width: 45%;
-  margin: auto;
-}
 .left-box .text {
-  width: 100%;
-  padding: 20px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--card-color);
   border: 1px black dashed;
   display: block;
-
 }
 .right-box .text {
-  width: 100%;
-  padding: 20px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--card-color);
   border: 1px black dashed;
   display: block;
+}
 
+.text img {
+  width: 100%;
+}
+
+.text img + p {
+  text-align: center;
 }
 
 .left-box iframe {
-  width: 533px;
-  height: 300px;
-  padding: 20px;
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -424,9 +485,6 @@ header .title p{
 }
 
 .right-box iframe {
-  width: 533px;
-  height: 300px;
-  padding: 20px;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;

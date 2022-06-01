@@ -13,17 +13,32 @@
             "short": "A 2D Text-based RPG, with a very clever name",
             "tags": ["Godot"],
             "format": {
-                "left": ["**<2DRPG V1>**After my Ludum Dare 45 game, I concluded that for me, the best game I can make single-handedly is a game with next to no, or no graphics. Therefore, a text-adventure game would be the most likely bet, as it leverages my strengths: programming & writing. I decided to set out with the same theme as my Ludum Dare Game: you see nothing. There are caveats in the game, making long-term continuation of it difficult, for the writing I did was highly unorganizd. However, through the writing, I figured out what this kind of game would need. I used LibGDX, a Java game framework, to build my own text-based game engine. This included text stages, towns, buildings, fights, and NPC encounters with a variety of possible options for each encounter. I held development on the game not due to limitations with the programming aspects, or creation of the game engine, but writing for long stretches for NPCs, scenarios, dungeons, and more became tedious. Future forrays into games after this became more technical, my next substantial work being a contributor to OddFolk, a ASCII Open-world Rouge-like built in Java. Later, I would come back to this style of game, with a more organized approach.",
+                "left": ["**<2DRPG V1>**After my Ludum Dare 45 game, I concluded that for me, the best game I can make single-handedly is a game with next to no, or no graphics. Therefore, a text-adventure game would be the most likely bet, as it leverages my strengths: programming & writing. <br> I decided to set out with the same theme as my Ludum Dare Game: you see nothing. There are caveats in the game, making long-term continuation of it difficult, for the writing I did was highly unorganizd. However, through the writing, I figured out what this kind of game would need. I used LibGDX, a Java game framework, to build my own text-based game engine. This included text stages, towns, buildings, fights, and NPC encounters with a variety of possible options for each encounter. I held development on the game not due to limitations with the programming aspects, or creation of the game engine, but writing for long stretches for NPCs, scenarios, dungeons, and more became tedious. <br> Future forrays into games after this became more technical, my next substantial work being a contributor to OddFolk, a ASCII Open-world Rouge-like built in Java. Later, I would come back to this style of game, with a more organized approach.",
                         "https://youtu.be/SJjCnfRwcmE"],
                 "right": ["https://youtu.be/j7FZskjmLGs",
-                        "I came back to this style of game after about a year of waiting. For OddFolk, having worked on a primative dialogue loading system in Java with my extra experience, I realized there were many more ways to create a dialogue system than the one I created for the first iteration of this game. Instead of Java & LibGDX, Godot & GDScript were used to create a more polished feel, and an easier time creating and poritng the game to different platforms. A system in GDScript that would read .txt files and compile them into a game that could be played. As a result of this modularity, only a haldful of maybe 2-3 files of code are used, and only a few hundred lines, rather than the copy and paste amalgomation that was the previous iteration of this game. This system is also far easier to use, making the only road-block in the creation of the game to be the writing aspect. However, I set forth on this game with an idea in mind, and although a vague idea, its an idea that Im fond of and would like to pursue further."]
+                        "**<2DRPG V2>**I came back to this style of game after about a year of waiting. For OddFolk, having worked on a primative dialogue loading system in Java with my extra experience, I realized there were many more ways to create a dialogue system than the one I created for the first iteration of this game. <br> Instead of Java & LibGDX, Godot & GDScript were used to create a more polished feel, and an easier time creating and poritng the game to different platforms. A system in GDScript that would read .txt files and compile them into a game that could be played. As a result of this modularity, only a haldful of maybe 2-3 files of code are used, and only a few hundred lines, rather than the copy and paste amalgomation that was the previous iteration of this game. <br> This system is also far easier to use, making the only road-block in the creation of the game to be the writing aspect. However, I set forth on this game with an idea in mind, and although a vague idea, its an idea that Im fond of and would like to pursue further."]
             }
         },
         {
 
-            "name": "2D-RPG",
-            "short": "A 2D Text-based RPG, with a very clever name",
-            "tags": ["Godot"]
+            "name": "TRPG Prototype",
+            "short": "A prototype for a game that was too ambitious",
+            "tags": ["Unity"],
+            "format": {
+                "left": ["**<Overview>**This un-named prototype is something I started working on at the end of sophomore year. Enfatuated with the idea of turn-based strategy games, I decided to go down a route taking inspiration from games such as Divinity Original Sin, Xcom, and Shadowrun.<br>This game would have used pixel art, primarily sprites that are 16x16, as art was not my primary focus. Through this I was able to learn pixel art more in depth, something that can be very useful in the game-dev world.<br>Furthermore, I learned a few things through this project such as A* pathfinding, and a deeper look into the Unity game engine. In this prototype I was able to include a map generator from png images (which I was planning on modifying in the future), random enemy spawning and clustering, A* pathfinding, game states, and many other minor features! The next step in this game would be to create AI logic for the enemies, as a system for AI already exists.<br>Throughout the process of game development, I recorded two videos detailing my progress, as well as did a live-stream where I did some pixel art."],
+                "right":["https://youtu.be/_jcf8ZO8pYk",
+                "https://youtu.be/am6W09yLFPI"]
+            }
+        },
+        {
+
+            "name": "PiPlant",
+            "short": "First & last HS group project: A talking plant",
+            "tags": ["Python/Flask", "D3.JS"],
+            "format": {
+                "left": ["**<Abstract>**From the Peddie Computer Science Club Website: The Raspberry Pi Talking plant is a plant monitoring system that allows for human-plant communication. It includes a web interface that allows users to monitor key statistics regarding their plant, including plant temperature, plant humidity, and air temperature. Also included are graphs that keep track of the data so that users can easily keep track of temperature and humidity growth over time. On the other hand of the project lies the “communication” side, where text-to-speech software is used to communicate with the users. Various python libraries are put together to have plants respond to user commands and questions based on keywords. With this project, we hope to be able to give plant caretakers more tools to aid their endeavors and to give everyone a new companion."],
+                "right":["**<Overview>** PiPlant was both my first and last group project in HighSchool. Done with Rohan Nunugonda '22 and Aditya Kalyan '23, work would be split among working on sensors for the plant, working on the back-end UNIX & Python implementation, and the front-end design and data processing. I worked on front-end and also a bit on handling/parsing commands on the back-end.", "img>https://skymocha.net/Projects/PiPlant/assets/Desktop.jpg Front-End for the project inspired by Windows XP Background"]
+            }
         }
     ],
 
@@ -31,7 +46,13 @@
         {
 
             "name": "Why The Trans Programmer?",
-            "short": "Do Trans Women Disproportionately Go Into Computer Science?"
+            "short": "Do Trans Women Disproportionately Go Into Computer Science?",
+            "format": {
+                "left": ["**<Overview>**This project consists of three questions explored over a months-long time-period. It consists of a primary video essay, followed a few months later by a well-researched paper, and finally by a follow-up video essay covering the topic in the most depth.<br>Questions:<br>1. Do Trans Women Disproportionately Go Into CS?<br>2. Why Do Trans Women Disproportionately Go Into CS?<br>3. So, Why Don't Cis Women?", "**<Original Video>**THIS SECTION IS A WIP", "https://youtu.be/mumIp8tFmcA"],
+                "right": [
+                    "**<Paper>**Through online anecdotal evidence and online communities, there is an in-group idea of trans people (specifically trans-feminine individuals) disproportionately entering computer science education & fields. Existing data suggests this is a plausible trend, yet no research has been done into exactly why. As computer science education (traditional schooling or self-taught methods) is integral to working in computer science fields, a simple research survey was conducted to gather data on 138 trans people’s experiences with computer science & computer science education. This article’s purpose is to shed insight on the motivations for trans individuals choosing computer science paths, while acting as a basis and call to action for further research.", "**<Follow-up Video>**THIS SECTION IS A WIP", "https://youtu.be/mumIp8tFmcA"
+                ]
+            }
         },
         {
 
