@@ -6,7 +6,11 @@
 
 Always a work-in-progress! :)
 
-## Current Update (5/22/2022)
+## Current Update 6/7/2022
+
+Completely re-creating /Projects/ and making it into /portfolio/ using the React framework. Also creating a publications.html to support indexing in Google Scholar.
+
+## 5/22/2022
 
 Ramping up for the (eventual) release of _Fight Club's Incel to Exploitable Chad Pipeline_. As a result I started going through and re-designing the landing page to not necessarily with the intent of looking more stylish; but to be more optimized, have cleaner code, and be more legible & information-dense. This overall leads to a slicker and cleaner UI.
 
