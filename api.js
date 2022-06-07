@@ -3,7 +3,6 @@ const config = require('./config.json');
 
 // LOAD EPRESS
 const express = require('express');
-const res = require('express/lib/response');
 const app = express()
 const port = 3000
 
@@ -32,7 +31,8 @@ const YTSearch = require ('yt-channel-info');
 const channelID = "UC_K4EmF_Ks9xmSlL0ZudM4w"
 
 const base_insta = `https://graph.instagram.com/v13.0`
-const insta_post_uri = `${base_insta}/me/media?fields=id,media_type,media_url,permalink,timestamp&access_token=${config.INSTA_ACCESS_TOKEN}`
+const skymochi64 = `${base_insta}/me/media?fields=id,media_type,media_url,permalink,timestamp&access_token=${config.INSTA_ACCESS_TOKEN_MAIN}`
+const skymocha_photo = `${base_insta}/me/media?fields=id,media_type,media_url,permalink,timestamp&access_token=${config.INSTA_ACCESS_TOKEN_PHOTO}`
 
 /**
  *
@@ -42,13 +42,25 @@ async function instaPosts () {
 
   let posts = []
 
-  await axios.get(insta_post_uri).then (d => {
+  await axios.get(skymochi64).then (async (d1) => {
 
-    let IDs = d.data.data.slice(0, 6)
+    await axios.get(skymocha_photo).then (async (d2) => {
 
-    IDs.forEach (p => {
+      let IDs = d1.data.data.slice(0, 5)
+      let photo = d2.data.data;
+      for (let i = 0; i < IDs.length; i++) {
+        if (photo[i])
+          IDs.push(photo[i])
+        else
+          break;
+      }
+      IDs.sort ((a, b) => new Date (b.timestamp) - new Date (a.timestamp))
 
-      posts.push (p)
+      IDs.forEach (p => {
+
+        posts.push (p)
+
+      })
 
     })
 

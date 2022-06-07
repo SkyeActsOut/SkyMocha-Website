@@ -1,0 +1,89 @@
+/* BODY */
+:root {
+    --padding-left: 1.5vw;
+}
+
+@font-face {
+    font-family: Titillium;
+    src: url("/fonts/TitilliumWeb.ttf");
+}
+
+body {
+    font-family: Titillium;
+    letter-spacing: 0.065em;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    line-break: normal;
+}
+
+body * {
+    width: 95%;
+    height: auto;
+}
+
+/* FONTS */
+h1 {
+    margin-left: var(--padding-left);
+    font-size: x-large;
+}
+h2 {
+    font-size: larger;
+}
+h3 {
+    font-size: large;
+}
+
+h2, .publication {
+    margin-top: calc(var(--padding-left)*0.25) ;
+    margin-left: calc(var(--padding-left)*2);
+}
+
+h3 * {
+    padding-left: 2px;
+}
+h3 i {
+    padding-left: 1px;
+    padding-right: 2px;
+}
+
+/* HEADER */
+header {
+    margin-left: var(--padding-left);
+    padding-top: calc(var(--padding-left)*0.5);
+}
+header h2 {
+    margin-left: var(--padding-left);
+    width: fit-content;
+    margin-top: 0px;
+}
+header a {
+    text-decoration: none;
+}
+header .flex {
+    display: flex;
+}
+
+/* LINKS */
+a {
+    color: rgb(117, 61, 105);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(140, 100, 150);
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer {
+    display: flex;
+}
+footer h2 {
+    width: fit-content;
+}
+footer a {
+    text-decoration: none;
+}
