@@ -25,11 +25,11 @@ h1, h2 {
     }
 
     .project {
-      width: calc(47.5%);
+      width: 50%;
     }
 
     .GitHubStats {
-      width: calc(47.5%);
+      width: 50%
     }
 
     :root {
@@ -39,26 +39,23 @@ h1, h2 {
       --width-multiplier: 2.3;
       --pad-in: 10px;
       --pad-out: 6px;
-      --img-size: 154px;
+      --img-size: 128px;
     }
 
 }
 
 @media (min-width: 1100px) {
     :root {
-      --large-font: calc(1vw + 8px);
-      --med-font: calc(1vw + 4px);
+      --large-font: calc(0.925vw + 8px);
+      --med-font: calc(0.825vw + 4px);
       --size-multiplier: 1.325;
       --pad-in: 10px;
       --pad-out: 12px;
-      --img-size: 154px;
+      --img-size: 128px;
     }
 
     .project-flex {
       flex-direction: row;
-    }
-    .header-flex {
-      /* display: flex; */
     }
 
     .nontech .projects_container {
@@ -66,10 +63,10 @@ h1, h2 {
     }
 
     .tech {
-      width: 66%;
+      width: 60%;
     }
     .nontech {
-      width: 32%;
+      width: 30%;
     }
 
     .nontech .project {
@@ -138,6 +135,17 @@ h1, h2 {
   ul {
     list-style: none;
     display: none;
+  }
+  .project .info ul {
+    display: flex;
+    list-style: none;
+    margin-right: 3rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+  }
+  .project .info ul * {
+    margin: auto;
   }
   li {
     margin: auto;
@@ -213,7 +221,7 @@ h1, h2 {
 
     padding-bottom: var(--pad-out);
   
-    height: calc(var(--img-size)*1.4);
+    height: calc(var(--img-size)*1.25);
   
     background-color:  var(--card-color);
     
@@ -225,8 +233,8 @@ h1, h2 {
     text-align: left;
 
     --header-size: 64px;
-
   }
+
   .GitHubStats {
     height: calc(var(--img-size)*var(--size-multiplier));
     margin: var(--pad-out);
@@ -247,19 +255,31 @@ h1, h2 {
   
   }
 
-  .project ul {
+  .project .info ul {
 
     padding-top: 0px;
     padding-bottom: 10px;
+
+    display: flex;
   
-    margin-left: -0.75em;
+    margin-left: -2.125rem;
     margin-right: auto;
-    margin-top: auto;
+    margin-top: -0.25rem;
     margin-bottom: auto;
   
     text-align: left;
   
     width: calc(100% - var(--pad-in)*2);
+  }
+
+  .project ul div {
+
+    padding-left: 0.325rem;
+    
+  }
+
+  .project ul div::after {
+    content: ','
   }
 
   header {
@@ -346,6 +366,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+
 }
 
 .header {
@@ -360,6 +385,7 @@ header {
   width: 100%;
   padding-top: 0.5em;
   background-color: #c8c4dc;
+  border-bottom: 2px solid black;
 }
 
 .header-flex {
@@ -397,6 +423,17 @@ header .title p{
 
 .project-flex {
   display: flex;
+  width: 95%;
+  margin: auto;
+}
+
+.project-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  background-color: black;
 }
 
 .projects_container {
@@ -446,7 +483,8 @@ header .title p{
   font-size: var(--med-font);
 
   padding: var(--pad-in);
-  margin: auto;
+  margin-top: -0.75rem;
+  margin-bottom: 0rem;
   text-align: left;
 
   width: calc(100% - var(--pad-in)*2);

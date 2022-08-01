@@ -73,6 +73,7 @@ function ProjectPage (props) {
                 <div className='left-box'>
                     {left_div}
                 </div>
+                
                 <div className='right-box'>
                     {right_div}
                 </div>

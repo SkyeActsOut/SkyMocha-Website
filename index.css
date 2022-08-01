@@ -10,6 +10,8 @@
 
 :root {
     scrollbar-width: none;
+
+    ---support-height: 72px;
 }
 
 /* FONTS AND SIZING BASE-LINE */
@@ -40,6 +42,11 @@ h2 {
 }
 
 h3 {
+    font-family: Titillium;
+}
+
+li {
+    color: white;
     font-family: Titillium;
 }
 
@@ -225,16 +232,21 @@ header .container a {
     bottom: 0px;
     left: 0px;
 
-    min-height: 66px;
+    min-height: var(---support-height);
     border-top-style: dashed;
 
     width: 101%;
-    height: 10%;
+
     border-width: 2px;
     border-color: rgba(0, 0, 0, 0.33);
 }
 .support h2 a {
-    margin-left: 20px;
+    position: absolute;
+    
+    bottom: calc( var(---support-height) * 0.075 + 2px);
+
+    left: 20px;
+
     display: -webkit-flex;
     display: flex;
     color: white;
@@ -251,10 +263,9 @@ header .container a {
     font-size: 1rem;
 }
 .support img {
-    /* margin-top: 2px; */
-    height: 52px;
-    width: 52px;
-    margin-left: 15px;
+    height: calc(var(---support-height)*(0.7));
+    width: calc(var(---support-height)*(0.7));
+    margin-left: 10px;
     margin-top: auto;
     margin-bottom: auto;
     display: block;
@@ -333,13 +344,13 @@ header .container a {
 
     /* FONT STYLING LANDSCAPE */
 
-    h3 {
+    /* h3 {
         padding-left: 36px;
-    }
-    .bull-point::before {
+    } */
+    /* .bull-point::before {
         content: '\2022';
         margin-left: -1em;
-    }
+    } */
 
     @media screen and (max-width: 800px) {
         h3 {
@@ -360,7 +371,7 @@ header .container a {
     }
     @media screen and (min-width: 800px) {
         h3 {
-            font-size: 20px;
+            font-size: calc(10px + 1vw);
         }
         .subtitle{
             line-height: 22px;
@@ -368,10 +379,10 @@ header .container a {
             font-style: italic;
         }
         .title {
-            font-size: 32px;
+            font-size: calc(18px + 1.25vw);
         }
         h1 {
-            font-size: 30px;
+            font-size: calc(14px + 1.125vw);
         }
     }
 
@@ -517,12 +528,12 @@ header .container a {
     h3 {
         font-size: 20px;
         width: 100%;
-        margin-left: 2em;
+        /* margin-left: 2em; */
     }
-    .bull-point::before {
+    /* .bull-point::before {
         content: '•';
         margin-left: -1em;
-    }
+    } */
     #subtitle {
         display: none;
     }

@@ -12,7 +12,7 @@ function Project (props) {
 
         let tags = []
         props.tags.forEach (t => { 
-            tags.push( <li> { t } </li> )
+            tags.push( <div>{ t }</div> )
         })
         return (
             <a href={sortName(props.name)} className="project">
@@ -20,7 +20,7 @@ function Project (props) {
                 <div className="info">
                     <h2> { props.name } </h2>
                     <p> { props.short } </p>
-                    <p className='technologies'>Technologies</p>
+                    <p className='technologies'>Technologies:</p>
                     <ul> { tags } </ul>
                 </div>
             </a>

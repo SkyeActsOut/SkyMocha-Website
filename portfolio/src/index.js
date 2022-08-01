@@ -34,6 +34,7 @@ function Home () {
 
       <div className='project-flex'>
         <Projects technical={true} />
+        <hr />
         <Projects technical={false} />
       </div>
 
