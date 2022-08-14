@@ -1,0 +1,115 @@
+<!-- 
+
+    Meant for https://people.reed.edu/~skychenthal/
+    No current need to completely re-create a website specifically for my college page
+    so migh as well re-direct after a fancy loading animation :)
+
+-->
+
+
+<style>
+
+    @font-face {
+        font-family: Titillium;
+        src: url("/fonts/TitilliumWeb.ttf");
+    }
+
+    :root {
+
+        --load-color: black;
+
+    }
+
+    .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid var(--load-color);
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: var(--load-color) transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+    .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+    .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+    @keyframes lds-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .box {
+
+        width: fit-content;
+        height: fit-content;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -60%);
+
+        text-align: center;
+        font-family: Titillium;
+
+    }
+
+</style>
+
+<head>
+
+    <title>Skye Kychenthal Reed College</title>
+    <meta name="descritpion" id="descritpion" content="
+        Skye Kychenthal's web page for Reed College 
+        "/>
+
+</head>
+
+<html>
+
+    <body>
+
+        <div class="box">
+            
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+            <h1>Redirecting to skymocha.net/</h1>
+
+        </div>
+
+    </body>
+
+</html>
+
+<noscript>
+
+    <meta http-equiv="refresh" content="0; URL='/'" />
+
+</noscript>
+
+<script>
+
+    setTimeout(() => {
+        
+        window.location.href = "https://www.skymocha.net";
+
+    }, 3 * 1000);
+
+</script>
