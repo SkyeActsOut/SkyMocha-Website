@@ -5,7 +5,8 @@
 
             "name": "FuzzBot",
             "short": "My first project: a multi-purpose Discord bot",
-            "tags": ["Discord.JS"]
+            "tags": ["Discord.JS"],
+            "redirect": "https://skymocha.net/Projects/FuzzBot/"
         },
         {
 
@@ -47,7 +48,11 @@
             "year": "2019?",
             "tags": ["python", "webdev", "CAD"],
             "format": {
-
+                "left": ["**<Overview>**My first term of Sophomore Year I was tasked with a open-ended project using a Raspberry Pi. The final result is a remote for a speaker. The program runs a Python (Flask) backend, connected to a web-page remote, containing a music visualizer, as well as a way to choose the currently playing song.<br>The remote is paired to a Raspberry Pi connected to a custom-built speaker, made of 2 sheets of Balsa wood, with Dayton Audio exciters connected in parallel.<br>The original intent of the project was to hook up LEDs to the piece of Balsa Wood, and CAD & Laser Print a mount for the speaker. The LEDs would light up as a music visualizer depending on the song being played, and the mount would be attatched to the wall and help for better audio. In the end, I did not get that far. I created a mount in CAD but never finalized and created it, and although I had a partial music visualizer in software, it was not good enough for LED hookup.<br>At the end of the term, I was asked to give a presentation on the project, which can be seen on the right."],
+                "right": [
+                    "img>https://skymocha.net/Projects/NS02/assets/screenshot3.jpg Web Interface",
+                    "img>https://skymocha.net/Projects/NS02/assets/screenshot1.jpg Testing Setup"
+                ]
             }
 
         },
@@ -57,17 +62,7 @@
             "short": "An ASCII-based ARPG with C++ and Python prototypes",
             "year": "2019?",
             "tags": ["GameDev", "Python", "C++"],
-            "format": {
-
-            }
-
-        },
-        {
-
-            "name": "TRPG_Prototype",
-            "short": "A prototype for turn-based battles on a grid",
-            "year": "2019?",
-            "tags": ["GameDev", "Unity"],
+            "redirect": "https://skymocha.net/Projects/TARPG/",
             "format": {
 
             }
@@ -87,11 +82,16 @@
         {
 
             "name": "FRC 5895",
-            "short": "TBD",
+            "short": "FIRST Robotics Team 5895",
             "year": "2019?",
             "tags": ["GameDev", "WebDev"],
             "format": {
-
+                "left": ["**<Overview>** 5895 or Peddie Robotics is The Peddie School's FRC team. I participated my sophomore, junior, and senior years, however, due to the high stress of build season, I quit about four weeks in. url>FRC 5895 Website url>FRC 5895 Instagram", "**<2020 Season>** 2020 was my frist FIRST season. Our build season was uninterupted by COVID, and although we consistently fell behind schedule, we produced one of our districts best robots. <br> As no one on the team was familiar with wiring and pneumatics, our mentor Mr. Meredith taught me the ropes, and I was the person most in charge of wiring the robot electrically and pneumatically. During our first competition I was on call in case the wiring broke, but it never did. <br> We won our first competion, almost guarenteeing us a trip to district championships, and possibly even world championships in Detroit. <br> Sadly, due to COVID, none of this happened.", "img>http://frc5895.peddie.org/wp-content/uploads/2020/03/e8SVSmFh-448x448.jpg 2020 Robot: Emperor Goose"],
+                "right": [
+                    "**<2021 Season>** The 2021 season was lackluster due to COVID. Our team was split across the world, so those of us who were at Peddie worked on creating a simple swerve bot. This season was mostly just to train new people, and also keep older poeple from losing their learned experience. We also worked on a few off-season projects, such as event-day gear & organization. I taught some of the new students wiring, and also began learning how to drive Emperor Goose for fun.",
+                    "**<2022 Season>** Although I quit four weeks into build season for 2022, I contributed greatly to the team by helping prototype and design the shooter for our robot. After getting a rough prototype design for the flywheel shooter, me and my subteam spent hours shooting with different wheels, angles, etc. My job was to take note of all the different inputs and find out what the best shooter angles and wheel materials were for the balls used in 2022. Thanks to my work, the subsequent work of other students, and the programming team we had one of the best shooters in our district and made it to world championships in Houston.",
+                    "img>http://frc5895.peddie.org/wp-content/uploads/2022/04/2022Robot-744x744.jpg 2022 Robot: Gullinkambi"
+                ]
             }
 
         },
@@ -193,21 +193,33 @@
             "name": "Why The Trans Programmer?",
             "short": "Do Trans Women Disproportionately Go Into Computer Science?",
             "format": {
-                "left": ["**<Overview>**This project consists of three questions explored over a months-long time-period. It consists of a primary video essay, followed a few months later by a well-researched paper, and finally by a follow-up video essay covering the topic in the most depth.<br>Questions:<br>1. Do Trans Women Disproportionately Go Into CS?<br>2. Why Do Trans Women Disproportionately Go Into CS?<br>3. So, Why Don't Cis Women?", "**<Original Video>**THIS SECTION IS A WIP", "https://youtu.be/mumIp8tFmcA"],
+                "left": ["**<Overview>**This project consists of three questions explored over a months-long time-period. It consists of a primary video essay, followed a few months later by a well-researched paper, and finally by a follow-up video essay covering the topic in the most depth.<br>Questions:<br>1. Do Trans Women Disproportionately Go Into CS?<br>2. Why Do Trans Women Disproportionately Go Into CS?<br>3. So, Why Don't Cis Women?", "**<Original Video>**The orginal video for 'Why The Trans Programmer?' was primarily focused on annecdotal evidence from what I saw occuring in the world and what others did. As a result it ws more of a loosely bullet-pointed vlog with minimal citations. The follow-up-video wuld be a far better-researched video with a paper component archived to IEEE Xplore (currently available through ArXiV).", "https://youtu.be/mumIp8tFmcA"],
                 "right": [
-                    "**<Paper>**Through online anecdotal evidence and online communities, there is an in-group idea of trans people (specifically trans-feminine individuals) disproportionately entering computer science education & fields. Existing data suggests this is a plausible trend, yet no research has been done into exactly why. As computer science education (traditional schooling or self-taught methods) is integral to working in computer science fields, a simple research survey was conducted to gather data on 138 trans people’s experiences with computer science & computer science education. This article’s purpose is to shed insight on the motivations for trans individuals choosing computer science paths, while acting as a basis and call to action for further research.", "**<Follow-up Video>**THIS SECTION IS A WIP", "https://youtu.be/mumIp8tFmcA"
+                    "**<Paper Abstract>** Through online anecdotal evidence and online communities, there is an in-group idea of trans people (specifically trans-feminine individuals) disproportionately entering computer science education & fields. Existing data suggests this is a plausible trend, yet no research has been done into exactly why. As computer science education (traditional schooling or self-taught methods) is integral to working in computer science fields, a simple research survey was conducted to gather data on 138 trans people’s experiences with computer science & computer science education. This article’s purpose is to shed insight on the motivations for trans individuals choosing computer science paths, while acting as a basis and call to action for further research.", "**<Follow-up Video>**THIS SECTION IS A WIP", "https://youtu.be/k3lAdCd6f84"
                 ]
             }
         },
         {
 
             "name": "Geiger Reeves Speaking Contest",
-            "short": "A shcool scpeech competition; wining hearts and awards"
+            "short": "A shcool scpeech competition; wining hearts and awards",
+            "format": {
+
+                "left": ["**<Overview>** The Peddie School has two yearly speech competetions, a monologue competition (The Declemation), and a written speech competition (Geiger Reeves). I participated three times: Fresmen, Junior, & Senior Years. The Geiger Reeves Speaking Contest, alongside my time in Speech & Debate at Peddie has been integral to my growth as an actor.",
+                "**<Freshmen Reeeves: The Courage To Ask>** For my innagural entry into the speech competition, I already knew most people would look deep within themselves and find some meaningfull topic to convey to an audiance whether to win the competition, or to spread a message. I took this opportunity to be more light-hearted, humorous, yet still impactful and sincere: I wrote about my love life. Although I won nothing for this speech, I recieving weeks of congratulations alongside the only standing ovation.<br>Video unavailable due to the video being pre-transition. Audio TBD.", "**<Junior Reeevs: I'm weird and so are you>**My junior year I strived for a balance of light-heartnedness and an importantance. As a result, I talked about something that many high-school students struggle with: being considered 'weird.' The speech centered around celebrating weirdness. <br> Due to COVID the speeches were not delivered on stage, but recorded in video. For this speech I recieved honorable mention out of approx. 30 competitors."],
+                "right": [
+                "**<Senior Reeevs: Leave Us Alone>** For my final Reeeves speech, I decided to work on a more serious topic and delivery. Although I am good at comededy, delivering a serious and impassioned speech is something I still struggled with at the time. I went with somewhat recent topics: The BBCs treatment of trans people. The speech centered on my experiences as a trans person with both my identity and with this particular topic. I won honorable mention and posted the preformance to my YouTube channel.", "https://www.youtu.be/JI6H2vYV6gM"]
+
+            }
         },
         {
 
             "name": "Fight Club's Incel To Exploitable Chad Pipeline",
-            "short": "A shcool scpeech competition; wining hearts and awards"
+            "short": "A feature film YouTube video on Fight Club, Incels, & Trump",
+            "format": {
+                "left": ["**<Overview>**A self-led project, with initial advising from Dr. Ami Shah of the Peddie School’s English department, with contributions from Abriana Fergesun, Reed Turner, Doran Penner, and Eli McKinzie. Started as my high-school senior thesis, this project explores Fight Club: the movie by David Fincher and the book by Chuck Phalanick; dissecting it, then using it as a lens of analysis for the 2016 presidential campaign of Donald Trump, primarily focusing on the aspects of micro-targeting incels and other manosphere communities by Cambridge Analytica outlined in the memoir Mindf*ck by Christopher Wylie. Through drawing parallels between fiction and the real world, conclusions can be made about the populist rhetoric and ideology used by both Tyler Durden in Fight Club and by Donald Trump."],
+                "right": ["Video is a WIP & currently in recording & editing phase"]
+            }
         },
         {
 

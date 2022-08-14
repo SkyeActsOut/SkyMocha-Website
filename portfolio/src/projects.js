@@ -3,10 +3,14 @@ import React from 'react';
 import projects from './project_list.json'
 
 function sortName (name) {
-    return name.split(' ').join('').split('?').join('').split('!').join('');
+    return name.split(' ').join('').split('?').join('').split('!').join('').split('/').join('-');
 }
 
 function Project (props) {
+
+    let redirect = sortName(props.name)
+    if (props.redirect != undefined)
+        redirect = props.redirect
     
     if (props.technical) {
 
@@ -14,8 +18,9 @@ function Project (props) {
         props.tags.forEach (t => { 
             tags.push( <div>{ t }</div> )
         })
+        
         return (
-            <a href={sortName(props.name)} className="project">
+            <a href={redirect} className="project">
                 <img src={ `/assets/thumbnails/${sortName(props.name)}.png` } alt={props.name} />
                 <div className="info">
                     <h2> { props.name } </h2>
@@ -28,7 +33,7 @@ function Project (props) {
     }
     else
         return (
-            <a href={sortName(props.name)} className="project">
+            <a href={redirect} className="project">
                 <img src={ `/assets/thumbnails/${sortName(props.name)}.png` } alt={props.name} />
                 <div className="info">
                     <h2> { props.name } </h2>
@@ -61,6 +66,7 @@ function Projects (props) {
                 name={p.name} 
                 short={p.short}
                 tags={p.tags}
+                redirect={p.redirect}
                 technical={true}
             /> )
             i+=1;
@@ -75,6 +81,7 @@ function Projects (props) {
                 name={p.name} 
                 short={p.short}
                 tags={p.tags}
+                redirect={p.redirect}
                 technical={false}
             /> )
         })

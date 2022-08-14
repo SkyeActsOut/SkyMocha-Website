@@ -6,9 +6,9 @@
 
 Always a work-in-progress! :)
 
-## Current Update 6/7/2022
+## Summer Updates 6/7/2022 -> 8/20/2022
 
-Completely re-creating /Projects/ and making it into /portfolio/ using the React framework. Also creating a publications.html to support indexing in Google Scholar.
+Completely re-creating /Projects/ and making it into /portfolio/ using the React framework. /portfolio/ will be built around a .json file in order to make the addition and editing of projects far easier than creating individual .html pages for each project. Also creating a publications.html to support indexing in Google Scholar for the release of _Fight C'ub's Incel To Exploitable Chad Pipeline_.
 
 ## 5/22/2022
 
@@ -18,14 +18,17 @@ Index.css has had roughly 300 lines of CSS removed during restructuring, some of
 
 ## Overview
 
-The website is currently split into two sections:
+The website is currently split into three sections:
 
-1. Front-end Website
-2. Back-end SkyMocha API
+1. Front Page Website
+2. Portfolio
+3. Back-end SkyMocha API
 
-### Front-End Website
+### Front Page Website
 
-The front-end website runs on Apache2 on a cloudflare protected server, with custom HTML5 pages for each directory and (mostly) custom-made CSS. Although not the most functional, doing everything myself has allowed for the greatest degree of artistic freedom & customizability.
+The front page acts as a sort-of linktree for various social medias; while also containing links to my main projects, my resume, and a showcase of my Instagram feed using the back-end SkyMocha API.
+
+The front-end website runs on Apache2 on a cloudflare protected server, with custom HTML5 and (mostly) custom-made CSS. Although not the most functional, doing everything myself has allowed for the greatest degree of artistic freedom, customizability, and it has been a really great learning experinece.
 
 Primary end-points are:
 
@@ -34,6 +37,10 @@ Primary end-points are:
 > [www.skymocha.net/Projects/](https://www.skymocha.net/Projects/) > _Portfolio_
 
 > [www.skymocha.net/resume.pdf](https://www.skymocha.net/resume.pdf) > _Resume_
+
+### Portfolio
+
+The portfolio section is an independent app built on the React.JS framework. It's built around a .json file to make it far easier to add and edit project pages compared to vast amount of individual .html files. Currently a WIP.
 
 ### Back-End API
 
