@@ -3,117 +3,79 @@
     <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
     <url>
         <loc>https://skymocha.net/</loc>
-        <lastmod>2022-04-26T19:05:37+00:00</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/</loc>
-        <lastmod>2022-03-06T15:00:28+00:00</lastmod>
-        <priority>0.80</priority>
+        <loc>https://skymocha.net/resume.pdf</loc>
+        <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/resume.pdf</loc>
-        <lastmod>2022-05-01T13:54:35+00:00</lastmod>
-        <priority>0.90</priority>
+        <loc>https://portfolio.skymocha.net/</loc>
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://skymocha.net/Projects/FuzzBot/</loc>
-        <lastmod>2020-06-02T10:57:09+00:00</lastmod>
         <priority>0.2</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/RPG/</loc>
-        <lastmod>2021-05-31T16:07:38+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/2D-RPG</loc>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/NS02/</loc>
-        <lastmod>2021-05-31T16:06:59+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/TRPGPrototype</loc>
         <priority>0.5</priority>
     </url>
     <url>
         <loc>https://skymocha.net/Projects/TARPG/</loc>
-        <lastmod>2021-06-24T22:43:17+00:00</lastmod>
         <priority>0.64</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/TRPG_Prototype/</loc>
-        <lastmod>2021-05-31T16:07:58+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/PiPlant</loc>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/nickPosr/</loc>
-        <lastmod>2021-05-31T16:06:46+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/nPoser</loc>
         <priority>0.4</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/PiPlant/</loc>
-        <lastmod>2021-10-24T13:55:44+00:00</lastmod>
-        <priority>0.4</priority>
+        <loc>https://portfolio.skymocha.net/CavesofQUwUD</loc>
+        <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/AbyssalMaze/</loc>
-        <lastmod>2020-08-25T12:20:30+00:00</lastmod>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://skymocha.net/Projects/LunchboxGalaxy/</loc>
-        <lastmod>2021-05-31T16:06:35+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/LunchBoxGalaxy</loc>
         <priority>0.25</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/OddFolk/</loc>
-        <lastmod>2021-05-30T14:11:29+00:00</lastmod>
-        <priority>0.3</priority>
+        <loc>https://portfolio.skymocha.net/OddFolk</loc>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://skymocha.net/Projects/DogClicker/</loc>
-        <lastmod>2021-12-27T17:19:48+00:00</lastmod>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/Discord-Quiz/</loc>
-        <lastmod>2021-05-31T16:05:12+00:00</lastmod>
+        <loc>https://portfolio.skymocha.net/DiscordQuiz</loc>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/RXNS/</loc>
-        <lastmod>2021-05-31T16:07:46+00:00</lastmod>
-        <priority>0.3</priority>
+        <loc>https://portfolio.skymocha.net/WhyTheTransProgrammer</loc>
+        <priority>0.75</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/WhyTheTransProgrammer/</loc>
-        <lastmod>2022-03-06T14:42:47+00:00</lastmod>
-        <priority>0.64</priority>
+        <loc>https://portfolio.skymocha.net/FightClub'sIncelToExploitableChadPipeline</loc>
+        <priority>0.75</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/FightClubIncels/</loc>
-        <lastmod>2022-03-06T16:47:40+00:00</lastmod>
-        <priority>0.64</priority>
+        <loc>https://portfolio.skymocha.net/PeddieHacks/</loc>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/PeddieHacks/</loc>
-        <lastmod>2021-10-24T13:47:11+00:00</lastmod>
-        <priority>0.64</priority>
+        <loc>https://portfolio.skymocha.net/GeigerReevesSpeakingContest</loc>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://skymocha.net/Projects/Reeves/</loc>
-        <lastmod>2021-06-23T23:59:29+00:00</lastmod>
-        <priority>0.64</priority>
+        <loc>https://portfolio.skymocha.net/FRC5895</loc>
+        <priority>0.6</priority>
     </url>
-    <url>
-        <loc>https://skymocha.net/Projects/5895/</loc>
-        <lastmod>2021-10-14T15:44:58+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
-    <url>
-        <loc>https://skymocha.net/Projects/NS02/NS02.pdf</loc>
-        <lastmod>2021-05-30T13:58:25+00:00</lastmod>
-        <priority>0.51</priority>
-    </url>
-    <url>
-        <loc>https://skymocha.net/Projects/FightClubIncels/PaperV1.pdf</loc>
-        <lastmod>2022-03-06T14:49:22+00:00</lastmod>
-        <priority>0.64</priority>
-    </url>
+
 </urlset>

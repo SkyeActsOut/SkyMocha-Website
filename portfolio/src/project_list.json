@@ -37,7 +37,7 @@
             "short": "First & last HS group project: A talking plant",
             "tags": ["Python/Flask", "D3.JS"],
             "format": {
-                "left": ["**<Abstract>**From the Peddie Computer Science Club Website: The Raspberry Pi Talking plant is a plant monitoring system that allows for human-plant communication. It includes a web interface that allows users to monitor key statistics regarding their plant, including plant temperature, plant humidity, and air temperature. Also included are graphs that keep track of the data so that users can easily keep track of temperature and humidity growth over time. On the other hand of the project lies the “communication” side, where text-to-speech software is used to communicate with the users. Various python libraries are put together to have plants respond to user commands and questions based on keywords. With this project, we hope to be able to give plant caretakers more tools to aid their endeavors and to give everyone a new companion."],
+                "left": ["**<Abstract>**From the Peddie Computer Science Club Website: The Raspberry Pi Talking plant is a plant monitoring system that allows for human-plant communication. It includes a web interface that allows users to monitor key statistics regarding their plant, including plant temperature, plant humidity, and air temperature. Also included are graphs that keep track of the data so that users can easily keep track of temperature and humidity growth over time. On the other hand of the project lies the “communication” side, where text-to-speech software is used to communicate with the users. Various python libraries are put together to have plants respond to user commands and questions based on keywords. With this project, we hope to be able to give plant caretakers more tools to aid their endeavors and to give everyone a new companion.", "url>https://github.com/akalyan23/pyschic-plant-man(GitHub) url>https://trello.com/b/J3Io1G6m/raspberry-pi-plant-project(Trello)"],
                 "right":["**<Overview>** PiPlant was both my first and last group project in HighSchool. Done with Rohan Nunugonda '22 and Aditya Kalyan '23, work would be split among working on sensors for the plant, working on the back-end UNIX & Python implementation, and the front-end design and data processing. I worked on front-end and also a bit on handling/parsing commands on the back-end.", "img>https://skymocha.net/Projects/PiPlant/assets/Desktop.jpg Front-End for the project inspired by Windows XP Background"]
             }
         },
@@ -71,11 +71,11 @@
         {
 
             "name": "5895 Pit Screen",
-            "short": "TBD",
+            "short": "An open source pit screen for FRC teams",
             "year": "2019?",
-            "tags": ["GameDev", "WebDev"],
+            "tags": ["WebDev"],
             "format": {
-
+                
             }
 
         },
@@ -102,19 +102,8 @@
             "year": "2019?",
             "tags": ["Python"],
             "format": {
-
-            }
-
-        }
-        ,
-        {
-
-            "name": "PiPlant",
-            "short": "First and last HS group project: a talking plant!",
-            "year": "2019?",
-            "tags": ["Python", "WebDev", "Unix"],
-            "format": {
-
+                "left": ["**<Overview>**Over the summer between Freshmen and Sophomore year, I decided to look into AI. For my beginner project after MNIST, I would create a msuic generation program. The first step, and ultimately my last, would be to convert audio into an image format. In the end, a MIDI file would be converted to a CSV file, which would therefore be converted into a image displaying the data of the CSV. The image could then be reverse-engineered back into a MIDI file, with minor flaws.<br>The flaw with this approach, however, is that songs would range between a few hundred lines and a few thousand lines. Not only is the variablity tough for AI to handle, but for longer songs, the amount of inputs would exceed anything that could compute them at my disposal. In the end, it was a scraped project, yet served as my first forray into data science rather than Artificial Intelligence."],
+                "right": ["img>https://skymocha.net/Projects/nickPosr/assets/Chrono%20Trigger%20CSV.jpg 'Chrono Trigger' turned into CSV data", "img>https://skymocha.net/Projects/nickPosr/assets/Still%20More%20Fighting.png 'Still More Fighting' (Final Fantasy) turned from CSV to image format"]
             }
 
         },
@@ -126,6 +115,11 @@
             "tags": ["Unity", "Python"],
             "format": {
 
+                "left": ["**<Overview>** Caves of Qud is a text-heavy Unity engine game, and that text is serious, well-crafted, and intelligent. I decided I'd counteract all three by making all text UwU speech.", "**<Process>** Caves of Qud's text falls into two categories of generation: Python & C#/Harmony. <br> Python: All quests, NPC interactions, and a few other things are all pre-determined through XML files in the games data. To make them UwU text, the easiest way of doing so would be to write a Python script that would turn all XML files text (not the tags or important information) into UwU text. The only down-side to this, and the only thing I would correct in the future, is that these XML files are core to the game. Therefore, when the game is updated with any form of changes to the XML, the mod will break. So, the currently existing mod only works for one version of the game. <br> C#/Harmony: All other text, such as message logs, are constructed within the code of the game. There is no 'pre-determined' way of changing the text, so it has to be changed during run-time in the C# code. The issue with this, though, is during run-time, methods cannot be directly modified. The way modders and the way I got around this is by using a library called Harmony. Harmony allows the modder to create prefixes / suffixes for methods, meaning that code can be executed before or after the methods initial code. So, say a method called addLog(Message) adds to the message log in Caves of Qud using a variable called Message. All I have to do as the modder is modify the Message variable into UwU text by adding a prefix to the addLog(Message) method. This way, by the time the actual addLog code is executed, Message is already UwU text."],
+                "right": [
+                    "url>https://github.com/SkyMocha/QuwuD(GitHub Page) url>https://steamcommunity.com/sharedfiles/filedetails/?id=2395382615(Steam Page)", "**<Updates>** The major issue with the initial version of this project is that, because the Python scripts run locally on my computer and then the updated versions are uploaded to the mod page, after one CoQ update that changes any of the XML files, the mod completely breaks. As a result, new versions of those mod would either have to run the Python script to compile new XML files at run-time or run all text through the C#/Harmony patches.", "https://youtu.be/fmTZ3Y1gCQY"
+                ]
+
             }
 
         },
@@ -135,6 +129,7 @@
             "short": "My First Game Jam: LD 45",
             "year": "2019?",
             "tags": ["Unity"],
+            "redirect": "https://ldjam.com/events/ludum-dare/45/abyssal-maze",
             "format": {
 
             }
@@ -147,18 +142,20 @@
             "year": "2019?",
             "tags": ["Unity"],
             "format": {
-
+                "left": ["**<Overview>** After missing the opportunity to compete in my second Ludum Dare, I decided the next best thing would be to record myself competing in MiniJam, a bi-weekly game jam.<br>My project would be a simple game where you move around in a small solar system. After making my first planet based on Earth, I found that one of the continents looked very much like an avocado, so I decided to name the planet Avocado. After that, I began naming and also designing my planets around certain foods.<br>This project was extremely insightful for me. Although it did not involve much programming, I did do all the artwork. The artwork was simple pixel art, yet, art ended up being my highest rating in the jam. Pixel art, when given character and emotion can carry a project or game."],
+                "right": ["url>https://itch.io/jam/mini-jam-71-puzzles/rate/880112(Itch.io Page)", "https://youtu.be/_7O4t2juXBQ"]
             }
 
         },
         {
 
             "name": "OddFolk",
-            "short": "TBD",
+            "short": "A dead-end",
             "year": "2019?",
-            "tags": ["Unity"],
+            "tags": ["GameDev, Java"],
             "format": {
-
+                "left": ["**<Overview>** 'Odd Folk is a Roguelike survival simulation hybrid.' <br> OddFolk was a project I found on r/RogueLikeDev back in 2020 while looking for open source projects to contribute to. The project was claiming to be an ASCII open-world rogue-like and I was incredibly interested in helping out. I contacted the lead developers at Lockhead.nl, a small indie game developer of, if memory serves, two or three people to see where I could help out. Lockhead.nl is no longer a functioning URL and I have had trouble finding OddFolk online. <br> After joining the project's Discord, I helped out by making a few commits to the UI of the game. The game's UI system was incredibly broken and looked horrendous, so I cleaned it up, added new features such as co-ordinates, and improved the functionality of the UI. <br> After I finished up some of my work on the UI, I began working on a text parser/proccessor for NPC dialogue. This would inspire some of my own future prototypes for games such as 2DRPG that use text parsers to create most of their games. It even inspired this portfolio, as it runs off one single .json file wrapped around by a React.JS app!"],
+                "right": []
             }
 
         }
@@ -166,7 +163,7 @@
         {
 
             "name": "Dog Clicker",
-            "short": "TBD",
+            "short": "Cookie Clicker but for dogs!",
             "year": "2019?",
             "tags": ["GameDev", "WebDev"],
             "format": {
@@ -181,8 +178,9 @@
             "year": "2019?",
             "tags": ["GameDev", "WebDev"],
             "format": {
-
-            }
+                "left": ["**<Overview>** In trying to remake one of my YouTube tutorials on quiz commands within Discord.JS, I decided it would be easiest to create a NPM package built ontop of Discord.JS and then create a tutorial around that. The package has since recieved 5,000 downloads on NPM and one or two off-hand updates updating it to the latest versions of Discord.JS", "url>https://www.npmjs.com/package/discord-quiz(NPM Page) url>https://github.com/SkyMocha/DiscordQuiz(GitHub)"],
+                "right": ["https://youtu.be/4dSuV-h117U"]
+            }   
 
         }
     ],
@@ -224,7 +222,11 @@
         {
 
             "name": "PeddieHacks",
-            "short": "A shcool scpeech competition; wining hearts and awards"
+            "short": "A yearly summer hackathon",
+            "format": {
+                "left": ["**<Overview>** PeddieHacks is a yearly hackathon hosted by The Peddie School. The Hackathon started shortly before COVID, so for its first two years it has been online.", "**<Peddie Hacks 2022>** During the 2019-2020 school year, my schools Computer Science club began planning an in-person Hackathon; held in our schools science center, we would invite all participants from the surrounding schools to gether on these two floors to create. However, amidst a global pandemic, we decided to make it an online Hackathon from August 22nd to August 23rd, 2020. The Hackathon was primarily hosted over Discord, where I was a communicator, as well as administrator and organizer. <br> Day one was primarily the opening, and things went smoothly as it was primarily the opening ceremony and brainstorming for teams; however, as the end approached on day two things got hectic very quickly leading to a 15 hour work day. During the second day I was tasked at the start (9 AM) to lead a game session, and later throughout the day was tasked on things such as checking in with teams, creating a judging schedule, making announcements, and more. The greatest challenge was organizing the judging; as judging was supposed to be approximately 3 to 4 hours, but ended up lasting almost 7 full hours. I was for the majority of those 7 hours constantly adjusting the schedule to accomodate teams and help judges. <br> In the end I only survived thanks to lots of caffeine.", "img>https://skymocha.net/Projects/PeddieHacks/assets/PHacks_Judging_Schedule.jpg PeddieHacks 2020 Judging Schedule: Built with black magic, caffeine, sleep deprevation, and hard work."],
+                "right": ["**<PeddieHacks 2021>** For 2021 Peddie Hacks, I took a more backseat approach to the organization. After the hell that was 2020, I wanted a more relaxing experience. However, I did serve during the orginazation process by making suggestions by attending the organization zoom meetings. Most of my suggestions served to help create the judging criteria.<br> During the actual competition, my biggest roles were once again being the MC and organizing the Discord server. I updated the 2020 PeddieHacks Discord bot, documented it, and put it on GitHub for future students to use. This was vital in organizing teams, giving them rooms to work, and checking in with them.<br>When it came to being master of ceremonies, I ran the latter half of the opening cermonies, and the entire closing cermonies. I definitiely did not do my best during the closing ceremonies. I was given the slides three minutes before go time, so I made a lot of mistakes, but cold reading is my specialty.", "**<PeddieHacks 2022>** For the 2022 hackathon, I choose to keep contributions to the project minimal, as my summer was primarily geared towards getting ready for college. I did a few bits of maintenance on the Peddie Hacks Discord bot, but that was more or less the extent of what I did.", "url>https://www.peddie.org/about-us/stories/stories-detail/~board/news/post/peddiehacks-challenges-participants-to-code-a-better-world(Peddie Hacks 2021 Blog Post) url>https://peddiehacks.peddie.org/(Peddie Hacks Website) url>https://github.com/SkyMocha/PeddieHacks_Bot(Peddie Hacks Discord Bot)","img>https://skymocha.net/Projects/PeddieHacks/assets/Organizers2021.jpg 2021 Lead Organizers"]
+            }
         }
     ]
 

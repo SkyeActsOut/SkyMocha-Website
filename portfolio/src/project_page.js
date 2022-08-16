@@ -37,7 +37,7 @@ function populateFormat (elem) {
 
     elem.forEach(element => {
         
-        if (!element.startsWith ('https') && !element.startsWith ('img'))
+        if (!element.startsWith ('https') && !element.startsWith ('img') && !element.includes ('url'))
             div.push ( <p>
                             {(formatText(element))}
                         </p> )
@@ -47,6 +47,19 @@ function populateFormat (elem) {
         else if (element.startsWith ('img')) {
             let src = element.split('>')[1].split(' ');
             div.push ( <div className='text'> <img src={src[0]} /> <p>{src.slice(1).join(' ')}</p> </div> )
+        }
+        else if (element.startsWith ('url')) {
+            let _div = []
+
+            _div.push (<h3>Links</h3>)
+
+            element.split('url>').forEach (e => {
+                let e_split = e.split('(')
+                if (e_split[1] != undefined)
+                    _div.push  ( <div className='link'> <a href={ e_split[0] } > { `${e_split[1].replace(')','')}` } </a> </div>)
+            });
+
+            div.push (<div className="text">{_div}</div>)
         }
     });
 

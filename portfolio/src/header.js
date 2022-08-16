@@ -8,8 +8,8 @@ function Header(props) {
       <header className="header">
 
         <div className="header-flex">
-          <h1><a href='/'>HOME</a></h1>
-          <h1><a href='/portfolio'>PORTOLIO</a></h1>
+          <h1><a href='https://www.skymocha.net/'>HOME</a></h1>
+          <h1><a href='/'>PORTOLIO</a></h1>
         </div>
 
         <div className="title">

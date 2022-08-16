@@ -1,423 +1,106 @@
-in<!doctype html>
-<html class="no-js" lang="en">
+<style>
+
+    @font-face {
+        font-family: Titillium;
+        src: url("/fonts/TitilliumWeb.ttf");
+    }
+
+    :root {
+
+        --load-color: black;
+
+    }
+
+    .lds-ring {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+    }
+    .lds-ring div {
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+        width: 64px;
+        height: 64px;
+        margin: 8px;
+        border: 8px solid var(--load-color);
+        border-radius: 50%;
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border-color: var(--load-color) transparent transparent transparent;
+    }
+    .lds-ring div:nth-child(1) {
+        animation-delay: -0.45s;
+    }
+    .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+    }
+    .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+    }
+    @keyframes lds-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .box {
+
+        width: fit-content;
+        height: fit-content;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -60%);
+
+        text-align: center;
+        font-family: Titillium;
+
+    }
+
+</style>
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>SkyMocha Portfolio</title>
-<!-- <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css"> -->
-<link rel="stylesheet" href="./projects.css">
 
-<meta name="descritpion" id="descritpion" content="Skye Kychenthal's portfolio of work.">
-<meta name="keywords" id="keywords" content="Skye Kychenthal, SkyMocha">
-<meta name="author" content="Skye (SkyMocha) Kychenthal">
-
-<link rel="icon" href="/logo_assets/SkyMocha.png" type="image/gif">
-<meta name="theme-color" content="#4B52EC"/>
-<meta property="og:title" content="SkyMocha's Portfolio"/>
-<meta property="og:url" content="http://www.skymocha.net/Projects/"/>
-<meta property="og:image" content="/logo_assets/SkyMocha.png"/>
-
-<!-- Prepare a container for your calendar. -->
-<script
-  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
-</script>
-
-<!-- Optionally, include the theme (if you don't want to struggle to write the CSS) -->
-<link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
+    <title>Skye Kychenthal Reed College</title>
+    <meta name="descritpion" id="descritpion" content="
+        Skye Kychenthal's web page for Reed College 
+        "/>
 
 </head>
 
-<body class="whiteTwo">
+<html>
 
-<div class="background"> </div>
-    
-<div class="top-bar">
-    <div class="head">
-        <div class="top-bar-left">
-            <div class="menu">
-                <a href="/">SkyMocha</a>
-                <a href="/Projects/">Projects</a>
-                <a href="https://blog.skymocha.net">Blog</a>
-            </div>
-            <hr>
-        </div>
-        <div class="top-bar-right">
-            <a href="https://github.com/skymocha" target="blank">
-                <img class="github" src="/assets/Github Dark.png" >
-            </a>
-        </div>
-    </div>
-    <div class="callout">
-        <h2>Projects | Portfolio</h2>
-    </div>
-</div>
+    <body>
 
-<br>
-
-<div class="buttons"> 
-    <div class="top-button" onclick="ChangeProjects('technical')"> <h5> &nbsp;Technical&nbsp; </h5> </div>
-    <div class="top-button" onclick="ChangeProjects('nontechnical')"> <h5> &nbsp;Nontechnical&nbsp; </h5> </div>
-</div>
-
-
-<br>
-
-<hr>
-
-<div class="projects">
-    <div id="technical">
-        
-        <div class="project_type"> 
-            <div class="box">
-                <input type="checkbox" id="Discord.JS" name="Discord.JS" onclick="selectProject(this.id)">
-                <label for="Discord.JS">Discord.JS</label><br>
-            </div>
-            <div class="box">
-                <input type="checkbox" id="Python" name="Python" onclick="selectProject(this.id)">
-                <label for="Python">Python</label><br>
-            </div>
-            <div class="box">
-                <input type="checkbox" id="C# / Unity" name="C# / Unity" onclick="selectProject(this.id)">
-                <label for="C# / Unity">C# / Unity</label><br> 
-            </div>
-            <div class="box">
-                <input type="checkbox" id="C++" name="C++" onclick="selectProject(this.id)">
-                <label for="C++">C++</label><br> 
-            </div>
-            <div class="box">
-                <input type="checkbox" id="Godot" name="Godot" onclick="selectProject(this.id)">
-                <label for="Godot">Godot</label><br> 
-            </div>
-            <div class="box">
-                <input type="checkbox" id="Java" name="Java" onclick="selectProject(this.id)">
-                <label for="Java">Java</label><br>
-            </div>
-            <div class="box">
-                <input type="checkbox" id="WebDev" name="WebDev" onclick="selectProject(this.id)">
-                <label for="WebDev">WebDev</label><br> 
-            </div>
-            <div class="box">
-                <input type="checkbox" id="GameDev" name="GameDev" onclick="selectProject(this.id)">
-                <label for="GameDev">GameDev</label><br> 
-            </div>
-        </div>
-
-        <br>
-        <div class="project-list">
-            <a class="project" href="/Projects/FuzzBot/">
-                <img src="https://cdn.discordapp.com/avatars/384506571146788867/267a85599e7b72a0bdbcf1cc612c94a0.png?size=1024" class="thumbnail" alt="The FuzzBot Image">
-                <h5>FuzzBot</h5>
-                <p>My first project: A Multi-Purpose Discord Bot</p>
-                <p class="tags">Discord.JS</p>
-            </a>
-
-            <a class="project" href="/Projects/RPG/">
-                <img src="/assets/Eye.png" class="thumbnail" alt="2D TestBased RPG Logo">
-                <h5>2D-Textbased RPG V1/V2</h5>
-                <p>Text-based games are always visually appealing!</p>
-                <p class="tags">GameDev, Godot</p>
-            </a>
-
-            <a class="project" href="/Projects/NS02/">
-                <img src="../assets/NS02.png" class="thumbnail" alt="">
-                <h5>NS02</h5>
-                <p>A Music Visualizer and Remote Control for Speakers</p>
-                <p class="tags">Python, WebDev, CAD</p>
-            </a>
-
-            <a class="project" href="/Projects/TARPG/">
-                <img src="/Projects/TARPG/assets/TARPG_Icon_One.png" class="thumbnail" alt="TARPG Screenshot">
-                <h5>TARPG V1/V2</h5>
-                <p>An ASCII-based ARPG with C++ and Python prototypes</p>
-                <p class="tags">GameDev, Python, C++</p>
-            </a>
-
-            <a class="project" href="/Projects/TRPG_Prototype/">
-                <img src="/assets/Player_0_Beeg.png" class="thumbnail" alt="TRPG Playable Character">
-                <h5>TRPG_Prototype</h5>
-                <p>A prototype: Turn-based battles on a grid</p>
-                <p class="tags">GameDev, C# / Unity</p>
-            </a>
-
-            <!-- <a class="project" href="/Projects/nickPosr/">
-                <img src="/assets/MIDI.png" class="thumbnail" alt="">
-                <h5>5895 Pit</h5>
-                <p>Data Processing for AI (no AI involved or harmed)</p>
-                <p class="tags">Python</p>
-            </a> -->
-
-            <a class="project" href="/Projects/nickPosr/">
-                <img src="/assets/MIDI.png" class="thumbnail" alt="">
-                <h5>nickPosr</h5>
-                <p>Data Processing for AI (no AI involved or harmed)</p>
-                <p class="tags">Python</p>
-            </a>
-
-            <a class="project" href="/Projects/PiPlant/">
-                <img src="./PiPlant/assets/PottedPlantPiel.png" class="thumbnail" alt="">
-                <h5>PiPlant</h5>
-                <p>First & last HS group project: A talking plant</p>
-                <p class="tags">Python, WebDev</p>
-            </a>
-
-            <a class="project" href="/Projects/QUwUD">
-                <img src="/assets/QUwUD.png" class="thumbnail" alt="">
-                <h5>Caves of QUwUD</h5>
-                <p>A mod for the game Caves of Qud using Harmony & Data Science</p>
-                <p class="tags">C# / Unity, Python</p>
-            </a>
-
-            <a class="project" href="/Projects/AbyssalMaze/">
-                <img src="../assets/AbyssalMaze512x512.png" class="thumbnail" alt="Abyssal Maze Logo">
-                <h5>Abyssal Maze</h5>
-                <p>My First Game Jam: A Ludum Dare 45 Game</p>
-                <p class="tags">GameDev, C# / Unity</p>
-            </a>
-
-            <a class="project" href="/Projects/LunchboxGalaxy/">
-                <img src="../assets/LunchBoxGalaxy.png" class="thumbnail" alt="LunchBox Galaxy Logo">
-                <h5>LunchBox Galaxy</h5>
-                <p>A MiniJam 71 Project I ocassionally come back to</p>
-                <p class="tags">GameDev, C# / Unity</p>
-            </a>
-
-            <!-- <div class="project">
-                <a href="/Projects/Discord-Location/">
-                    <img src="https://cdn.discordapp.com/attachments/660964079556493312/661183772728754187/map-pin-marker-circle-512.png" class="thumbnail" alt="">
-                </a>
-                <h5>Discord Location</h5>
-                <p>A Distance Calculator for Discord Users</p>
-            </div> -->
-
-            <a class="project" href="/Projects/OddFolk/">
-                <img src="./OddFolk/Gameplay-Square.gif" class="thumbnail" alt="">
-                <h5>OddFolk</h5>
-                <p>A Java Open Source, Open World RougeLike</p>
-                <p class="tags">GameDev, Java</p>
-            </a>
-
-            <a class="project" href="/Projects/DogClicker/" target="_blank">
-                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
-                <h5>DogClicker</h5>
-                <p>Dog DogClicker is a cookie clicker clone involving dogs</p>
-                <p class="tags">GameDev, WebDev</p>
-            </a>
+        <div class="box">
             
-            <!-- <div class="project" href="https://dogclicker.xyz">
-                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
-                <h5>MochiComics</h5>
-                <p>Under Development</p>
-                <p class="tags">WebDev</p>
-            </div> -->
+            <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
-            <!-- <a class="project">
-                <img src="/assets/Bone_Dog.png" class="thumbnail" alt="">
-                <h5>Peddie CS Site</h5>
-                <p>The Peddie School's Computer Science Website</p>
-                <p class="tags">WebDev</p>
-            </a> -->
-
-            <a class="project" href="/Projects/Discord-Quiz/">
-                <img src="/assets/discord-quiz.png" class="thumbnail" alt="">
-                <h5>discord-quiz</h5>
-                <p>A simple NPM package built on Discord.JS</p>
-                <p class="tags">Discord.JS</p>
-            </a>
-
-            <a class="project" href="/Projects/RXNS/">
-                <img src="https://cdn.discordapp.com/avatars/688388524528893955/a808fd599dcab4b688c5e7d2e61c59d1.png?size=1024" class="thumbnail" alt="RXNS Discord Bot Image">
-                <h5>RXNS</h5>
-                <p>The Final Bot: A Discord Bot Centered Around Reactions</p>
-                <p class="tags">Discord.JS</p>
-            </a>
-
-            <!-- <div class="columns column-block" id="garbage_button">
-                <img src="/assets/TrashCan.png" class="thumbnail" alt="">
-                <h5>Failed / On Hold Projects</h5>
-                <p>Discared projects that still show merit</p>
-            </div> -->
+            <h1>Redirecting to portfolio.skymocha.net/</h1>
 
         </div>
-    </div>
 
-
-    <div id="nontechnical" style="display: none;">
-        <div class="project-list">
-
-            <a class="project" target="_blank" href="https://www.youtube.com/channel/UC_K4EmF_Ks9xmSlL0ZudM4w">
-                <img src="/logo_assets/FerriFour.png" class="thumbnail" alt="">
-                <h5>SkyMocha YouTube Channel</h5>
-                <p>The SkyMocha YouTube channel active since late 2017</p>
-            </a>
-
-            <a class="project" href="/Projects/WhyTheTransProgrammer/">
-                <img src="./WhyTheTransProgrammer/Thumb.jpeg" class="thumbnail" alt="">
-                <h5>Why The Trans Programmer</h5>
-                <p>Why do trans women go into STEM but cis women don't?</p>
-            </a>
-
-            <a class="project" href="/Projects/FightClubIncels/">
-                <img src="./FightClubIncels/BookCover.jpg" class="thumbnail" alt="">
-                <h5>Fight Club's Incel To Exploitable Chad Pipeline</h5>
-                <p>You're not supposed to talk about it.</p>
-            </a>
-
-            <a class="project" href="/Projects/PeddieHacks/">
-                <img src="./PeddieHacks/assets/PHacks.png" class="thumbnail" alt="">
-                <h5>PeddieHacks</h5>
-                <p>An online hackathon hosted summer 2020 & 2021 by The Peddie School</p>
-            </a>
-
-            <a class="project" href="/Projects/Reeves/">
-                <img src="./Reeves/assets/Speaker.png" class="thumbnail" alt="">
-                <h5>Geiger Reeves Speech 1 & 2</h5>
-                <p>A school speech competition; winning hearts and awards</p>
-            </a>
-
-            <a class="project" href="/Projects/5895/">
-                <img src="./5895/assets/goose.jpg" class="thumbnail" alt="">
-                <h5>FRC 5895</h5>
-                <p>An overview of my work on FIRST Robotics team 5895</p>
-            </a>
-
-        </div>
-    </div>
-</div>
-
-
-<div class="row small-up-1 medium-up-1 large-up-1" id="grid">
-    <div class="columns column-block">
-        <h4 class="calendar-title"> SkyMocha's GitHub Calendar </h4>
-    </div>
-    <!-- <div class="columns column-block">
-        <h4 class="calendar-title"> Nick's (Public) GitHub Commits </h4>
-    </div> -->
-</div>
-<div class="calendar">
-    <!-- Loading stuff -->
-    <h5>Loading...</h5>
-</div>
-<!-- <div id="commits">
-    <h3 id="loading">Loading...</h3>
-</div> -->
-
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
-    <script>
-        $(document).foundation();
-
-        GitHubCalendar(".calendar", "SkyMocha", { responsive: true });
-
-        function ChangeProjects (type) {
-            if (type == "technical") {
-                document.getElementById("technical").style.display = "initial"
-                document.getElementById("nontechnical").style.display = "none"
-            }
-            if (type == "nontechnical") {
-                document.getElementById("technical").style.display = "none"
-                document.getElementById("nontechnical").style.display = "initial"
-            }
-        }
-
-        var projects = {
-
-        }
-
-        var projects_raw = document.getElementsByClassName("project")
-        console.log (projects_raw);
-
-        var boxes = document.getElementsByClassName("box")
-
-        for (item of boxes) {
-            let id = item.children[0].id
-            console.log (id);
-
-            projects[id] = []
-
-            for (proj of projects_raw) {
-                if (proj.children[3]) {
-                    let tags = proj.children[3].innerHTML.split(',')
-                    tags.forEach(tag => {
-                        if (tag.includes(id)) {
-                            projects[id].push(proj);
-                        }
-                    });
-                }
-            }
-            
-        }
-
-        project_nums = {
-
-        }
-        for (let proj in projects) {
-            project_nums[proj] = 0;
-            projects[proj].forEach(() => {
-                project_nums[proj] += 1;
-            });
-        } 
-
-        // adds number of projects to each
-        for (let proj in projects) {
-            let label = document.getElementById(proj).parentElement.children[1]
-            label.innerHTML = label.innerHTML + ` [${project_nums[proj]}]`
-
-            // Ungodly line of code
-            // document.getElementById(proj).parentElement.children[1].innerHTML = document.getElementById(proj).parentElement.children[1].innerHTML + ` [${project_nums[proj]}]`
-        }        
-
-        // shows checked projects
-        function selectProject (id) {
-
-            let checked = []
-
-            for (box of boxes) {
-
-                let check_box = box.children[0]
-                if (check_box.checked) {
-                    checked.push(check_box.id);
-                }
-
-            }
-
-            if (checked.length == 0) {
-                for (proj of projects_raw) {
-                    proj.style.display = "block"
-                }
-            }
-            // Please don't look at this its terrible spaghetti code ;-;
-            else {
-                // sets all projects to invis
-                for (proj of projects_raw) {
-                    proj.style.display = "none"
-                }
-                // Goes through each id thats checked, goes through every list of projects with that id, checks if all the checked ids are in the tags, then visibilities them
-                checked.forEach (checked_id => {
-                    projects[checked_id].forEach (proj => {
-                        let tags = proj.children[3].innerHTML.split(',')
-                        if (is_tags_in_arr(checked, tags))
-                            proj.style.display = "block";
-                    })
-                })
-            }
-        }
-
-        function is_tags_in_arr (checked, tags) {
-            let count = 0;
-            checked.forEach (id => {
-                tags.forEach (tag => {
-                    if (tag.includes (id))
-                        count +=1 ;
-                })
-            })
-            console.log (checked.length + " " + count);
-            return checked.length == count
-        }
-
-    </script>
-</body>
+    </body>
 
 </html>
+
+<noscript>
+
+    <meta http-equiv="refresh" content="0; URL='/'" />
+
+</noscript>
+
+<script>
+
+    setTimeout(() => {
+        
+        window.location.href = "https://portfolio.skymocha.net";
+
+    }, 1.75 * 1000);
+
+</script>

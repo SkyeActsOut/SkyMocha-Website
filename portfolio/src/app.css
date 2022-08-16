@@ -343,13 +343,13 @@ h1, h2 {
     margin-top: 20px;
   }
   .left-box img {
-    max-height: 200px;
+    max-height: 320px;
     width: auto !important;
     display: block;
     margin: auto;
   }
   .right-box img {
-    max-height: 200px;
+    max-height: 320px;
     width: auto !important;
     display: block;
     margin: auto;
@@ -434,7 +434,7 @@ header .title h2{
 header .title p{
   margin-left: auto;  
   padding: 0px;  
-  margin: 0px;
+  margin: 0px;  
   line-height: 0.5em;
 }
 
@@ -529,6 +529,14 @@ hr {
 
 .text img + p {
   text-align: center;
+}
+
+.text .link {
+
+  padding-bottom: 0.75em;
+
+  padding-left: 1em;
+
 }
 
 .left-box iframe {
